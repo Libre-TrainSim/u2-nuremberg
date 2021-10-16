@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_röthenbach.ogg-33bf0b05696d793ff0f5bc486067b8f5.oggstr"
+
+[deps]
+
+source_file="res://Resources/U2-Nuremberg/Sounds/next_station_röthenbach.ogg"
+dest_files=[ "res://.import/next_station_röthenbach.ogg-33bf0b05696d793ff0f5bc486067b8f5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

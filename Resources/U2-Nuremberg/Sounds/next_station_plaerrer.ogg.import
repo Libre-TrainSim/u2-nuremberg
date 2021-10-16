@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_plaerrer.ogg-76f4290dce055ae440bb1c0f1c5f5d8f.oggstr"
+
+[deps]
+
+source_file="res://Resources/U2-Nuremberg/Sounds/next_station_plaerrer.ogg"
+dest_files=[ "res://.import/next_station_plaerrer.ogg-76f4290dce055ae440bb1c0f1c5f5d8f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

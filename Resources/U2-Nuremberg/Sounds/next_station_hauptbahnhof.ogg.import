@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_hauptbahnhof.ogg-c571a4520a002d1d19a5a4ba225665c1.oggstr"
+
+[deps]
+
+source_file="res://Resources/U2-Nuremberg/Sounds/next_station_hauptbahnhof.ogg"
+dest_files=[ "res://.import/next_station_hauptbahnhof.ogg-c571a4520a002d1d19a5a4ba225665c1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

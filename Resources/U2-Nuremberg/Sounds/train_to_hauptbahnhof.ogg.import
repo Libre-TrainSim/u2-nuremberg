@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/train_to_hauptbahnhof.ogg-b3894dd7b021d4255f0c14b02f7264c8.oggstr"
+
+[deps]
+
+source_file="res://Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+dest_files=[ "res://.import/train_to_hauptbahnhof.ogg-b3894dd7b021d4255f0c14b02f7264c8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

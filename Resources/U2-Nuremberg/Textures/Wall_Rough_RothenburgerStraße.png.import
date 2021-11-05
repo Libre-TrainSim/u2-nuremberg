@@ -2,18 +2,17 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Wall_Rough_RothenburgerStraße.png-50a762f474b3c9ce10e7ef4fe9ff1e67.s3tc.stex"
-path.etc2="res://.import/Wall_Rough_RothenburgerStraße.png-50a762f474b3c9ce10e7ef4fe9ff1e67.etc2.stex"
-path.etc="res://.import/Wall_Rough_RothenburgerStraße.png-50a762f474b3c9ce10e7ef4fe9ff1e67.etc.stex"
+path.s3tc="res://.import/Wall_Rough_RothenburgerStraße.png-a55703e84a885bd0fc8e3f18d5af22d4.s3tc.stex"
+path.etc2="res://.import/Wall_Rough_RothenburgerStraße.png-a55703e84a885bd0fc8e3f18d5af22d4.etc2.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2", "etc" ],
+"imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Textures/Wall_Rough_RothenburgerStraße.png"
-dest_files=[ "res://.import/Wall_Rough_RothenburgerStraße.png-50a762f474b3c9ce10e7ef4fe9ff1e67.s3tc.stex", "res://.import/Wall_Rough_RothenburgerStraße.png-50a762f474b3c9ce10e7ef4fe9ff1e67.etc2.stex", "res://.import/Wall_Rough_RothenburgerStraße.png-50a762f474b3c9ce10e7ef4fe9ff1e67.etc.stex" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Textures/Wall_Rough_RothenburgerStraße.png"
+dest_files=[ "res://.import/Wall_Rough_RothenburgerStraße.png-a55703e84a885bd0fc8e3f18d5af22d4.s3tc.stex", "res://.import/Wall_Rough_RothenburgerStraße.png-a55703e84a885bd0fc8e3f18d5af22d4.etc2.stex" ]
 
 [params]
 

@@ -2,18 +2,17 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Painting_Plärrer_3.png-71118ec76ebb009d1611c57f5bc10413.s3tc.stex"
-path.etc2="res://.import/Painting_Plärrer_3.png-71118ec76ebb009d1611c57f5bc10413.etc2.stex"
-path.etc="res://.import/Painting_Plärrer_3.png-71118ec76ebb009d1611c57f5bc10413.etc.stex"
+path.s3tc="res://.import/Painting_Plärrer_3.png-ef3c45cc92962d9deb846f7dab25027a.s3tc.stex"
+path.etc2="res://.import/Painting_Plärrer_3.png-ef3c45cc92962d9deb846f7dab25027a.etc2.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2", "etc" ],
+"imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Textures/Painting_Plärrer_3.png"
-dest_files=[ "res://.import/Painting_Plärrer_3.png-71118ec76ebb009d1611c57f5bc10413.s3tc.stex", "res://.import/Painting_Plärrer_3.png-71118ec76ebb009d1611c57f5bc10413.etc2.stex", "res://.import/Painting_Plärrer_3.png-71118ec76ebb009d1611c57f5bc10413.etc.stex" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Textures/Painting_Plärrer_3.png"
+dest_files=[ "res://.import/Painting_Plärrer_3.png-ef3c45cc92962d9deb846f7dab25027a.s3tc.stex", "res://.import/Painting_Plärrer_3.png-ef3c45cc92962d9deb846f7dab25027a.etc2.stex" ]
 
 [params]
 

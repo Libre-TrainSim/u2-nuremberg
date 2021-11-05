@@ -2,18 +2,17 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Orange_Bricks.png-27b088243fc9dd852c979a0ef14700fd.s3tc.stex"
-path.etc2="res://.import/Orange_Bricks.png-27b088243fc9dd852c979a0ef14700fd.etc2.stex"
-path.etc="res://.import/Orange_Bricks.png-27b088243fc9dd852c979a0ef14700fd.etc.stex"
+path.s3tc="res://.import/Orange_Bricks.png-e322c192b5d59b0c63b821539c23c160.s3tc.stex"
+path.etc2="res://.import/Orange_Bricks.png-e322c192b5d59b0c63b821539c23c160.etc2.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2", "etc" ],
+"imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Textures/Orange_Bricks.png"
-dest_files=[ "res://.import/Orange_Bricks.png-27b088243fc9dd852c979a0ef14700fd.s3tc.stex", "res://.import/Orange_Bricks.png-27b088243fc9dd852c979a0ef14700fd.etc2.stex", "res://.import/Orange_Bricks.png-27b088243fc9dd852c979a0ef14700fd.etc.stex" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Textures/Orange_Bricks.png"
+dest_files=[ "res://.import/Orange_Bricks.png-e322c192b5d59b0c63b821539c23c160.s3tc.stex", "res://.import/Orange_Bricks.png-e322c192b5d59b0c63b821539c23c160.etc2.stex" ]
 
 [params]
 

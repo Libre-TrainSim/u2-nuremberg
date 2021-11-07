@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_hohe_marter.ogg-09c0cd98764f8838dd74ee3b482bf250.oggstr"
+path="res://.import/next_station_hohe_marter.ogg-71494e921fb6051ab337965d83d76ea4.oggstr"
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Sounds/next_station_hohe_marter.ogg"
-dest_files=[ "res://.import/next_station_hohe_marter.ogg-09c0cd98764f8838dd74ee3b482bf250.oggstr" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_hohe_marter.ogg"
+dest_files=[ "res://.import/next_station_hohe_marter.ogg-71494e921fb6051ab337965d83d76ea4.oggstr" ]
 
 [params]
 

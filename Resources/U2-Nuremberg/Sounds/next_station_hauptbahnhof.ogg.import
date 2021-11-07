@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_hauptbahnhof.ogg-c571a4520a002d1d19a5a4ba225665c1.oggstr"
+path="res://.import/next_station_hauptbahnhof.ogg-2d7092b79ff2ed1c767721ab787baf9a.oggstr"
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Sounds/next_station_hauptbahnhof.ogg"
-dest_files=[ "res://.import/next_station_hauptbahnhof.ogg-c571a4520a002d1d19a5a4ba225665c1.oggstr" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_hauptbahnhof.ogg"
+dest_files=[ "res://.import/next_station_hauptbahnhof.ogg-2d7092b79ff2ed1c767721ab787baf9a.oggstr" ]
 
 [params]
 

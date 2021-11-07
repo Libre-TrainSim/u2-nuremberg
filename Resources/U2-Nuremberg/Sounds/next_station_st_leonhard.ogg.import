@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_st_leonhard.ogg-1ff141c39ae682911314d0a0f32b58c3.oggstr"
+path="res://.import/next_station_st_leonhard.ogg-d81abcfb454ea977e06bf83f26b3c525.oggstr"
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Sounds/next_station_st_leonhard.ogg"
-dest_files=[ "res://.import/next_station_st_leonhard.ogg-1ff141c39ae682911314d0a0f32b58c3.oggstr" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_st_leonhard.ogg"
+dest_files=[ "res://.import/next_station_st_leonhard.ogg-d81abcfb454ea977e06bf83f26b3c525.oggstr" ]
 
 [params]
 

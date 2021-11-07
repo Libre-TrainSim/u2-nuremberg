@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/UndergroundLamp4.obj-e6c851b75d465b131a5088ef91de5f0c.mesh"
+
+[deps]
+
+files=[ "res://.import/UndergroundLamp4.obj-e6c851b75d465b131a5088ef91de5f0c.mesh" ]
+
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Objects/UndergroundLamp4.obj"
+dest_files=[ "res://.import/UndergroundLamp4.obj-e6c851b75d465b131a5088ef91de5f0c.mesh", "res://.import/UndergroundLamp4.obj-e6c851b75d465b131a5088ef91de5f0c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

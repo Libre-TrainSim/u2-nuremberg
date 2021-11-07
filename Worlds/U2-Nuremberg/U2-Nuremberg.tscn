@@ -1,16 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Scripts/World.gd" type="Script" id=1]
-[ext_resource path="res://Resources/Basic/Grass.material" type="Material" id=3]
-[ext_resource path="res://Resources/Basic/grass.obj" type="ArrayMesh" id=4]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/Rail.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Resources/Basic/UndergroundWorldEnviroment.tres" type="Environment" id=7]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Scripts/BuildingsNode.gd" type="Script" id=12]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/Station.tscn" type="PackedScene" id=13]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/Signal.tscn" type="PackedScene" id=15]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/ContactPoint.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Data/Scripts/World.gd" type="Script" id=1]
+[ext_resource path="res://Data/Modules/Rail.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Environments/UndergroundWorldEnvironment.tres" type="Environment" id=7]
+[ext_resource path="res://Data/Scripts/BuildingsNode.gd" type="Script" id=12]
+[ext_resource path="res://Data/Modules/Station.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Data/Modules/Signal.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Data/Modules/ContactPoint.tscn" type="PackedScene" id=16]
 [ext_resource path="res://addons/jean28518.jTools/jSaveManager/jSaveModule.tscn" type="PackedScene" id=22]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/SpeedLimit.tscn" type="PackedScene" id=60]
+[ext_resource path="res://Data/Modules/SpeedLimit_Lf7.tscn" type="PackedScene" id=60]
 
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
@@ -18,6 +16,8 @@ FileName = "U2-Nuremberg"
 
 [node name="jSaveModule" parent="." instance=ExtResource( 22 )]
 save_path = "res://Worlds/U2-Nuremberg/U2-Nuremberg.save"
+
+[node name="jSaveModuleScenarios" parent="." instance=ExtResource( 22 )]
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.766044, 0.642787, 0, -0.642787, -0.766044, 0, 80.3552, 0 )
@@ -35,666 +35,655 @@ environment = ExtResource( 7 )
 
 [node name="Players" type="Spatial" parent="."]
 
-[node name="Grass" type="Spatial" parent="."]
-visible = false
-
-[node name="grass" type="MeshInstance" parent="Grass"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.515472, 0 )
-visible = false
-material_override = ExtResource( 3 )
-mesh = ExtResource( 4 )
-material/0 = null
-
 [node name="Signals" type="Spatial" parent="."]
 
 [node name="Röthenbach1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.0505579, 0, -0.998721, 0, 1, 0, 0.998721, 0, 0.0505579, 15.3003, 0, 20.7928 )
 stationLength = 135
-platformSide = 1
-attachedRail = "Röthenbach"
+platform_side = 1
+attached_rail = "Röthenbach"
 
 [node name="Röthenbach2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.0505579, 0, -0.998721, 0, 1, 0, 0.998721, 0, 0.0505579, 35.8018, 0, 153.911 )
 stationLength = 135
-platformSide = 1
-attachedRail = "RöthenbachP"
-onRailPosition = 134
+platform_side = 1
+attached_rail = "RöthenbachP"
+on_rail_position = 134
 forward = false
 
 [node name="HoheMarter1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.869478, 0, -0.493972, 0, 1, 0, 0.493972, 0, 0.869478, 843.108, 0, 921.972 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach13"
-onRailPosition = 15
+platform_side = 1
+attached_rail = "Röthenbach13"
+on_rail_position = 15
 
 [node name="HoheMarter2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.869478, 0, -0.493972, 0, 1, 0, 0.493972, 0, 0.869478, 944.678, 0, 965.875 )
 stationLength = 100
-attachedRail = "Röthenbach13P"
-onRailPosition = 125
+attached_rail = "Röthenbach13P"
+on_rail_position = 125
 forward = false
 
 [node name="Schweinau1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.909222, 0, -0.416312, 0, 1, 0, 0.416312, 0, 0.909222, 1197.29, 0, 1118.18 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach16"
+platform_side = 1
+attached_rail = "Röthenbach16"
 
 [node name="Schweinau2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.909222, 0, -0.416312, 0, 1, 0, 0.416312, 0, 0.909222, 1293.21, 0, 1148.9 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach16P"
-onRailPosition = 100
+platform_side = 1
+attached_rail = "Röthenbach16P"
+on_rail_position = 100
 forward = false
 
 [node name="StLeonhard1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 1916.28, 5, 1368.93 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach24"
+platform_side = 1
+attached_rail = "Röthenbach24"
 
 [node name="StLeonhard2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 2016.88, 5, 1373.78 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach24P"
-onRailPosition = 100
+platform_side = 1
+attached_rail = "Röthenbach24P"
+on_rail_position = 100
 forward = false
 
 [node name="RothenburgerStraße1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.759249, 0, -0.650801, 0, 1, 0, 0.650801, 0, 0.759249, 2535.95, 8.74866, 1711 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach38"
+platform_side = 1
+attached_rail = "Röthenbach38"
 
 [node name="RothenburgerStraße2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.759249, 0, -0.650801, 0, 1, 0, 0.650801, 0, 0.759249, 2617.96, 8.74866, 1768.91 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach38P"
-onRailPosition = 100
+platform_side = 1
+attached_rail = "Röthenbach38P"
+on_rail_position = 100
 forward = false
 
 [node name="Plärrer1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.114972, 0, -0.993369, 0, 1, 0, 0.993369, 0, -0.114972, 2991.59, 5.24866, 2389.81 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach49"
+platform_side = 1
+attached_rail = "Röthenbach49"
 
 [node name="Plärrer1R" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.114972, 0, -0.993369, 0, 1, 0, 0.993369, 0, -0.114972, 2975.78, 5.24866, 2488.52 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Röthenbach49"
-onRailPosition = 100
+platform_side = 2
+attached_rail = "Röthenbach49"
+on_rail_position = 100
 forward = false
 
 [node name="Plärrer2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.114972, 0, -0.993369, 0, 1, 0, 0.993369, 0, -0.114972, 2987.74, 5.24866, 2489.91 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach48P2"
-onRailPosition = 100
+platform_side = 1
+attached_rail = "Röthenbach48P2"
+on_rail_position = 100
 forward = false
 
 [node name="Plärrer2R" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.114972, 0, -0.993369, 0, 1, 0, 0.993369, 0, -0.114972, 3003.51, 5.24866, 2391.19 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Röthenbach48P2"
+platform_side = 2
+attached_rail = "Röthenbach48P2"
 
 [node name="Oper1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2846.87, 5.24866, 3077.92 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach59"
+platform_side = 1
+attached_rail = "Röthenbach59"
 
 [node name="Oper2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2845.54, 5.24866, 3178.63 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach59P"
-onRailPosition = 100
+platform_side = 1
+attached_rail = "Röthenbach59P"
+on_rail_position = 100
 forward = false
 
 [node name="Hauptbahnhof1" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.332128, 0, -0.943234, 0, 1, 0, 0.943234, 0, 0.332128, 2832.52, 9, 3613.79 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach68"
-onRailPosition = 1
+platform_side = 1
+attached_rail = "Röthenbach68"
+on_rail_position = 1
 
 [node name="Hauptbahnhof2" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( 0.332128, 0, -0.943234, 0, 1, 0, 0.943234, 0, 0.332128, 2880.01, 9, 3699.78 )
 stationLength = 100
-platformSide = 1
-attachedRail = "Röthenbach68P"
-onRailPosition = 98
+platform_side = 1
+attached_rail = "Röthenbach68P"
+on_rail_position = 98
 forward = false
 
 [node name="Signal" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0766843, 0, -0.997055, 0, 1, 0, 0.997055, 0, 0.0766843, 23.8897, 0, 155.515 )
 visible = false
-setPassAtH = 11
-setPassAtM = 1
+set_pass_at_h = 11
+set_pass_at_m = 1
 speed = 80
-attachedRail = "Röthenbach"
-onRailPosition = 135
+attached_rail = "Röthenbach"
+on_rail_position = 135
 
 [node name="ContactPoint" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.184986, 0, -0.982741, 0, 1, 0, 0.982741, 0, 0.184986, 39.7832, 0, 184.321 )
 affectedSignal = "Signal"
 newSpeed = 80
 affectTime = 5
-attachedRail = "Röthenbach2P"
-onRailPosition = 30
+attached_rail = "Röthenbach2P"
+on_rail_position = 30
 forward = false
 
 [node name="Signal2" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.139718, 0, -0.990191, 0, 1, 0, 0.990191, 0, 0.139718, 13.0496, 0, -73.5759 )
 visible = false
 status = 1
-setPassAtS = 15
+set_pass_at_s = 15
 speed = 20
-attachedRail = "RöthenbachP4P"
+attached_rail = "RöthenbachP4P"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal3" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.139715, 0, -0.990192, 0, 1, 0, 0.990192, 0, 0.139715, 18.9927, 0, -74.4004 )
 visible = false
-attachedRail = "RöthenbachP4"
+attached_rail = "RöthenbachP4"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal4" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.139721, 0, -0.990191, 0, 1, 0, 0.990191, 0, 0.139721, 7.10652, 0, -72.7515 )
 visible = false
-attachedRail = "RöthenbachP4PP"
+attached_rail = "RöthenbachP4PP"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal5" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.0505581, 0, 0.998721, 0, 1, 0, -0.998721, 0, -0.0505581, 27.0322, 0, 15.1925 )
 visible = false
 status = 1
 speed = 20
-attachedRail = "RöthenbachP2"
-onRailPosition = 5
+attached_rail = "RöthenbachP2"
+on_rail_position = 5
 
 [node name="Signal6" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.424332, 0, 0.905506, 0, 1, 0, -0.905506, 0, -0.424332, 63.7446, 0, 256.008 )
 visible = false
 status = 1
 speed = 80
-attachedRail = "Röthenbach4P"
+attached_rail = "Röthenbach4P"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal7" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.851708, 0, -0.524015, 0, 1, 0, 0.524015, 0, 0.851708, 194.865, -5.19771, 436.7 )
 visible = false
 status = 1
-attachedRail = "Röthenbach6"
-onRailPosition = 10
+attached_rail = "Röthenbach6"
+on_rail_position = 10
 
 [node name="Signal8" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.851709, 0, 0.524015, 0, 1, 0, -0.524015, 0, -0.851709, 286.324, -8.02655, 478.881 )
 visible = false
-attachedRail = "Röthenbach72P"
+attached_rail = "Röthenbach72P"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal9" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.731489, 0, -0.681853, 0, 1, 0, 0.681853, 0, 0.731489, 575.769, -0.014434, 721.843 )
 visible = false
 status = 1
-attachedRail = "Röthenbach9Connector"
-onRailPosition = 30
+attached_rail = "Röthenbach9Connector"
+on_rail_position = 30
 
 [node name="Signal10" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.712002, 0, 0.702178, 0, 1, 0, -0.702178, 0, -0.712002, 647.468, -0.00477213, 780.092 )
 visible = false
-attachedRail = "Röthenbach9P"
+attached_rail = "Röthenbach9P"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal11" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.869478, 0, -0.493972, 0, 1, 0, 0.493972, 0, 0.869478, 938.751, 0, 976.309 )
 visible = false
-setPassAtH = 11
-setPassAtM = 3
-attachedRail = "Röthenbach13"
-onRailPosition = 125
+set_pass_at_h = 11
+set_pass_at_m = 3
+attached_rail = "Röthenbach13"
+on_rail_position = 125
 
 [node name="Signal12" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.869478, 0, -0.493972, 0, 1, 0, 0.493972, 0, 0.869478, 1009.89, 0, 1002.92 )
 visible = false
-attachedRail = "Röthenbach13P"
-onRailPosition = 200
+attached_rail = "Röthenbach13P"
+on_rail_position = 200
 
 [node name="Signal13" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.869478, 0, 0.493972, 0, 1, 0, -0.493972, 0, -0.869478, 849.036, 0, 911.538 )
 visible = false
-attachedRail = "Röthenbach13P"
+attached_rail = "Röthenbach13P"
 forward = false
-onRailPosition = 15
+on_rail_position = 15
 
 [node name="Signal14" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.884158, 0, 0.46719, 0, 1, 0, -0.46719, 0, -0.884158, 1121.84, 0, 1062.95 )
 visible = false
 status = 1
-attachedRail = "Röthenbach15PConnector3"
+attached_rail = "Röthenbach15PConnector3"
 forward = false
-onRailPosition = 7
+on_rail_position = 7
 
 [node name="Signal15" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.871625, 0, 0.490174, 0, 1, 0, -0.490174, 0, -0.871625, 1112.65, 0, 1075.09 )
 visible = false
-attachedRail = "Röthenbach15"
+attached_rail = "Röthenbach15"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal16" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.832902, 0, -0.55342, 0, 1, 0, 0.55342, 0, 0.832902, 1383.33, 0, 1214.75 )
 visible = false
 status = 1
-attachedRail = "Röthenbach18"
-onRailPosition = 10
+attached_rail = "Röthenbach18"
+on_rail_position = 10
 
 [node name="Signal17" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.869481, 0, 0.493967, 0, 1, 0, -0.493967, 0, -0.869481, 1422.39, 0, 1224.79 )
 visible = false
 status = 1
 speed = 80
-attachedRail = "Röthenbach19PConnector"
+attached_rail = "Röthenbach19PConnector"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal18" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.971953, 0, -0.235176, 0, 1, 0, 0.235176, 0, 0.971953, 1669.46, 3.39746, 1330.36 )
 visible = false
 status = 1
-attachedRail = "Röthenbach21"
-onRailPosition = 20
+attached_rail = "Röthenbach21"
+on_rail_position = 20
 
 [node name="Signal19" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.977873, 0, 0.209201, 0, 1, 0, -0.209201, 0, -0.977873, 1701.74, 2.49731, 1325.41 )
 visible = false
 status = 1
-attachedRail = "Röthenbach21P"
+attached_rail = "Röthenbach21P"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal20" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.98599, 0, 0.166803, 0, 1, 0, -0.166803, 0, -0.98599, 1918.28, 5, 1357.1 )
 visible = false
-attachedRail = "Röthenbach24P"
+attached_rail = "Röthenbach24P"
 forward = false
 
 [node name="Signal21" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 2014.87, 5, 1385.61 )
 visible = false
-setPassAtH = 11
-setPassAtM = 5
-attachedRail = "Röthenbach25"
+set_pass_at_h = 11
+set_pass_at_m = 5
+attached_rail = "Röthenbach25"
 
 [node name="Signal22" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.823117, 0, -0.567873, 0, 1, 0, 0.567873, 0, 0.823117, 2268.7, 7.49731, 1470.44 )
 visible = false
 status = 1
-attachedRail = "Röthenbach29"
+attached_rail = "Röthenbach29"
 
 [node name="Signal23" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.823117, 0, -0.567873, 0, 1, 0, 0.567873, 0, 0.823117, 2271.26, 7.49731, 1466.74 )
 visible = false
-attachedRail = "Röthenbach29P"
+attached_rail = "Röthenbach29P"
 
 [node name="Signal25" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.714824, 0, -0.699305, 0, 1, 0, 0.699305, 0, 0.714824, 2442.87, 8.74866, 1620.29 )
 visible = false
 status = 1
 speed = 50
-attachedRail = "Röthenbach32"
-onRailPosition = 50
+attached_rail = "Röthenbach32"
+on_rail_position = 50
 
 [node name="Signal24" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.759249, 0, -0.650801, 0, 1, 0, 0.650801, 0, 0.759249, 2483.3, 8.74866, 1650.31 )
 visible = false
-attachedRail = "Röthenbach31P3Connector2"
+attached_rail = "Röthenbach31P3Connector2"
 
 [node name="Signal26" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.81308, 0, -0.582151, 0, 1, 0, 0.582151, 0, 0.81308, 2445.28, 8.47074, 1632.7 )
 visible = false
-attachedRail = "Röthenbach35"
+attached_rail = "Röthenbach35"
 forward = false
-onRailPosition = 20
+on_rail_position = 20
 
 [node name="Signal27" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.759249, 0, 0.650801, 0, 1, 0, -0.650801, 0, -0.759249, 2543.76, 8.74866, 1701.89 )
 visible = false
 status = 1
-attachedRail = "Röthenbach38P"
+attached_rail = "Röthenbach38P"
 forward = false
 
 [node name="Signal28" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.736073, 0, 0.676902, 0, 1, 0, -0.676902, 0, -0.736073, 2520.99, 8.74866, 1697.73 )
 visible = false
-attachedRail = "Röthenbach33"
+attached_rail = "Röthenbach33"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal29" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.727749, 0, -0.685844, 0, 1, 0, 0.685844, 0, 0.727749, 2612.31, 8.74866, 1780.1 )
 visible = false
-setPassAtH = 11
-setPassAtM = 7
+set_pass_at_h = 11
+set_pass_at_m = 7
 speed = 80
-attachedRail = "Röthenbach39"
-onRailPosition = 3
+attached_rail = "Röthenbach39"
+on_rail_position = 3
 
 [node name="Signal30" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.727826, 0, -0.685762, 0, 1, 0, 0.685762, 0, 0.727826, 2620.59, 8.74866, 1771.41 )
 visible = false
-attachedRail = "Röthenbach39P"
-onRailPosition = 3
+attached_rail = "Röthenbach39P"
+on_rail_position = 3
 
 [node name="Signal31" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2920.51, 8.67877, 1956.1 )
 visible = false
 status = 1
-attachedRail = "Röthenbach42"
-onRailPosition = 10
+attached_rail = "Röthenbach42"
+on_rail_position = 10
 
 [node name="Signal32" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.916349, 0, 0.400381, 0, 1, 0, -0.400381, 0, -0.916349, 2924.51, 8.74866, 1946.94 )
 visible = false
-attachedRail = "Röthenbach42P"
+attached_rail = "Röthenbach42P"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal33" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0897276, 0, -0.995966, 0, 1, 0, 0.995966, 0, 0.0897276, 3062.42, 5.24866, 2131.83 )
 visible = false
 status = 1
 speed = 60
-attachedRail = "Röthenbach44"
-onRailPosition = 150
+attached_rail = "Röthenbach44"
+on_rail_position = 150
 
 [node name="Signal34" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3044.24, 5.24866, 2239.16 )
 visible = false
 status = 1
 speed = 60
-attachedRail = "Röthenbach46"
-onRailPosition = 10
+attached_rail = "Röthenbach46"
+on_rail_position = 10
 
 [node name="Signal35" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3055.4, 5.24866, 2243.58 )
 visible = false
 status = 1
 speed = 50
-attachedRail = "Röthenbach46P"
-onRailPosition = 10
+attached_rail = "Röthenbach46P"
+on_rail_position = 10
 
 [node name="Signal36" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.368157, 0, 0.929764, 0, 1, 0, -0.929764, 0, 0.368157, 3092.21, 5.24866, 2150.6 )
 visible = false
-attachedRail = "Röthenbach46P2"
-onRailPosition = 90
+attached_rail = "Röthenbach46P2"
+on_rail_position = 90
 
 [node name="Signal37" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3114.3, 5.24866, 2094.81 )
 visible = false
 status = 1
-attachedRail = "Röthenbach46P3"
+attached_rail = "Röthenbach46P3"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal38" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.114972, 0, 0.993369, 0, 1, 0, -0.993369, 0, 0.114972, 3003.51, 5.24866, 2391.19 )
 visible = false
-attachedRail = "Röthenbach48P2"
+attached_rail = "Röthenbach48P2"
 forward = false
 
 [node name="Signal39" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.140936, 0, 0.990019, 0, 1, 0, -0.990019, 0, 0.140936, 2992.23, 5.24866, 2384.83 )
 visible = false
-attachedRail = "Röthenbach48"
+attached_rail = "Röthenbach48"
 forward = false
-onRailPosition = 45
+on_rail_position = 45
 
 [node name="Signal40" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.223284, 0, -0.974754, 0, 1, 0, 0.974754, 0, -0.223284, 2973.65, 5.24866, 2498.29 )
 visible = false
-setPassAtH = 11
-setPassAtM = 8
+set_pass_at_h = 11
+set_pass_at_m = 8
 speed = 80
-attachedRail = "Röthenbach50"
-onRailPosition = 10
+attached_rail = "Röthenbach50"
+on_rail_position = 10
 
 [node name="Signal41" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.202763, 0, -0.979227, 0, 1, 0, 0.979227, 0, -0.202763, 2987.14, 5.24866, 2492.85 )
 visible = false
-setPassAtH = 11
-setPassAtM = 8
-setPassAtS = 40
+set_pass_at_h = 11
+set_pass_at_m = 8
+set_pass_at_s = 40
 speed = 80
-attachedRail = "Röthenbach48P2"
-onRailPosition = 103
+attached_rail = "Röthenbach48P2"
+on_rail_position = 103
 
 [node name="Signal42" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.454631, 0, -0.89068, 0, 1, 0, 0.89068, 0, -0.454631, 2912.97, 5.24866, 2645.82 )
 visible = false
 status = 1
-attachedRail = "Röthenbach53Connector2"
-onRailPosition = 20
+attached_rail = "Röthenbach53Connector2"
+on_rail_position = 20
 
 [node name="Signal43" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0799883, 0, 0.996796, 0, 1, 0, -0.996796, 0, 0.0799883, 2887.03, 5.24866, 2729.11 )
 visible = false
-attachedRail = "Röthenbach53Connector"
+attached_rail = "Röthenbach53Connector"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal44" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.0802338, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802338, 2871.17, 5.24866, 2814.05 )
 visible = false
 status = 1
-attachedRail = "Röthenbach54"
-onRailPosition = 45
+attached_rail = "Röthenbach54"
+on_rail_position = 45
 
 [node name="Signal45" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0860011, 0, 0.996295, 0, 1, 0, -0.996295, 0, 0.0860011, 2870.89, 5.24866, 2929.41 )
 visible = false
-setPassAtH = 11
-setPassAtM = 10
-attachedRail = "Röthenbach56P"
+set_pass_at_h = 11
+set_pass_at_m = 10
+attached_rail = "Röthenbach56P"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal46" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.132291, 0, 0.991211, 0, 1, 0, -0.991211, 0, 0.132291, 2858.76, 5.24866, 3079.51 )
 visible = false
-setPassAtH = 11
-setPassAtM = 10
+set_pass_at_h = 11
+set_pass_at_m = 10
 speed = 80
-attachedRail = "Röthenbach59P"
+attached_rail = "Röthenbach59P"
 forward = false
 
 [node name="Signal47" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2833.64, 5.24866, 3177.04 )
 visible = false
-setPassAtH = 11
-setPassAtM = 10
-attachedRail = "Röthenbach60"
+set_pass_at_h = 11
+set_pass_at_m = 10
+attached_rail = "Röthenbach60"
 
 [node name="Signal48" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.0976175, 0, -0.995224, 0, 1, 0, 0.995224, 0, -0.0976175, 2859.1, 5.24866, 2958.55 )
 visible = false
 status = 1
-attachedRail = "Röthenbach57"
-onRailPosition = 10
+attached_rail = "Röthenbach57"
+on_rail_position = 10
 
 [node name="Signal49" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2815.11, 8.97437, 3315.81 )
 visible = false
 status = 1
-setPassAtH = 11
-setPassAtM = 10
-setPassAtS = 10
-attachedRail = "Röthenbach61"
-onRailPosition = 90
+set_pass_at_h = 11
+set_pass_at_m = 10
+set_pass_at_s = 10
+attached_rail = "Röthenbach61"
+on_rail_position = 90
 
 [node name="Signal50" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.314587, 0, 0.949228, 0, 1, 0, -0.949228, 0, -0.314587, 2841.28, 9, 3602.38 )
 visible = false
-attachedRail = "Röthenbach66P"
+attached_rail = "Röthenbach66P"
 forward = false
-onRailPosition = 90
+on_rail_position = 90
 
 [node name="Signal51" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0693445, 0, 0.997593, 0, 1, 0, -0.997593, 0, 0.0693445, 2820.65, 9, 3377.05 )
 visible = false
 status = 1
-attachedRail = "Röthenbach62P"
+attached_rail = "Röthenbach62P"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal52" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.132291, 0, 0.991211, 0, 1, 0, -0.991211, 0, 0.132291, 2832.32, 5.29859, 3186.95 )
 visible = false
-attachedRail = "Röthenbach60"
+attached_rail = "Röthenbach60"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal53" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.120749, 0, 0.992683, 0, 1, 0, -0.992683, 0, 0.120749, 2848.14, 5.24866, 3068 )
 visible = false
-attachedRail = "Röthenbach58"
+attached_rail = "Röthenbach58"
 forward = false
-onRailPosition = 20
+on_rail_position = 20
 
 [node name="Signal54" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0518031, 0, -0.998657, 0, 1, 0, 0.998657, 0, 0.0518031, 2808.42, 9, 3465.39 )
 visible = false
 status = 1
-attachedRail = "Röthenbach65"
-onRailPosition = 20
+attached_rail = "Röthenbach65"
+on_rail_position = 20
 
 [node name="Signal55" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.0497821, 0, -0.99876, 0, 1, 0, 0.99876, 0, -0.0497821, 2813.4, 9, 3465.15 )
 visible = false
-attachedRail = "Röthenbach63PConnector2"
-onRailPosition = 20
+attached_rail = "Röthenbach63PConnector2"
+on_rail_position = 20
 
 [node name="Signal56" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.0702887, 0, 0.997527, 0, 1, 0, -0.997527, 0, 0.0702887, 2808.73, 9, 3375.45 )
 visible = false
-attachedRail = "Röthenbach62"
+attached_rail = "Röthenbach62"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal57" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.0298265, 0, 0.999555, 0, 1, 0, -0.999555, 0, -0.0298265, 2813.73, 9, 3375.68 )
 visible = false
-attachedRail = "Röthenbach63PConnector"
+attached_rail = "Röthenbach63PConnector"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal58" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.307323, 0, -0.951605, 0, 1, 0, 0.951605, 0, 0.307323, 2828.99, 9, 3603.38 )
 visible = false
 status = 1
 speed = 50
-attachedRail = "Röthenbach66"
-onRailPosition = 90
+attached_rail = "Röthenbach66"
+on_rail_position = 90
 
 [node name="Signal59" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.413073, 0, -0.910698, 0, 1, 0, 0.910698, 0, 0.413073, 2869.47, 9, 3705.61 )
 visible = false
-attachedRail = "Röthenbach69"
+attached_rail = "Röthenbach69"
 
 [node name="Signal60" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.413073, 0, -0.910698, 0, 1, 0, 0.910698, 0, 0.413073, 2880.4, 9, 3700.65 )
 visible = false
-attachedRail = "Röthenbach68PConnector"
+attached_rail = "Röthenbach68PConnector"
 
 [node name="Signal61" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.579253, 0, -0.815148, 0, 1, 0, 0.815148, 0, 0.579253, 2966.17, 9, 3891.81 )
 visible = false
-attachedRail = "Röthenbach71"
-onRailPosition = 10
+attached_rail = "Röthenbach71"
+on_rail_position = 10
 
 [node name="Signal62" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.539314, 0, 0.842105, 0, 1, 0, -0.842105, 0, -0.539314, 2966.1, 9, 3883.66 )
 visible = false
-attachedRail = "Röthenbach71P"
+attached_rail = "Röthenbach71P"
 forward = false
-onRailPosition = 3
+on_rail_position = 3
 
 [node name="Signal63" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.0505581, 0, 0.998721, 0, 1, 0, -0.998721, 0, -0.0505581, 15.0475, 0, 15.7992 )
 visible = false
-attachedRail = "RöthenbachP2P"
-onRailPosition = 5
+attached_rail = "RöthenbachP2P"
+on_rail_position = 5
 
 [node name="Signal64" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.112951, 0, -0.993601, 0, 1, 0, 0.993601, 0, 0.112951, 36.8026, 0, 164.549 )
 visible = false
-attachedRail = "Röthenbach2P"
-onRailPosition = 10
+attached_rail = "Röthenbach2P"
+on_rail_position = 10
 
 [node name="TrainStation" parent="Signals" instance=ExtResource( 13 )]
 transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 12.3481, 0, -78.5265 )
 stationLength = 300
-attachedRail = "RöthenbachP4P"
-onRailPosition = 15
+attached_rail = "RöthenbachP4P"
+on_rail_position = 15
 
 [node name="ContactPoint5" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2840.26, 5.24866, 3127.48 )
 affectedSignal = "Signal47"
 affectTime = 20
-attachedRail = "Röthenbach59"
-onRailPosition = 50
+attached_rail = "Röthenbach59"
+on_rail_position = 50
 
 [node name="Signal65" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( 0.905554, 0, -0.424231, 0, 1, 0, 0.424231, 0, 0.905554, 1292.75, 0, 1161.91 )
 visible = false
-setPassAtH = 11
-setPassAtM = 4
-attachedRail = "Röthenbach17"
-onRailPosition = 5
+set_pass_at_h = 11
+set_pass_at_m = 4
+attached_rail = "Röthenbach17"
+on_rail_position = 5
 
 [node name="Signal66" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.901365, 0, 0.433059, 0, 1, 0, -0.433059, 0, -0.901365, 1198.23, 0, 1105.37 )
 visible = false
-setPassAtH = 11
-setPassAtM = 4
-attachedRail = "Röthenbach16PConnector2"
+set_pass_at_h = 11
+set_pass_at_m = 4
+attached_rail = "Röthenbach16PConnector2"
 forward = false
-onRailPosition = 35
+on_rail_position = 35
 
 [node name="ContactPoint2" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( -0.736073, 0, 0.676902, 0, 1, 0, -0.676902, 0, -0.736073, 2536.28, 8.74866, 1695.25 )
 affectedSignal = "Signal27"
 bySpecificTrain = "-"
-attachedRail = "Röthenbach38P2"
-onRailPosition = 10
+attached_rail = "Röthenbach38P2"
+on_rail_position = 10
 
 [node name="Signal67" parent="Signals" instance=ExtResource( 15 )]
 transform = Transform( -0.171895, 0, 0.985115, 0, 1, 0, -0.985115, 0, -0.171895, -8.73267, 0, -211.653 )
 visible = false
-attachedRail = "RöthenbachP4P3"
+attached_rail = "RöthenbachP4P3"
 
 [node name="SpeedLimit" parent="Signals" instance=ExtResource( 60 )]
 transform = Transform( 0.0628249, 0, 0.998025, 0, 1, 0, -0.998025, 0, 0.0628249, 3065.57, 5.24866, 2145.72 )
 speed = 80
-attachedRail = "Röthenbach43P2"
-onRailPosition = 170
-forward = false
+attached_rail = "Röthenbach43P2"
+on_rail_position = 170
 
 [node name="Rails" type="Spatial" parent="."]
 
@@ -708,9 +697,6 @@ startrot = -87.102
 endrot = -85.602
 startpos = Vector3( 15.3003, 0, 20.7928 )
 endpos = Vector3( 23.8897, 0, 155.515 )
-otherRadius = 5152.12
-otherLength = 134.882
-Outlength = 152.337
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -723,9 +709,6 @@ startrot = -85.602
 endrot = -65.602
 startpos = Vector3( 23.8896, 0, 155.515 )
 endpos = Vector3( 48.6292, 0, 251.883 )
-otherRadius = 281.979
-otherLength = 98.4292
-Outlength = 35.9284
 tend2Pos = -1.0
 tend2 = 7.0
 overheadLine = false
@@ -741,9 +724,6 @@ startrot = -85.602
 endrot = -65.602
 startpos = Vector3( 35.8543, 0, 154.595 )
 endpos = Vector3( 59.5575, 0, 246.926 )
-otherRadius = 269.979
-otherLength = 94.2404
-Outlength = 35.1688
 parallelRail = "Röthenbach2"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -759,9 +739,6 @@ startrot = -85.602
 endrot = -65.602
 startpos = Vector3( 23.8896, 0, 155.515 )
 endpos = Vector3( 31.3115, 0, 184.425 )
-otherRadius = 81.4437
-otherLength = 28.4292
-Outlength = 19.709
 overheadLine = false
 isSwitchPart = [ "Röthenbach2", "" ]
 
@@ -774,9 +751,6 @@ startrot = -65.602
 endrot = -58.602
 startpos = Vector3( 48.6292, 0, 251.884 )
 endpos = Vector3( 95.3901, 0, 340.207 )
-otherRadius = 814.011
-otherLength = 99.4502
-Outlength = 60.7041
 tend2Pos = -1.0
 endTend = 5.0
 overheadLine = false
@@ -792,9 +766,6 @@ startrot = -65.602
 endrot = -58.602
 startpos = Vector3( 59.5576, 0, 246.927 )
 endpos = Vector3( 105.633, 0, 333.955 )
-otherRadius = 802.011
-otherLength = 97.9841
-Outlength = 60.2577
 parallelRail = "Röthenbach4"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -810,9 +781,6 @@ startrot = -65.602
 endrot = -65.7586
 startpos = Vector3( 31.3115, 0, 184.426 )
 endpos = Vector3( 45.4346, 0, 215.676 )
-otherRadius = -12549.0
-otherLength = 34.3059
-Outlength = 34.2936
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -826,9 +794,6 @@ startrot = -65.7587
 endrot = -65.602
 startpos = Vector3( 45.4345, 0, 215.676 )
 endpos = Vector3( 59.5575, 0, 246.926 )
-otherRadius = 12540.0
-otherLength = 34.2813
-Outlength = 237.596
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach2P" ]
 
@@ -842,9 +807,6 @@ startrot = -58.602
 endrot = -31.602
 startpos = Vector3( 95.4346, -0.00137758, 340.222 )
 endpos = Vector3( 186.348, -4.54215, 431.46 )
-otherRadius = 271.369
-otherLength = 127.879
-Outlength = 35.2576
 endSlope = -7.0
 startTend = 5.0
 tend2Pos = -1.0
@@ -861,9 +823,6 @@ startrot = -58.602
 endrot = -31.602
 startpos = Vector3( 105.677, -0.00137758, 333.97 )
 endpos = Vector3( 192.636, -4.54215, 421.239 )
-otherRadius = 259.369
-otherLength = 122.224
-Outlength = 34.4834
 parallelRail = "Röthenbach5"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -878,8 +837,6 @@ startrot = -44.602
 endrot = -44.602
 startpos = Vector3( 620.491, -0.00477213, 764.723 )
 endpos = Vector3( 677.451, -0.00477213, 820.897 )
-otherLength = 80.0
-Outlength = 80.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -892,8 +849,6 @@ startrot = -44.602
 endrot = -44.602
 startpos = Vector3( 626.108, -0.00477213, 759.027 )
 endpos = Vector3( 683.069, -0.00477213, 815.201 )
-otherLength = 80.0
-Outlength = 80.0
 parallelRail = "Röthenbach9"
 distanceToParallelRail = -8.0
 overheadLine = false
@@ -909,9 +864,6 @@ startrot = -44.602
 endrot = -29.602
 startpos = Vector3( 677.451, 0, 820.897 )
 endpos = Vector3( 741.074, 0, 869.018 )
-otherRadius = 301.077
-otherLength = 78.8219
-Outlength = 37.1051
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -925,9 +877,6 @@ startrot = -44.602
 endrot = -29.602
 startpos = Vector3( 683.068, 0, 815.201 )
 endpos = Vector3( 745.026, 0, 862.062 )
-otherRadius = 293.077
-otherLength = 76.7275
-Outlength = 36.6168
 parallelRail = "Röthenbach10"
 distanceToParallelRail = -8.0
 overheadLine = false
@@ -943,9 +892,6 @@ startrot = -29.602
 endrot = -24.602
 startpos = Vector3( 741.074, 0, 869.018 )
 endpos = Vector3( 785.57, 0, 891.79 )
-otherRadius = 568.458
-otherLength = 49.6073
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -959,9 +905,6 @@ startrot = -24.602
 endrot = -29.602
 startpos = Vector3( 785.57, 0, 891.79 )
 endpos = Vector3( 830.066, 0, 914.562 )
-otherRadius = -577.458
-otherLength = 50.3927
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -974,8 +917,6 @@ startrot = -29.602
 endrot = -29.602
 startpos = Vector3( 830.066, 0, 914.562 )
 endpos = Vector3( 1021.35, 0, 1023.24 )
-otherLength = 220.0
-Outlength = 220.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -988,8 +929,6 @@ startrot = -29.602
 endrot = -29.602
 startpos = Vector3( 835.994, 0, 904.128 )
 endpos = Vector3( 1027.28, 0, 1012.8 )
-otherLength = 220.0
-Outlength = 220.0
 parallelRail = "Röthenbach13"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1005,9 +944,6 @@ startrot = -29.602
 endrot = -20.0317
 startpos = Vector3( 745.026, 0, 862.063 )
 endpos = Vector3( 790.51, 0, 883.096 )
-otherRadius = 295.856
-otherLength = 49.4179
-Outlength = 36.7871
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1021,9 +957,6 @@ startrot = -20.0317
 endrot = -29.602
 startpos = Vector3( 790.51, 0, 883.095 )
 endpos = Vector3( 835.994, 0, 904.128 )
-otherRadius = -304.856
-otherLength = 50.9212
-Outlength = 50.1695
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1047,9 +980,6 @@ startrot = -29.602
 endrot = -24.602
 startpos = Vector3( 1108.3, 0, 1072.63 )
 endpos = Vector3( 1197.29, 0, 1118.17 )
-otherRadius = 1141.42
-otherLength = 99.6073
-Outlength = 71.8215
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1063,9 +993,6 @@ startrot = -29.602
 endrot = -12.5406
 startpos = Vector3( 1021.35, 0, 1023.24 )
 endpos = Vector3( 1068.53, 0, 1041.42 )
-otherRadius = 165.918
-otherLength = 49.4066
-Outlength = 27.7232
 overheadLine = false
 isSwitchPart = [ "Röthenbach14", "" ]
 
@@ -1079,9 +1006,6 @@ startrot = -12.5406
 endrot = -29.602
 startpos = Vector3( 1068.53, 0, 1041.41 )
 endpos = Vector3( 1115.71, 0, 1059.59 )
-otherRadius = -174.918
-otherLength = 52.0866
-Outlength = 50.7466
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach15PConnector2" ]
 
@@ -1095,9 +1019,6 @@ startrot = -29.602
 endrot = -43.2876
 startpos = Vector3( 1027.28, 0, 1012.8 )
 endpos = Vector3( 1067.79, 0, 1042.72 )
-otherRadius = -215.832
-otherLength = 51.5535
-Outlength = 50.4786
 overheadLine = false
 isSwitchPart = [ "Röthenbach13PConnector3", "" ]
 
@@ -1111,9 +1032,6 @@ startrot = -43.2876
 endrot = -29.602
 startpos = Vector3( 1067.79, 0, 1042.72 )
 endpos = Vector3( 1108.3, 0, 1072.64 )
-otherRadius = 206.832
-otherLength = 49.4037
-Outlength = 30.8656
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach14" ]
 
@@ -1127,9 +1045,6 @@ startrot = -29.602
 endrot = -26.1654
 startpos = Vector3( 1027.28, 0, 1012.8 )
 endpos = Vector3( 1071.49, 0, 1036.19 )
-otherRadius = 829.612
-otherLength = 49.76
-Outlength = 61.2796
 overheadLine = false
 isSwitchPart = [ "Röthenbach13PConnector2", "" ]
 
@@ -1143,9 +1058,6 @@ startrot = -26.1654
 endrot = -29.602
 startpos = Vector3( 1071.49, 0, 1036.2 )
 endpos = Vector3( 1115.7, 0, 1059.59 )
-otherRadius = -838.612
-otherLength = 50.2998
-Outlength = 50.0299
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach15PConnector" ]
 
@@ -1182,8 +1094,6 @@ startrot = -24.602
 endrot = -34.602
 startpos = Vector3( 1288.21, 0, 1159.81 )
 endpos = Vector3( 1375.05, 0, 1209.14 )
-otherRadius = -577.458
-otherLength = 100.785
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1196,9 +1106,6 @@ startrot = -34.602
 endrot = -24.602
 startpos = Vector3( 1375.05, 0, 1209.14 )
 endpos = Vector3( 1461.89, 0, 1258.47 )
-otherRadius = 568.458
-otherLength = 99.2146
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1211,9 +1118,6 @@ startrot = -24.602
 endrot = -19.602
 startpos = Vector3( 1461.89, 0, 1258.48 )
 endpos = Vector3( 1554.51, 0, 1296.09 )
-otherRadius = 1141.42
-otherLength = 99.6073
-Outlength = 71.8215
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1227,9 +1131,6 @@ startrot = -24.602
 endrot = -19.602
 startpos = Vector3( 1466.89, 0, 1247.57 )
 endpos = Vector3( 1558.54, 0, 1284.79 )
-otherRadius = 1129.42
-otherLength = 98.5601
-Outlength = 71.4446
 parallelRail = "Röthenbach19"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1244,9 +1145,6 @@ startrot = -19.602
 endrot = -14.602
 startpos = Vector3( 1554.51, 0, 1296.09 )
 endpos = Vector3( 1650.06, 2.49731, 1325.49 )
-otherRadius = 1141.42
-otherLength = 99.6073
-Outlength = 71.8215
 endSlope = 5.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -1260,9 +1158,6 @@ startrot = -14.602
 endrot = -9.60202
 startpos = Vector3( 1650.06, 2.49731, 1325.49 )
 endpos = Vector3( 1747.81, 5, 1346.45 )
-otherRadius = 1141.42
-otherLength = 99.6073
-Outlength = 71.8215
 startSlope = 5.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -1277,9 +1172,6 @@ startrot = -14.602
 endrot = -9.60202
 startpos = Vector3( 1653.09, 2.49731, 1313.88 )
 endpos = Vector3( 1749.81, 5, 1334.62 )
-otherRadius = 1129.42
-otherLength = 98.5601
-Outlength = 71.4446
 parallelRail = "Röthenbach21"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1295,9 +1187,6 @@ startrot = -19.602
 endrot = -14.602
 startpos = Vector3( 1558.54, 0, 1284.79 )
 endpos = Vector3( 1653.08, 2.49731, 1313.88 )
-otherRadius = 1129.42
-otherLength = 98.5601
-Outlength = 71.4446
 parallelRail = "Röthenbach20"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1312,9 +1201,6 @@ startrot = -9.60199
 endrot = -5.60198
 startpos = Vector3( 1747.8, 5, 1346.45 )
 endpos = Vector3( 1846.9, 5, 1359.68 )
-otherRadius = 1427.89
-otherLength = 99.6858
-Outlength = 80.296
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1328,9 +1214,6 @@ startrot = -9.60199
 endrot = -5.60198
 startpos = Vector3( 1749.8, 5, 1334.62 )
 endpos = Vector3( 1848.07, 5, 1347.73 )
-otherRadius = 1415.89
-otherLength = 98.848
-Outlength = 79.959
 parallelRail = "Röthenbach22"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1346,9 +1229,6 @@ startrot = -5.60198
 endrot = -9.60196
 startpos = Vector3( 1846.9, 5, 1359.67 )
 endpos = Vector3( 1916.27, 5, 1368.93 )
-otherRadius = -1007.18
-otherLength = 70.3142
-Outlength = 70.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1362,9 +1242,6 @@ startrot = -5.60198
 endrot = -9.60196
 startpos = Vector3( 1848.07, 5, 1347.73 )
 endpos = Vector3( 1918.27, 5, 1357.1 )
-otherRadius = -1019.18
-otherLength = 71.152
-Outlength = 70.8378
 parallelRail = "Röthenbach23"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1403,8 +1280,6 @@ startrot = -9.60199
 endrot = -9.60199
 startpos = Vector3( 2014.87, 5, 1385.61 )
 endpos = Vector3( 2064.17, 5, 1393.95 )
-otherLength = 50.0
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1418,9 +1293,6 @@ startrot = -9.60199
 endrot = -14.602
 startpos = Vector3( 2064.17, 5, 1393.95 )
 endpos = Vector3( 2113.04, 5, 1404.43 )
-otherRadius = -577.458
-otherLength = 50.3927
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1434,9 +1306,6 @@ startrot = -14.602
 endrot = -19.602
 startpos = Vector3( 2113.05, 5, 1404.43 )
 endpos = Vector3( 2179.93, 5, 1425.01 )
-otherRadius = -806.641
-otherLength = 70.3927
-Outlength = 70.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1450,9 +1319,6 @@ startrot = -14.602
 endrot = -19.602
 startpos = Vector3( 2114.18, 5, 1400.08 )
 endpos = Vector3( 2181.44, 5, 1420.77 )
-otherRadius = -811.141
-otherLength = 70.7854
-Outlength = 70.3927
 parallelRail = "Röthenbach27"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -1468,9 +1334,6 @@ startrot = -9.60199
 endrot = -14.602
 startpos = Vector3( 2016.88, 5, 1373.78 )
 endpos = Vector3( 2046.2, 5, 1380.07 )
-otherRadius = -348.275
-otherLength = 30.3927
-Outlength = 30.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1484,9 +1347,6 @@ startrot = -14.602
 endrot = -18.1996
 startpos = Vector3( 2046.2, 5, 1380.07 )
 endpos = Vector3( 2080.19, 5, 1390.07 )
-otherRadius = -568.894
-otherLength = 35.7211
-Outlength = 35.4385
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1500,9 +1360,6 @@ startrot = -18.1996
 endrot = -14.602
 startpos = Vector3( 2080.19, 5, 1390.07 )
 endpos = Vector3( 2114.18, 5, 1400.07 )
-otherRadius = 559.894
-otherLength = 35.1559
-Outlength = 50.4129
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1515,8 +1372,6 @@ startrot = -19.602
 endrot = -34.602
 startpos = Vector3( 2179.93, 5, 1425.01 )
 endpos = Vector3( 2268.7, 7.49731, 1470.44 )
-otherRadius = -386.472
-otherLength = 101.178
 endSlope = 5.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -1531,9 +1386,6 @@ startrot = -34.602
 endrot = -39.602
 startpos = Vector3( 2268.7, 7.49731, 1470.44 )
 endpos = Vector3( 2308.57, 8.74865, 1500.59 )
-otherRadius = -577.458
-otherLength = 50.3927
-Outlength = 50.0
 startSlope = 5.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -1548,9 +1400,6 @@ startrot = -34.602
 endrot = -39.602
 startpos = Vector3( 2271.26, 7.49731, 1466.74 )
 endpos = Vector3( 2311.43, 8.74865, 1497.12 )
-otherRadius = -581.958
-otherLength = 50.7854
-Outlength = 50.3927
 parallelRail = "Röthenbach29"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -1566,9 +1415,6 @@ startrot = -19.602
 endrot = -34.602
 startpos = Vector3( 2181.44, 5, 1420.77 )
 endpos = Vector3( 2271.25, 7.49731, 1466.73 )
-otherRadius = -390.972
-otherLength = 102.356
-Outlength = 101.178
 parallelRail = "Röthenbach28"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -1583,8 +1429,6 @@ startrot = -39.602
 endrot = -39.602
 startpos = Vector3( 2308.56, 8.74866, 1500.59 )
 endpos = Vector3( 2347.08, 8.74866, 1532.46 )
-otherLength = 50.0
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach31Connector" ]
 
@@ -1598,9 +1442,6 @@ startrot = -39.602
 endrot = -43.602
 startpos = Vector3( 2347.09, 8.74866, 1532.46 )
 endpos = Vector3( 2406.9, 8.74866, 1585.57 )
-otherRadius = -1150.42
-otherLength = 80.3142
-Outlength = 80.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1614,9 +1455,6 @@ startrot = -39.602
 endrot = -43.602
 startpos = Vector3( 2349.96, 8.74866, 1528.99 )
 endpos = Vector3( 2410, 8.74866, 1582.31 )
-otherRadius = -1154.92
-otherLength = 80.6284
-Outlength = 80.3142
 parallelRail = "Röthenbach31"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -1631,8 +1469,6 @@ startrot = -39.602
 endrot = -39.602
 startpos = Vector3( 2311.43, 8.74866, 1497.12 )
 endpos = Vector3( 2349.95, 8.74866, 1529 )
-otherLength = 50.0
-Outlength = 50.0
 parallelRail = "Röthenbach30"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -1648,9 +1484,6 @@ startrot = -39.602
 endrot = -49.8872
 startpos = Vector3( 2311.43, 8.74866, 1497.12 )
 endpos = Vector3( 2329.26, 8.74866, 1514.79 )
-otherRadius = -144.519
-otherLength = 25.9426
-Outlength = 25.1348
 overheadLine = false
 isSwitchPart = [ "Röthenbach30P", "" ]
 
@@ -1664,9 +1497,6 @@ startrot = -49.8872
 endrot = -39.602
 startpos = Vector3( 2329.26, 8.74866, 1514.79 )
 endpos = Vector3( 2347.09, 8.74866, 1532.46 )
-otherRadius = 135.519
-otherLength = 24.327
-Outlength = 25.1352
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach30" ]
 
@@ -1680,9 +1510,6 @@ startrot = -43.602
 endrot = -45.602
 startpos = Vector3( 2406.9, 8.74866, 1585.57 )
 endpos = Vector3( 2499.46, 8.74866, 1676.85 )
-otherRadius = -3728.73
-otherLength = 130.157
-Outlength = 130.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach31Connector2", "Röthenbach34" ]
 
@@ -1695,8 +1522,6 @@ startrot = -43.602
 endrot = -43.602
 startpos = Vector3( 2410, 8.74866, 1582.31 )
 endpos = Vector3( 2446.21, 8.74866, 1616.79 )
-otherLength = 50.0
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach31P3Connector" ]
 
@@ -1710,9 +1535,6 @@ startrot = -43.602
 endrot = -40.602
 startpos = Vector3( 2446.21, 8.74866, 1616.79 )
 endpos = Vector3( 2483.3, 8.74866, 1650.31 )
-otherRadius = 950.43
-otherLength = 49.7644
-Outlength = 65.5658
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1726,9 +1548,6 @@ startrot = -43.602
 endrot = -33.3164
 startpos = Vector3( 2406.9, 8.74866, 1585.57 )
 endpos = Vector3( 2426.56, 8.74866, 1601.18 )
-otherRadius = 135.513
-otherLength = 24.327
-Outlength = 25.1347
 overheadLine = false
 isSwitchPart = [ "Röthenbach32", "" ]
 
@@ -1742,9 +1561,6 @@ startrot = -33.3164
 endrot = -43.602
 startpos = Vector3( 2426.55, 8.74866, 1601.18 )
 endpos = Vector3( 2446.21, 8.74866, 1616.79 )
-otherRadius = -144.513
-otherLength = 25.9426
-Outlength = 25.1348
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach31P2" ]
 
@@ -1758,9 +1574,6 @@ startrot = -45.602
 endrot = -40.602
 startpos = Vector3( 2499.45, 8.74866, 1676.85 )
 endpos = Vector3( 2535.95, 8.74866, 1711 )
-otherRadius = 568.458
-otherLength = 49.6073
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1774,9 +1587,6 @@ startrot = 134.398
 endrot = 144.398
 startpos = Vector3( 2499.45, 8.75028, 1676.84 )
 endpos = Vector3( 2461.54, 8.75028, 1644.34 )
-otherRadius = 281.979
-otherLength = 49.2146
-Outlength = 35.9284
 overheadLine = false
 isSwitchPart = [ "Röthenbach32", "" ]
 
@@ -1789,8 +1599,6 @@ startrot = 144.398
 endrot = 144.398
 startpos = Vector3( 2461.54, 8.75028, 1644.34 )
 endpos = Vector3( 2420.89, 7.00382, 1615.23 )
-otherLength = 50.0
-Outlength = 50.0
 endSlope = -7.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -1804,8 +1612,6 @@ startrot = 144.398
 endrot = 124.398
 startpos = Vector3( 2420.88, 7.00382, 1615.24 )
 endpos = Vector3( 2351.27, 0.00381994, 1544.15 )
-otherRadius = -290.979
-otherLength = 101.571
 startSlope = -7.0
 endSlope = -7.0
 overheadLine = false
@@ -1820,8 +1626,6 @@ startrot = 124.398
 endrot = 104.398
 startpos = Vector3( 2351.28, 0.00381851, 1544.15 )
 endpos = Vector3( 2310.18, -6.99618, 1453.54 )
-otherRadius = -290.979
-otherLength = 101.571
 startSlope = -7.0
 endSlope = -7.0
 overheadLine = false
@@ -1836,8 +1640,6 @@ startrot = -40.602
 endrot = -43.602
 startpos = Vector3( 2535.95, 8.74866, 1711 )
 endpos = Vector3( 2610.14, 8.74866, 1778.04 )
-otherRadius = -1914.36
-otherLength = 100.236
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1851,9 +1653,6 @@ startrot = -40.602
 endrot = -43.602
 startpos = Vector3( 2543.76, 8.74866, 1701.89 )
 endpos = Vector3( 2618.41, 8.74866, 1769.35 )
-otherRadius = -1926.36
-otherLength = 100.864
-Outlength = 100.628
 parallelRail = "Röthenbach38"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1869,9 +1668,6 @@ startrot = -40.602
 endrot = -40.3372
 startpos = Vector3( 2483.3, 8.74866, 1650.31 )
 endpos = Vector3( 2513.53, 8.74866, 1676.1 )
-otherRadius = 8594.08
-otherLength = 39.7139
-Outlength = 196.711
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1885,9 +1681,6 @@ startrot = -40.3372
 endrot = -40.602
 startpos = Vector3( 2513.53, 8.74866, 1676.1 )
 endpos = Vector3( 2543.76, 8.74866, 1701.89 )
-otherRadius = -8603.08
-otherLength = 39.7555
-Outlength = 39.7347
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach38P2" ]
 
@@ -1901,9 +1694,6 @@ startrot = 139.398
 endrot = 124.398
 startpos = Vector3( 2543.76, 8.74866, 1701.89 )
 endpos = Vector3( 2493.82, 8.74866, 1646.22 )
-otherRadius = -290.979
-otherLength = 76.1781
-Outlength = 75.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach38PConnector", "" ]
 
@@ -1916,8 +1706,6 @@ startrot = 124.398
 endrot = 124.398
 startpos = Vector3( 2493.81, 8.74866, 1646.22 )
 endpos = Vector3( 2465.56, 7.0022, 1604.96 )
-otherLength = 50.0
-Outlength = 50.0
 endSlope = -7.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -1931,8 +1719,6 @@ startrot = 124.398
 endrot = 124.398
 startpos = Vector3( 2465.57, 7.0022, 1604.97 )
 endpos = Vector3( 2437.32, 3.5022, 1563.71 )
-otherLength = 50.0
-Outlength = 50.0
 startSlope = -7.0
 endSlope = -7.0
 overheadLine = false
@@ -1947,8 +1733,6 @@ startrot = 124.398
 endrot = 84.3979
 startpos = Vector3( 2437.32, 3.5022, 1563.71 )
 endpos = Vector3( 2412.96, -3.4978, 1468.81 )
-otherRadius = -147.739
-otherLength = 103.142
 startSlope = -7.0
 endSlope = -7.0
 overheadLine = false
@@ -1963,9 +1747,6 @@ startrot = -43.602
 endrot = -33.602
 startpos = Vector3( 2610.13, 8.74866, 1778.04 )
 endpos = Vector3( 2688.18, 8.74866, 1840.35 )
-otherRadius = 568.458
-otherLength = 99.2146
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1979,9 +1760,6 @@ startrot = -43.602
 endrot = -33.602
 startpos = Vector3( 2618.41, 8.74866, 1769.35 )
 endpos = Vector3( 2694.82, 8.74866, 1830.36 )
-otherRadius = 556.458
-otherLength = 97.1202
-Outlength = 50.2593
 parallelRail = "Röthenbach39"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -1997,9 +1775,6 @@ startrot = -33.602
 endrot = -23.602
 startpos = Vector3( 2688.19, 8.74866, 1840.35 )
 endpos = Vector3( 2819.72, 8.74866, 1912.07 )
-otherRadius = 854.937
-otherLength = 149.215
-Outlength = 62.2025
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2013,9 +1788,6 @@ startrot = -33.602
 endrot = -23.602
 startpos = Vector3( 2694.83, 8.74866, 1830.36 )
 endpos = Vector3( 2824.52, 8.74866, 1901.07 )
-otherRadius = 842.937
-otherLength = 147.121
-Outlength = 61.7669
 parallelRail = "Röthenbach40"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2041,8 +1813,6 @@ startrot = -23.602
 endrot = -23.602
 startpos = Vector3( 2911.35, 8.74866, 1952.1 )
 endpos = Vector3( 2957.17, 7.0022, 1972.12 )
-otherLength = 50.0
-Outlength = 50.0
 endSlope = -7.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -2056,8 +1826,6 @@ startrot = -23.602
 endrot = -23.602
 startpos = Vector3( 2915.35, 8.74866, 1942.94 )
 endpos = Vector3( 2961.17, 7.0022, 1962.96 )
-otherLength = 50.0
-Outlength = 50.0
 parallelRail = "Röthenbach42"
 distanceToParallelRail = -10.0
 overheadLine = false
@@ -2073,9 +1841,6 @@ startrot = -23.602
 endrot = -25.8937
 startpos = Vector3( 2824.52, 8.74866, 1901.07 )
 endpos = Vector3( 2869.94, 8.74866, 1922.01 )
-otherRadius = -1254.92
-otherLength = 50.1933
-Outlength = 50.0133
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2089,9 +1854,6 @@ startrot = -25.8936
 endrot = -23.602
 startpos = Vector3( 2869.93, 8.74866, 1922 )
 endpos = Vector3( 2915.35, 8.74866, 1942.94 )
-otherRadius = 1245.92
-otherLength = 49.8333
-Outlength = 75.0238
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2105,9 +1867,6 @@ startrot = -23.602
 endrot = -43.6021
 startpos = Vector3( 2957.17, 7.0022, 1972.12 )
 endpos = Vector3( 2998.6, 5.24866, 1999.65 )
-otherRadius = -147.739
-otherLength = 51.5708
-Outlength = 50.0
 startSlope = -7.0
 endTend = -7.0
 overheadLine = false
@@ -2123,9 +1882,6 @@ startrot = -23.602
 endrot = -43.6021
 startpos = Vector3( 2961.17, 7.0022, 1962.96 )
 endpos = Vector3( 3005.5, 5.24866, 1992.41 )
-otherRadius = -157.739
-otherLength = 55.0615
-Outlength = 53.4907
 parallelRail = "Röthenbach43"
 distanceToParallelRail = -10.0
 overheadLine = false
@@ -2141,9 +1897,6 @@ startrot = -43.602
 endrot = -98.6021
 startpos = Vector3( 2998.6, 5.24866, 1999.65 )
 endpos = Vector3( 3060.92, 5.24866, 2181.69 )
-otherRadius = -212.848
-otherLength = 204.32
-Outlength = 200.0
 startTend = -7.0
 tend1Pos = 1.0
 tend1 = -7.0
@@ -2162,9 +1915,6 @@ startrot = -43.602
 endrot = -98.6019
 startpos = Vector3( 3005.5, 5.24866, 1992.41 )
 endpos = Vector3( 3063.77, 5.24866, 2162.62 )
-otherRadius = -199.306
-otherLength = 191.32
-Outlength = 187.0
 startTend = -7.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -2179,9 +1929,6 @@ startrot = -98.602
 endrot = -111.602
 startpos = Vector3( 3060.92, 5.24866, 2181.69 )
 endpos = Vector3( 3047.92, 5.24866, 2229.86 )
-otherRadius = -224.868
-otherLength = 51.021
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2194,8 +1941,6 @@ startrot = -111.602
 endrot = -111.602
 startpos = Vector3( 3047.92, 5.24866, 2229.86 )
 endpos = Vector3( 3040.56, 5.24866, 2248.46 )
-otherLength = 20.0
-Outlength = 20.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2208,8 +1953,6 @@ startrot = -111.602
 endrot = -111.602
 startpos = Vector3( 3059.08, 5.24866, 2234.28 )
 endpos = Vector3( 3051.71, 5.24866, 2252.87 )
-otherLength = 20.0
-Outlength = 20.0
 parallelRail = "Röthenbach46"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2247,9 +1990,6 @@ startrot = 68.398
 endrot = -31.602
 startpos = Vector3( 3095.89, 5.24866, 2141.3 )
 endpos = Vector3( 3512.37, 5.24866, 2002.77 )
-otherRadius = -290.979
-otherLength = 507.854
-Outlength = 500.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach46P3", "" ]
 
@@ -2263,9 +2003,6 @@ startrot = 68.398
 endrot = -11.602
 startpos = Vector3( 3132.71, 5.24866, 2048.33 )
 endpos = Vector3( 3456.68, 5.24866, 1873.17 )
-otherRadius = -290.979
-otherLength = 406.283
-Outlength = 400.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2290,9 +2027,6 @@ startrot = -111.602
 endrot = -96.602
 startpos = Vector3( 3003.74, 5.24866, 2341.43 )
 endpos = Vector3( 2991.59, 5.24866, 2389.78 )
-otherRadius = 186.486
-otherLength = 48.8219
-Outlength = 29.345
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2306,9 +2040,6 @@ startrot = -111.602
 endrot = -96.602
 startpos = Vector3( 3014.9, 5.24866, 2345.85 )
 endpos = Vector3( 3003.51, 5.24866, 2391.16 )
-otherRadius = 174.486
-otherLength = 45.6803
-Outlength = 28.41
 parallelRail = "Röthenbach48"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2324,9 +2055,6 @@ startrot = -111.602
 endrot = -97.9164
 startpos = Vector3( 3040.56, 5.24866, 2248.46 )
 endpos = Vector3( 3027.73, 5.24866, 2297.16 )
-otherRadius = 206.832
-otherLength = 49.4037
-Outlength = 30.8656
 overheadLine = false
 isSwitchPart = [ "Röthenbach47", "" ]
 
@@ -2340,9 +2068,6 @@ startrot = -97.9163
 endrot = -111.602
 startpos = Vector3( 3027.73, 5.24866, 2297.15 )
 endpos = Vector3( 3014.9, 5.24866, 2345.85 )
-otherRadius = -215.832
-otherLength = 51.5535
-Outlength = 50.4786
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach47P" ]
 
@@ -2356,9 +2081,6 @@ startrot = -111.602
 endrot = -125.288
 startpos = Vector3( 3051.71, 5.24866, 2252.87 )
 endpos = Vector3( 3027.72, 5.24866, 2297.15 )
-otherRadius = -215.831
-otherLength = 51.5535
-Outlength = 50.4786
 overheadLine = false
 isSwitchPart = [ "Röthenbach47P", "" ]
 
@@ -2372,9 +2094,6 @@ startrot = -125.288
 endrot = -111.602
 startpos = Vector3( 3027.73, 5.24866, 2297.15 )
 endpos = Vector3( 3003.74, 5.24866, 2341.43 )
-otherRadius = 206.831
-otherLength = 49.4037
-Outlength = 30.8655
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach47" ]
 
@@ -2400,8 +2119,6 @@ startrot = -96.602
 endrot = -101.602
 startpos = Vector3( 2991.59, 5.24866, 2389.81 )
 endpos = Vector3( 2975.78, 5.24866, 2488.52 )
-otherRadius = -1150.42
-otherLength = 100.393
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2415,9 +2132,6 @@ startrot = -87.102
 endrot = -85.602
 startpos = Vector3( 27.285, 0, 20.1861 )
 endpos = Vector3( 35.8545, 0, 154.595 )
-otherRadius = 5140.12
-otherLength = 134.568
-Outlength = 152.159
 parallelRail = "Röthenbach"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2432,8 +2146,6 @@ startrot = -101.602
 endrot = -114.602
 startpos = Vector3( 2975.77, 5.24866, 2488.52 )
 endpos = Vector3( 2944.77, 5.24866, 2583.37 )
-otherRadius = -445.237
-otherLength = 101.021
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2446,9 +2158,6 @@ startrot = -114.602
 endrot = -94.602
 startpos = Vector3( 2899.86, 5.24866, 2672.92 )
 endpos = Vector3( 2874.78, 5.24866, 2769.2 )
-otherRadius = 281.979
-otherLength = 98.4292
-Outlength = 35.9284
 overheadLine = false
 isSwitchPart = [ "Röthenbach53", "" ]
 
@@ -2462,9 +2171,6 @@ startrot = -114.602
 endrot = -94.602
 startpos = Vector3( 2899.86, 5.24866, 2672.92 )
 endpos = Vector3( 2887.82, 5.24866, 2719.13 )
-otherRadius = 133.01
-otherLength = 46.4292
-Outlength = 24.9096
 overheadLine = false
 isSwitchPart = [ "Röthenbach52", "" ]
 
@@ -2477,8 +2183,6 @@ startrot = -94.602
 endrot = -94.602
 startpos = Vector3( 2874.78, 5.24866, 2769.2 )
 endpos = Vector3( 2870.77, 5.24866, 2819.04 )
-otherLength = 50.0
-Outlength = 50.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2491,8 +2195,6 @@ startrot = -94.602
 endrot = -94.602
 startpos = Vector3( 2883.75, 5.24866, 2769.92 )
 endpos = Vector3( 2879.74, 5.24866, 2819.76 )
-otherLength = 50.0
-Outlength = 50.0
 parallelRail = "Röthenbach54"
 distanceToParallelRail = -9.0
 overheadLine = false
@@ -2508,9 +2210,6 @@ startrot = -94.602
 endrot = -94.5661
 startpos = Vector3( 2887.83, 5.24866, 2719.14 )
 endpos = Vector3( 2885.79, 5.24866, 2744.53 )
-otherRadius = 40614.8
-otherLength = 25.4725
-Outlength = 427.538
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2524,9 +2223,6 @@ startrot = -94.5661
 endrot = -94.602
 startpos = Vector3( 2885.79, 5.24866, 2744.53 )
 endpos = Vector3( 2883.75, 5.24866, 2769.92 )
-otherRadius = -40623.8
-otherLength = 25.4781
-Outlength = 25.4753
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2551,9 +2247,6 @@ startrot = -94.602
 endrot = -95.602
 startpos = Vector3( 2862.75, 5.24866, 2918.72 )
 endpos = Vector3( 2860.08, 5.24866, 2948.6 )
-otherRadius = -1723.37
-otherLength = 30.0785
-Outlength = 30.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2567,9 +2260,6 @@ startrot = -94.602
 endrot = -95.602
 startpos = Vector3( 2871.72, 5.24866, 2919.44 )
 endpos = Vector3( 2869.04, 5.24866, 2949.48 )
-otherRadius = -1732.37
-otherLength = 30.2356
-Outlength = 30.1571
 parallelRail = "Röthenbach56"
 distanceToParallelRail = -9.0
 overheadLine = false
@@ -2609,9 +2299,6 @@ startrot = -94.602
 endrot = -84.3166
 startpos = Vector3( 2870.77, 5.24866, 2819.04 )
 endpos = Vector3( 2871.24, 5.24866, 2869.24 )
-otherRadius = 275.531
-otherLength = 49.4617
-Outlength = 35.5223
 overheadLine = false
 isSwitchPart = [ "Röthenbach55", "" ]
 
@@ -2625,9 +2312,6 @@ startrot = -84.3166
 endrot = -94.602
 startpos = Vector3( 2871.24, 5.24866, 2869.24 )
 endpos = Vector3( 2871.71, 5.24866, 2919.44 )
-otherRadius = -284.531
-otherLength = 51.0773
-Outlength = 50.2695
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach55P" ]
 
@@ -2641,9 +2325,6 @@ startrot = -95.602
 endrot = -97.602
 startpos = Vector3( 2850.32, 5.24866, 3048.12 )
 endpos = Vector3( 2846.87, 5.24866, 3077.92 )
-otherRadius = -863.937
-otherLength = 30.1571
-Outlength = 30.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2657,9 +2338,6 @@ startrot = -95.602
 endrot = -105.887
 startpos = Vector3( 2869.04, 5.24866, 2949.48 )
 endpos = Vector3( 2859.68, 5.24866, 2998.8 )
-otherRadius = -284.53
-otherLength = 51.0775
-Outlength = 50.2697
 overheadLine = false
 isSwitchPart = [ "Röthenbach56P2", "" ]
 
@@ -2673,9 +2351,6 @@ startrot = -105.887
 endrot = -95.602
 startpos = Vector3( 2859.68, 5.24866, 2998.8 )
 endpos = Vector3( 2850.32, 5.24866, 3048.12 )
-otherRadius = 275.53
-otherLength = 49.4619
-Outlength = 35.5222
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach57" ]
 
@@ -2713,9 +2388,6 @@ startrot = -95.602
 endrot = -97.602
 startpos = Vector3( 2869.04, 5.24866, 2949.48 )
 endpos = Vector3( 2865.59, 5.24866, 2979.28 )
-otherRadius = -863.937
-otherLength = 30.1571
-Outlength = 30.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach56PConnector2", "" ]
 
@@ -2729,9 +2401,6 @@ startrot = -97.602
 endrot = -90.1879
 startpos = Vector3( 2865.59, 5.24866, 2979.28 )
 endpos = Vector3( 2862.18, 5.24866, 3029.4 )
-otherRadius = 383.96
-otherLength = 49.6845
-Outlength = 41.8301
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2745,9 +2414,6 @@ startrot = -90.1879
 endrot = -97.602
 startpos = Vector3( 2862.18, 5.24866, 3029.39 )
 endpos = Vector3( 2858.77, 5.24866, 3079.51 )
-otherRadius = -392.96
-otherLength = 50.8491
-Outlength = 50.2668
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2760,8 +2426,6 @@ startrot = -97.602
 endrot = -97.602
 startpos = Vector3( 2833.64, 5.24866, 3177.04 )
 endpos = Vector3( 2827.03, 6.49732, 3226.6 )
-otherLength = 50.0
-Outlength = 50.0
 endSlope = 5.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -2800,8 +2464,6 @@ startrot = -97.602
 endrot = -97.602
 startpos = Vector3( 2845.53, 5.24866, 3178.63 )
 endpos = Vector3( 2838.92, 6.49732, 3228.19 )
-otherLength = 50.0
-Outlength = 50.0
 parallelRail = "Röthenbach60"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2817,9 +2479,6 @@ startrot = -97.602
 endrot = -92.602
 startpos = Vector3( 2813.8, 9, 3325.72 )
 endpos = Vector3( 2807.58, 9, 3395.42 )
-otherRadius = 797.641
-otherLength = 69.6073
-Outlength = 60.0943
 overheadLine = false
 isSwitchPart = [ "Röthenbach64", "" ]
 
@@ -2833,9 +2492,6 @@ startrot = -97.602
 endrot = -92.602
 startpos = Vector3( 2825.69, 9, 3327.31 )
 endpos = Vector3( 2819.56, 9, 3395.97 )
-otherRadius = 785.641
-otherLength = 68.5601
-Outlength = 59.6433
 parallelRail = "Röthenbach62"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2851,9 +2507,6 @@ startrot = -92.602
 endrot = -87.602
 startpos = Vector3( 2807.57, 9, 3395.42 )
 endpos = Vector3( 2807.48, 9, 3445.4 )
-otherRadius = 568.458
-otherLength = 49.6073
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2867,9 +2520,6 @@ startrot = -92.602
 endrot = -87.602
 startpos = Vector3( 2813.56, 9, 3395.69 )
 endpos = Vector3( 2813.48, 9, 3445.15 )
-otherRadius = 562.458
-otherLength = 49.0837
-Outlength = 50.5272
 parallelRail = "Röthenbach63"
 distanceToParallelRail = -6.0
 overheadLine = false
@@ -2885,9 +2535,6 @@ startrot = -92.602
 endrot = -87.602
 startpos = Vector3( 2819.56, 9, 3395.96 )
 endpos = Vector3( 2819.47, 9, 3444.9 )
-otherRadius = 556.458
-otherLength = 48.5601
-Outlength = 50.2593
 parallelRail = "Röthenbach63P"
 distanceToParallelRail = -6.0
 overheadLine = false
@@ -2903,9 +2550,6 @@ startrot = -97.602
 endrot = -92.602
 startpos = Vector3( 2813.8, 9, 3325.72 )
 endpos = Vector3( 2812.91, 9, 3335.68 )
-otherRadius = 110.092
-otherLength = 9.6073
-Outlength = 22.7456
 overheadLine = false
 isSwitchPart = [ "Röthenbach62", "" ]
 
@@ -2919,9 +2563,6 @@ startrot = -92.602
 endrot = -86.138
 startpos = Vector3( 2812.91, 9, 3335.68 )
 endpos = Vector3( 2813.24, 9, 3365.69 )
-otherRadius = 261.643
-otherLength = 29.5178
-Outlength = 34.6314
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2935,9 +2576,6 @@ startrot = -86.138
 endrot = -92.602
 startpos = Vector3( 2813.24, 9, 3365.69 )
 endpos = Vector3( 2813.57, 9, 3395.7 )
-otherRadius = -270.643
-otherLength = 30.5332
-Outlength = 30.0255
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -2951,9 +2589,6 @@ startrot = -87.602
 endrot = -85.602
 startpos = Vector3( 2807.48, 9, 3445.41 )
 endpos = Vector3( 2811.63, 9, 3515.28 )
-otherRadius = 2000.85
-otherLength = 69.8429
-Outlength = 95.004
 overheadLine = false
 isSwitchPart = [ "", "Röthenbach67" ]
 
@@ -2967,9 +2602,6 @@ startrot = -87.602
 endrot = -85.602
 startpos = Vector3( 2819.47, 9, 3444.91 )
 endpos = Vector3( 2823.59, 9, 3514.36 )
-otherRadius = 1988.85
-otherLength = 69.424
-Outlength = 94.7194
 parallelRail = "Röthenbach65"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -2984,9 +2616,6 @@ startrot = -85.602
 endrot = -70.602
 startpos = Vector3( 2811.63, 9, 3515.28 )
 endpos = Vector3( 2832.19, 9, 3612.85 )
-otherRadius = 377.472
-otherLength = 98.8219
-Outlength = 41.4797
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3000,9 +2629,6 @@ startrot = 94.398
 endrot = 92.398
 startpos = Vector3( 2811.63, 9, 3515.28 )
 endpos = Vector3( 2811.33, 9, 3510.29 )
-otherRadius = -147.739
-otherLength = 5.15708
-Outlength = 5.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach65", "" ]
 
@@ -3016,9 +2642,6 @@ startrot = -87.602
 endrot = -96.1657
 startpos = Vector3( 2813.48, 9, 3445.16 )
 endpos = Vector3( 2812.41, 9, 3477.73 )
-otherRadius = -222.708
-otherLength = 33.2872
-Outlength = 32.6146
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3032,9 +2655,6 @@ startrot = -96.1657
 endrot = -87.602
 startpos = Vector3( 2812.41, 9, 3477.72 )
 endpos = Vector3( 2811.34, 9, 3510.29 )
-otherRadius = 213.708
-otherLength = 31.942
-Outlength = 31.3628
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3048,9 +2668,6 @@ startrot = -85.602
 endrot = -70.602
 startpos = Vector3( 2823.59, 9, 3514.36 )
 endpos = Vector3( 2843.51, 9, 3608.87 )
-otherRadius = 365.472
-otherLength = 95.6803
-Outlength = 40.8236
 parallelRail = "Röthenbach66"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -3065,9 +2682,6 @@ startrot = -70.602
 endrot = -65.602
 startpos = Vector3( 2832.19, 9, 3612.85 )
 endpos = Vector3( 2869.47, 9, 3705.61 )
-otherRadius = 1141.42
-otherLength = 99.6073
-Outlength = 71.8215
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3081,9 +2695,6 @@ startrot = -70.602
 endrot = -65.602
 startpos = Vector3( 2843.51, 9, 3608.86 )
 endpos = Vector3( 2880.4, 9, 3700.65 )
-otherRadius = 1129.42
-otherLength = 98.5601
-Outlength = 71.4446
 parallelRail = "Röthenbach68"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -3098,9 +2709,6 @@ startrot = -65.602
 endrot = -63.602
 startpos = Vector3( 2869.47, 9, 3705.61 )
 endpos = Vector3( 2912.36, 9, 3795.94 )
-otherRadius = 2860.29
-otherLength = 99.8429
-Outlength = 113.548
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3113,9 +2721,6 @@ startrot = -63.602
 endrot = -58.602
 startpos = Vector3( 2912.36, 9, 3795.94 )
 endpos = Vector3( 2960.67, 9, 3883.46 )
-otherRadius = 1141.42
-otherLength = 99.6073
-Outlength = 71.8215
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3128,9 +2733,6 @@ startrot = -58.602
 endrot = -18.6019
 startpos = Vector3( 2960.67, 9, 3883.46 )
 endpos = Vector3( 3037.24, 9, 3944.59 )
-otherRadius = 138.739
-otherLength = 96.8584
-Outlength = 25.4218
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3144,9 +2746,6 @@ startrot = -58.602
 endrot = -18.6019
 startpos = Vector3( 2964.51, 9, 3881.12 )
 endpos = Vector3( 3038.68, 9, 3940.33 )
-otherRadius = 134.239
-otherLength = 93.7168
-Outlength = 25.0204
 parallelRail = "Röthenbach71"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -3162,9 +2761,6 @@ startrot = -63.602
 endrot = -58.602
 startpos = Vector3( 2916.39, 9, 3793.94 )
 endpos = Vector3( 2964.51, 9, 3881.12 )
-otherRadius = 1136.92
-otherLength = 99.2146
-Outlength = 71.6804
 parallelRail = "Röthenbach70"
 distanceToParallelRail = -4.5
 overheadLine = false
@@ -3180,9 +2776,6 @@ startrot = -65.602
 endrot = -72.2041
 startpos = Vector3( 2880.4, 9, 3700.65 )
 endpos = Vector3( 2898.4, 9, 3747.29 )
-otherRadius = -438.608
-otherLength = 50.5403
-Outlength = 50.0218
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3196,9 +2789,6 @@ startrot = -72.2041
 endrot = -65.602
 startpos = Vector3( 2898.4, 9, 3747.29 )
 endpos = Vector3( 2916.4, 9, 3793.93 )
-otherRadius = 429.608
-otherLength = 49.5033
-Outlength = 44.2174
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3211,8 +2801,6 @@ startrot = 92.898
 endrot = 92.898
 startpos = Vector3( 27.285, 0, 20.1861 )
 endpos = Vector3( 26.021, 0, -4.78193 )
-otherLength = 25.0
-Outlength = 25.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3225,8 +2813,6 @@ startrot = 92.898
 endrot = 92.898
 startpos = Vector3( 15.3003, 0, 20.7928 )
 endpos = Vector3( 14.0364, 0, -4.17523 )
-otherLength = 25.0
-Outlength = 25.0
 parallelRail = "RöthenbachP2"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -3242,9 +2828,6 @@ startrot = 92.898
 endrot = 97.898
 startpos = Vector3( 26.021, 0, -4.78192 )
 endpos = Vector3( 20.3784, 0, -64.4969 )
-otherRadius = 683.049
-otherLength = 59.6073
-Outlength = 55.6387
 overheadLine = false
 isSwitchPart = [ "RöthenbachP5", "" ]
 
@@ -3258,9 +2841,6 @@ startrot = 92.898
 endrot = 97.898
 startpos = Vector3( 14.0363, 0, -4.17522 )
 endpos = Vector3( 8.4922, 0, -62.848 )
-otherRadius = 671.049
-otherLength = 58.5601
-Outlength = 55.1512
 parallelRail = "RöthenbachP3"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -3276,9 +2856,6 @@ startrot = 97.898
 endrot = 99.898
 startpos = Vector3( 20.3784, 0, -64.4969 )
 endpos = Vector3( -2.82175, 0, -212.684 )
-otherRadius = 4292.68
-otherLength = 149.843
-Outlength = 139.065
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3292,9 +2869,6 @@ startrot = 97.898
 endrot = 99.898
 startpos = Vector3( 14.4353, 0, -63.6724 )
 endpos = Vector3( -8.73267, 0, -211.653 )
-otherRadius = 4286.68
-otherLength = 149.634
-Outlength = 138.968
 parallelRail = "RöthenbachP4"
 distanceToParallelRail = -6.0
 overheadLine = false
@@ -3310,9 +2884,6 @@ startrot = 97.898
 endrot = 99.898
 startpos = Vector3( 8.49223, 0, -62.848 )
 endpos = Vector3( -14.6436, 0, -210.621 )
-otherRadius = 4280.68
-otherLength = 149.424
-Outlength = 138.87
 parallelRail = "RöthenbachP4P"
 distanceToParallelRail = -6.0
 overheadLine = false
@@ -3328,9 +2899,6 @@ startrot = 92.898
 endrot = 97.898
 startpos = Vector3( 26.021, 0, -4.78192 )
 endpos = Vector3( 25.0806, 0, -14.7344 )
-otherRadius = 110.092
-otherLength = 9.6073
-Outlength = 22.7456
 overheadLine = false
 isSwitchPart = [ "RöthenbachP3", "" ]
 
@@ -3344,9 +2912,6 @@ startrot = 97.898
 endrot = 106.646
 startpos = Vector3( 25.0806, 0, -14.7344 )
 endpos = Vector3( 19.758, 0, -39.2034 )
-otherRadius = 159.665
-otherLength = 24.3785
-Outlength = 27.211
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3360,9 +2925,6 @@ startrot = 106.646
 endrot = 97.898
 startpos = Vector3( 19.7579, 0, -39.2034 )
 endpos = Vector3( 14.4352, 0, -63.6724 )
-otherRadius = -168.665
-otherLength = 25.7527
-Outlength = 25.0656
 overheadLine = false
 isSwitchPart = [ "", "RöthenbachP4P2" ]
 
@@ -3376,9 +2938,6 @@ startrot = -82.102
 endrot = -87.102
 startpos = Vector3( 14.4353, 0, -63.6724 )
 endpos = Vector3( 15.846, 0, -48.7437 )
-otherRadius = -176.387
-otherLength = 15.3927
-Outlength = 15.0
 overheadLine = false
 isSwitchPart = [ "RöthenbachP4PConnector", "" ]
 
@@ -3392,9 +2951,6 @@ startrot = 92.898
 endrot = 82.4518
 startpos = Vector3( 14.0364, 0, -4.17523 )
 endpos = Vector3( 14.9412, 0, -26.4594 )
-otherRadius = -126.996
-otherLength = 23.1539
-Outlength = 22.3335
 overheadLine = false
 isSwitchPart = [ "RöthenbachP3P", "" ]
 
@@ -3408,9 +2964,6 @@ startrot = 82.4518
 endrot = 92.898
 startpos = Vector3( 14.9411, 0, -26.4595 )
 endpos = Vector3( 15.8459, 0, -48.7437 )
-otherRadius = 117.996
-otherLength = 21.5131
-Outlength = 23.5144
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3461,9 +3014,6 @@ startrot = -31.602
 endrot = -44.602
 startpos = Vector3( 356.69, -5.01493, 536.263 )
 endpos = Vector3( 486.88, -0.0334826, 638.353 )
-otherRadius = -735.242
-otherLength = 166.821
-Outlength = 165.8
 startSlope = 6.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
@@ -3478,9 +3028,6 @@ startrot = -44.602
 endrot = -42.2073
 startpos = Vector3( 486.88, -0.0222279, 638.353 )
 endpos = Vector3( 553.685, -0.0222279, 701.538 )
-otherRadius = 2195.75
-otherLength = 91.7715
-Outlength = 99.5129
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3494,9 +3041,6 @@ startrot = -42.2074
 endrot = -44.6021
 startpos = Vector3( 553.686, -0.014434, 701.538 )
 endpos = Vector3( 620.491, -0.014434, 764.723 )
-otherRadius = -2204.75
-otherLength = 92.1477
-Outlength = 91.9596
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3523,9 +3067,6 @@ startrot = -31.602
 endrot = -44.602
 startpos = Vector3( 362.978, -5.01493, 526.042 )
 endpos = Vector3( 495.307, -0.0334826, 629.809 )
-otherRadius = -747.242
-otherLength = 169.544
-Outlength = 168.523
 parallelRail = "Röthenbach73"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -3541,9 +3082,6 @@ startrot = -44.602
 endrot = -44.7
 startpos = Vector3( 495.306, 0.00144005, 629.809 )
 endpos = Vector3( 560.707, 0.00144005, 694.418 )
-otherRadius = -53780.0
-otherLength = 91.9406
-Outlength = 91.9329
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3557,9 +3095,6 @@ startrot = -44.7
 endrot = -44.602
 startpos = Vector3( 560.708, 0.00144005, 694.418 )
 endpos = Vector3( 626.109, 0.00144005, 759.028 )
-otherRadius = 53771.0
-otherLength = 91.9252
-Outlength = 491.926
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3573,9 +3108,6 @@ startrot = -114.602
 endrot = -118.662
 startpos = Vector3( 2944.77, 5.24866, 2583.37 )
 endpos = Vector3( 2922.32, 5.24866, 2628.15 )
-otherRadius = -711.506
-otherLength = 50.4205
-Outlength = 50.1016
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3589,9 +3121,6 @@ startrot = -118.662
 endrot = -114.602
 startpos = Vector3( 2922.31, 5.24866, 2628.14 )
 endpos = Vector3( 2899.86, 5.24866, 2672.92 )
-otherRadius = 702.506
-otherLength = 49.7827
-Outlength = 56.42
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3605,9 +3134,6 @@ startrot = -96.602
 endrot = -101.602
 startpos = Vector3( 3003.51, 5.24866, 2391.19 )
 endpos = Vector3( 2987.53, 5.24866, 2490.93 )
-otherRadius = -1162.42
-otherLength = 101.44
-Outlength = 101.047
 parallelRail = "Röthenbach49"
 distanceToParallelRail = -12.0
 overheadLine = false
@@ -3623,9 +3149,6 @@ startrot = -101.602
 endrot = -81.602
 startpos = Vector3( 2987.53, 5.24866, 2490.93 )
 endpos = Vector3( 2981.97, 5.24866, 2689.84 )
-otherRadius = 568.458
-otherLength = 198.429
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3639,9 +3162,6 @@ startrot = -81.602
 endrot = -61.602
 startpos = Vector3( 2981.97, 5.24866, 2689.84 )
 endpos = Vector3( 3044.77, 5.24866, 2878.66 )
-otherRadius = 568.458
-otherLength = 198.429
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3655,9 +3175,6 @@ startrot = -61.602
 endrot = -41.602
 startpos = Vector3( 3044.77, 5.24866, 2878.66 )
 endpos = Vector3( 3168.36, 5.24866, 3034.61 )
-otherRadius = 568.458
-otherLength = 198.429
-Outlength = 50.7937
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3671,9 +3188,6 @@ startrot = -31.602
 endrot = -131.602
 startpos = Vector3( 3512.37, 5.24866, 2002.77 )
 endpos = Vector3( 3576.47, 5.24866, 2436.97 )
-otherRadius = -290.979
-otherLength = 507.854
-Outlength = 500.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3687,9 +3201,6 @@ startrot = -11.602
 endrot = -91.602
 startpos = Vector3( 3456.68, 5.24866, 1873.17 )
 endpos = Vector3( 3685.43, 5.24866, 2161.8 )
-otherRadius = -290.979
-otherLength = 406.283
-Outlength = 400.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach46P8", "Röthenbach46P8" ]
 
@@ -3702,9 +3213,6 @@ startrot = -18.6019
 endrot = 21.3983
 startpos = Vector3( 3037.24, 9, 3944.59 )
 endpos = Vector3( 3135.19, 9, 3942.2 )
-otherRadius = 138.739
-otherLength = 96.8584
-Outlength = 25.4218
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3717,9 +3225,6 @@ startrot = -18.6019
 endrot = 21.3983
 startpos = Vector3( 3038.68, 9, 3940.33 )
 endpos = Vector3( 3136.63, 9, 3937.94 )
-otherRadius = 138.739
-otherLength = 96.8584
-Outlength = 25.4218
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3732,8 +3237,6 @@ startrot = -24.602
 endrot = -34.6009
 startpos = Vector3( 1293.21, 0, 1148.9 )
 endpos = Vector3( 1380.05, 0, 1198.23 )
-otherRadius = -577.517
-otherLength = 100.785
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3746,9 +3249,6 @@ startrot = -34.6011
 endrot = -24.6021
 startpos = Vector3( 1380.05, 0, 1198.23 )
 endpos = Vector3( 1466.89, 0, 1247.56 )
-otherRadius = 568.517
-otherLength = 99.2147
-Outlength = 50.7963
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3762,9 +3262,6 @@ startrot = -29.602
 endrot = -24.602
 startpos = Vector3( 1115.7, 0, 1059.59 )
 endpos = Vector3( 1133.5, 0, 1068.7 )
-otherRadius = 224.683
-otherLength = 19.6073
-Outlength = 32.1406
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3778,9 +3275,6 @@ startrot = -24.602
 endrot = -33.9566
 startpos = Vector3( 1133.5, 0, 1068.7 )
 endpos = Vector3( 1167.89, 0, 1087.98 )
-otherRadius = -246.262
-otherLength = 40.207
-Outlength = 39.4723
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3794,9 +3288,6 @@ startrot = -33.9566
 endrot = -24.602
 startpos = Vector3( 1167.89, 0, 1087.99 )
 endpos = Vector3( 1202.28, 0, 1107.27 )
-otherRadius = 237.262
-otherLength = 38.7376
-Outlength = 33.0094
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3810,9 +3301,6 @@ startrot = 99.898
 endrot = 100.031
 startpos = Vector3( -2.82175, 0, -212.684 )
 endpos = Vector3( -4.55224, 0, -222.533 )
-otherRadius = 4292.68
-otherLength = 9.98953
-Outlength = 139.065
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3825,8 +3313,6 @@ startrot = 84.3979
 endrot = 44.3978
 startpos = Vector3( 2412.96, -3.4978, 1468.81 )
 endpos = Vector3( 2455.3, -10.4978, 1380.45 )
-otherRadius = -147.739
-otherLength = 103.142
 startSlope = -7.0
 endSlope = -7.0
 overheadLine = false
@@ -3841,8 +3327,6 @@ startrot = 99.898
 endrot = 99.898
 startpos = Vector3( -8.73267, 0, -211.653 )
 endpos = Vector3( -180.628, 0, -1196.77 )
-otherLength = 1000.0
-Outlength = 1000.0
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3856,9 +3340,6 @@ startrot = 81.398
 endrot = 81.6201
 startpos = Vector3( 3060.92, 5.24866, 2181.69 )
 endpos = Vector3( 3062.34, 5.24866, 2172.15 )
-otherRadius = 2483.01
-otherLength = 9.62561
-Outlength = 105.809
 overheadLine = false
 isSwitchPart = [ "Röthenbach44", "" ]
 
@@ -3872,9 +3353,6 @@ startrot = 81.6201
 endrot = 81.398
 startpos = Vector3( 3062.34, 5.24866, 2172.15 )
 endpos = Vector3( 3063.76, 5.24866, 2162.61 )
-otherRadius = -2492.01
-otherLength = 9.66049
-Outlength = 9.64305
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -3888,9 +3366,6 @@ startrot = -11.602
 endrot = -91.602
 startpos = Vector3( 3456.68, 5.24866, 1873.17 )
 endpos = Vector3( 3685.43, 5.24866, 2161.8 )
-otherRadius = -290.979
-otherLength = 406.283
-Outlength = 400.0
 overheadLine = false
 isSwitchPart = [ "Röthenbach46P7", "Röthenbach46P7" ]
 

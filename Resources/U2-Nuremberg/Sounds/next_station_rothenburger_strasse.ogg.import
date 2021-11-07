@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_rothenburger_strasse.ogg-1746bb867959e17b44651489a69700b5.oggstr"
+path="res://.import/next_station_rothenburger_strasse.ogg-637975e54523d24a82270b084c0118de.oggstr"
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Sounds/next_station_rothenburger_strasse.ogg"
-dest_files=[ "res://.import/next_station_rothenburger_strasse.ogg-1746bb867959e17b44651489a69700b5.oggstr" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_rothenburger_strasse.ogg"
+dest_files=[ "res://.import/next_station_rothenburger_strasse.ogg-637975e54523d24a82270b084c0118de.oggstr" ]
 
 [params]
 

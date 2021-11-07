@@ -2,18 +2,17 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Painting_Oper.png-4b180b639ba2d56e99c3d1a07c5290b1.s3tc.stex"
-path.etc2="res://.import/Painting_Oper.png-4b180b639ba2d56e99c3d1a07c5290b1.etc2.stex"
-path.etc="res://.import/Painting_Oper.png-4b180b639ba2d56e99c3d1a07c5290b1.etc.stex"
+path.s3tc="res://.import/Painting_Oper.png-49ef032f286721a8f7d46e88b7fcd564.s3tc.stex"
+path.etc2="res://.import/Painting_Oper.png-49ef032f286721a8f7d46e88b7fcd564.etc2.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2", "etc" ],
+"imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Resources/U2-Nuremberg/Textures/Painting_Oper.png"
-dest_files=[ "res://.import/Painting_Oper.png-4b180b639ba2d56e99c3d1a07c5290b1.s3tc.stex", "res://.import/Painting_Oper.png-4b180b639ba2d56e99c3d1a07c5290b1.etc2.stex", "res://.import/Painting_Oper.png-4b180b639ba2d56e99c3d1a07c5290b1.etc.stex" ]
+source_file="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Textures/Painting_Oper.png"
+dest_files=[ "res://.import/Painting_Oper.png-49ef032f286721a8f7d46e88b7fcd564.s3tc.stex", "res://.import/Painting_Oper.png-49ef032f286721a8f7d46e88b7fcd564.etc2.stex" ]
 
 [params]
 

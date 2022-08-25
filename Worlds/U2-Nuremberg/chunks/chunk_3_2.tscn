@@ -32,7 +32,7 @@ rails = [ "Röthenbach45", "Röthenbach46", "Röthenbach46P", "Röthenbach46P2",
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Röthenbach43P2 Ceilling2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3401, 5.24866, -827.85 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3062.34, 5.24866, 2172.15 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -60,7 +60,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2 Ceilling3" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -88,7 +88,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2 Ground2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3401, 5.24866, -827.85 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3062.34, 5.24866, 2172.15 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -116,7 +116,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2 Ground3" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -144,7 +144,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2 Wall2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3401, 5.24866, -827.85 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3062.34, 5.24866, 2172.15 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -172,7 +172,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2 Wall3" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -200,7 +200,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2Connector Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3401, 5.24866, -827.85 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3062.34, 5.24866, 2172.15 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -228,7 +228,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2Connector Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3401, 5.24866, -827.85 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3062.34, 5.24866, 2172.15 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -256,7 +256,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach43P2Connector Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3401, 5.24866, -827.85 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3062.34, 5.24866, 2172.15 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -284,7 +284,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach45 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -312,7 +312,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach45 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -340,7 +340,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach45 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -368,7 +368,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach45Connector Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -396,7 +396,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach45Connector Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -424,7 +424,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach45Connector Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9199, 5.24866, -818.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3060.92, 5.24866, 2181.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -452,7 +452,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9199, 5.24866, -770.14 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3047.92, 5.24866, 2229.86 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -480,7 +480,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9199, 5.24866, -770.14 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3047.92, 5.24866, 2229.86 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -508,7 +508,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9199, 5.24866, -770.14 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3047.92, 5.24866, 2229.86 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -536,7 +536,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0771, 5.24866, -765.722 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3059.08, 5.24866, 2234.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -564,7 +564,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P2 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0801, 5.24866, -765.72 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3059.08, 5.24866, 2234.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -592,7 +592,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P2 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0801, 5.24866, -765.72 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3059.08, 5.24866, 2234.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -620,7 +620,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P2 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0801, 5.24866, -765.72 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3059.08, 5.24866, 2234.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -648,7 +648,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P3 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.8899, 5.24866, -858.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3095.89, 5.24866, 2141.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -676,7 +676,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P3 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.8899, 5.24866, -858.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3095.89, 5.24866, 2141.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -704,7 +704,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P3 Wall2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 121.661, 5.24866, -923.783 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3121.66, 5.24866, 2076.22 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -732,7 +732,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach46P4 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.8899, 5.24866, -858.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3095.89, 5.24866, 2141.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -760,7 +760,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P4 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.8899, 5.24866, -858.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3095.89, 5.24866, 2141.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -788,7 +788,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach46P4 Wall2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 128.736, 5.24866, -919.191 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3128.74, 5.24866, 2080.81 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -816,7 +816,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach46P5 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 133.043, 5.24866, -952.506 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3133.04, 5.24866, 2047.49 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Tunnel"
@@ -844,7 +844,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach46P5 TunnelPortal" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.71, 5.24866, -951.67 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3132.71, 5.24866, 2048.33 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "TunnelPortal"
@@ -872,7 +872,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach47 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5601, 5.24866, -751.54 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3040.56, 5.24866, 2248.46 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -900,7 +900,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach47 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5601, 5.24866, -751.54 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3040.56, 5.24866, 2248.46 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -928,7 +928,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach47 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5601, 5.24866, -751.54 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3040.56, 5.24866, 2248.46 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -956,7 +956,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach47P Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.7173, 5.24866, -747.122 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3051.72, 5.24866, 2252.88 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -984,7 +984,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73999, 5.24866, -658.57 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.74, 5.24866, 2341.43 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ceilling"
@@ -1012,7 +1012,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73999, 5.24866, -658.57 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.74, 5.24866, 2341.43 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -1040,7 +1040,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48 Pfosts" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73999, 5.24866, -658.57 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.74, 5.24866, 2341.43 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1068,7 +1068,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8972, 5.24866, -654.152 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3014.9, 5.24866, 2345.85 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1096,7 +1096,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts3" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 57.6045, 5.24866, -762.003 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3057.61, 5.24866, 2238 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1124,7 +1124,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.4473, 5.24866, -766.421 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3046.45, 5.24866, 2233.58 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1152,7 +1152,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts5" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.71, 5.24866, -747.13 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3051.71, 5.24866, 2252.87 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1180,7 +1180,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5601, 5.24866, -751.54 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3040.56, 5.24866, 2248.46 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1208,7 +1208,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts7" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9655, 5.24866, -686.003 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3016.97, 5.24866, 2314 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1236,7 +1236,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Pfosts8" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5066, 5.24866, -673.528 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3021.51, 5.24866, 2326.47 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Pfosts"
@@ -1264,7 +1264,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73999, 5.24866, -658.57 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.74, 5.24866, 2341.43 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -1292,7 +1292,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48P Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8972, 5.24866, -654.152 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3014.9, 5.24866, 2345.85 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -1320,7 +1320,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48P2 Lights" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03965, 5.24866, -588.963 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3001.04, 5.24866, 2411.04 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Lights"
@@ -1348,7 +1348,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48P2 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5105, 5.24866, -608.81 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.51, 5.24866, 2391.19 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"
@@ -1376,7 +1376,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48P2 Wall (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5105, 5.24866, -608.81 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.51, 5.24866, 2391.19 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall (Duplicate)"
@@ -1404,7 +1404,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Röthenbach48P2 WallPaint (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.04371, 5.24866, -604.837 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.04, 5.24866, 2395.16 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate)"
@@ -1432,7 +1432,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48P2 WallPaint (Duplicate) (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06905, 5.24866, -596.897 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3002.07, 5.24866, 2403.1 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate) (Duplicate)"
@@ -1460,7 +1460,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48P2 WallPaint (Duplicate) (Duplicate) (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06905, 5.24866, -596.897 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3002.07, 5.24866, 2403.1 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate) (Duplicate) (Duplicate)"
@@ -1488,7 +1488,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach48P2 WallPaint (Duplicate) (Duplicate)2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.04371, 5.24866, -604.837 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3003.04, 5.24866, 2395.16 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate) (Duplicate)"

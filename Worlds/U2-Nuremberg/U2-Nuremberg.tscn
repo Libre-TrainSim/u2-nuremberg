@@ -53,7 +53,7 @@ forward = true
 assigned_signal = "Signal"
 
 [node name="Röthenbach2" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 13 )]
-transform = Transform( -0.076684, 0, 0.997055, 0, 1, 0, -0.997055, 0, -0.076684, 35.8542, 0, 154.592 )
+transform = Transform( -0.0766841, 0, 0.997055, 0, 1, 0, -0.997055, 0, -0.0766841, 35.8542, 0, 154.593 )
 script = ExtResource( 4 )
 length = 135
 platform_side = 1
@@ -292,6 +292,7 @@ assigned_signal = "Signal50"
 
 [node name="Signal" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.0766809, 0, -0.997055, 0, 1, 0, 0.997055, 0, 0.0766809, 23.8889, 0, 155.513 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -301,7 +302,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach"
 forward = true
 on_rail_position = 135
-operation_mode = 0
+operation_mode = 1
 
 [node name="ContactPoint" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 16 )]
 transform = Transform( -0.184983, 0, 0.982742, 0, 1, 0, -0.982742, 0, -0.184983, 39.7834, 0, 184.317 )
@@ -319,6 +320,7 @@ forward = false
 
 [node name="Signal2" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.139715, 0, -0.990191, 0, 1, 0, 0.990191, 0, 0.139715, 13.0511, 0, -73.579 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -332,6 +334,7 @@ operation_mode = 0
 
 [node name="Signal3" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.139712, 0, -0.990192, 0, 1, 0, 0.990192, 0, 0.139712, 18.9942, 0, -74.4035 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -344,7 +347,8 @@ on_rail_position = 10
 operation_mode = 0
 
 [node name="Signal4" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
-transform = Transform( 0.139719, 0, -0.990191, 0, 1, 0, 0.990191, 0, 0.139719, 7.11115, 0, -72.749 )
+transform = Transform( 0.139719, 0, -0.990191, 0, 1, 0, 0.990191, 0, 0.139719, 7.10805, 0, -72.7546 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -358,6 +362,7 @@ operation_mode = 0
 
 [node name="Signal5" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.0505621, 0, 0.998721, 0, 1, 0, -0.998721, 0, -0.0505621, 27.0272, 0, 15.1963 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -367,10 +372,11 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "RöthenbachP2"
 forward = true
 on_rail_position = 5
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal6" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.424333, 0, 0.905506, 0, 1, 0, -0.905506, 0, -0.424333, 63.7453, 0, 256.004 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -384,6 +390,7 @@ operation_mode = 0
 
 [node name="Signal7" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.851707, 0, -0.524016, 0, 1, 0, 0.524016, 0, 0.851707, 194.867, -5.19771, 436.7 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -397,6 +404,7 @@ operation_mode = 0
 
 [node name="Signal8" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.851708, 0, 0.524017, 0, 1, 0, -0.524017, 0, -0.851708, 286.325, -8.02655, 478.88 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -410,6 +418,7 @@ operation_mode = 0
 
 [node name="Signal9" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.731489, 0, -0.681853, 0, 1, 0, 0.681853, 0, 0.731489, 575.773, -0.014434, 721.845 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -423,6 +432,7 @@ operation_mode = 0
 
 [node name="Signal10" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.712002, 0, 0.702178, 0, 1, 0, -0.702178, 0, -0.712002, 647.467, -0.00477213, 780.089 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -436,6 +446,7 @@ operation_mode = 0
 
 [node name="Signal11" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.869478, 0, -0.493972, 0, 1, 0, 0.493972, 0, 0.869478, 938.755, 0, 976.306 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -445,10 +456,11 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach13"
 forward = true
 on_rail_position = 125
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal12" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.869478, 0, -0.493972, 0, 1, 0, 0.493972, 0, 0.869478, 1009.89, 0, 1002.92 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -462,6 +474,7 @@ operation_mode = 0
 
 [node name="Signal13" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.869478, 0, 0.493972, 0, 1, 0, -0.493972, 0, -0.869478, 849.04, 0, 911.536 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -471,7 +484,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach13P"
 forward = false
 on_rail_position = 15
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal14" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.884158, 0, 0.467189, 0, 1, 0, -0.467189, 0, -0.884158, 1121.84, 0, 1062.95 )
@@ -562,7 +575,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach24P"
 forward = false
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal21" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 2014.87, 5, 1385.61 )
@@ -575,7 +588,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach25"
 forward = true
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal22" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.823118, 0, -0.567872, 0, 1, 0, 0.567872, 0, 0.823118, 2268.7, 7.49731, 1470.44 )
@@ -653,7 +666,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach38P"
 forward = false
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal28" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.736073, 0, 0.676902, 0, 1, 0, -0.676902, 0, -0.736073, 2520.99, 8.74866, 1697.73 )
@@ -679,7 +692,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach39"
 forward = true
 on_rail_position = 3
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal30" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.727826, 0, -0.685762, 0, 1, 0, 0.685762, 0, 0.727826, 2620.59, 8.74866, 1771.41 )
@@ -796,7 +809,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach48P2"
 forward = false
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal39" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.140934, 0, 0.990019, 0, 1, 0, -0.990019, 0, 0.140934, 2992.23, 5.24866, 2384.83 )
@@ -809,7 +822,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach48"
 forward = false
 on_rail_position = 45
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal40" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.223285, 0, -0.974754, 0, 1, 0, 0.974754, 0, -0.223285, 2973.65, 5.24866, 2498.29 )
@@ -822,10 +835,10 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach50"
 forward = true
 on_rail_position = 10
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal41" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
-transform = Transform( -0.20276, 0, -0.979227, 0, 1, 0, 0.979227, 0, -0.20276, 2987.14, 5.24866, 2492.85 )
+transform = Transform( -0.201069, 0, -0.979576, 0, 1, 0, 0.979576, 0, -0.201069, 2987.54, 5.24866, 2490.89 )
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -835,7 +848,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach48P2"
 forward = true
 on_rail_position = 101
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal42" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.454638, 0, -0.890677, 0, 1, 0, 0.890677, 0, -0.454638, 2912.97, 5.24866, 2645.82 )
@@ -900,7 +913,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach59P"
 forward = false
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal47" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.132295, 0, -0.99121, 0, 1, 0, 0.99121, 0, -0.132295, 2833.64, 5.24866, 3177.04 )
@@ -913,7 +926,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach60"
 forward = true
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal48" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.097618, 0, -0.995224, 0, 1, 0, 0.995224, 0, -0.097618, 2859.1, 5.24866, 2958.55 )
@@ -952,7 +965,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach66P"
 forward = false
 on_rail_position = 90
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal51" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.0693482, 0, 0.997593, 0, 1, 0, -0.997593, 0, 0.0693482, 2820.65, 9, 3377.05 )
@@ -1069,7 +1082,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach69"
 forward = true
 on_rail_position = 0
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal60" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.413073, 0, -0.910698, 0, 1, 0, 0.910698, 0, 0.413073, 2880.4, 9, 3700.65 )
@@ -1112,6 +1125,7 @@ operation_mode = 0
 
 [node name="Signal63" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.0505621, 0, 0.998721, 0, 1, 0, -0.998721, 0, -0.0505621, 15.0426, 0, 15.803 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -1125,6 +1139,7 @@ operation_mode = 0
 
 [node name="Signal64" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( 0.112947, 0, -0.993601, 0, 1, 0, 0.993601, 0, 0.112947, 36.8028, 0, 164.544 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -1137,7 +1152,7 @@ on_rail_position = 10
 operation_mode = 0
 
 [node name="TrainStation" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 13 )]
-transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 14.4368, 0, -63.6755 )
+transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 14.4368, 0, -63.6756 )
 script = ExtResource( 4 )
 length = 150
 platform_side = 0
@@ -1175,7 +1190,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach17"
 forward = true
 on_rail_position = 5
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal66" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
 transform = Transform( -0.901365, 0, 0.433059, 0, 1, 0, -0.433059, 0, -0.901365, 1198.23, 0, 1105.37 )
@@ -1188,7 +1203,7 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "Röthenbach16PConnector2"
 forward = false
 on_rail_position = 35
-operation_mode = 0
+operation_mode = 1
 
 [node name="ContactPoint2" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 16 )]
 transform = Transform( -0.736071, 0, 0.676905, 0, 1, 0, -0.676905, 0, -0.736071, 2536.28, 8.74866, 1695.25 )
@@ -1213,7 +1228,8 @@ on_rail_position = 170.0
 forward = false
 
 [node name="Signal67" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
-transform = Transform( -0.170748, 0, 0.985315, 0, 1, 0, -0.985315, 0, -0.170748, -1.96386, 0, -207.761 )
+transform = Transform( -0.170746, 0, 0.985315, 0, 1, 0, -0.985315, 0, -0.170746, -1.9635, 0, -207.761 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -1226,7 +1242,8 @@ on_rail_position = 145
 operation_mode = 0
 
 [node name="Signal68" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
-transform = Transform( -0.170795, 0, 0.985307, 0, 1, 0, -0.985307, 0, -0.170795, -7.91032, 0, -206.936 )
+transform = Transform( -0.170793, 0, 0.985307, 0, 1, 0, -0.985307, 0, -0.170793, -7.90997, 0, -206.936 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -1236,10 +1253,11 @@ visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
 attached_rail = "RöthenbachP4P"
 forward = true
 on_rail_position = 145
-operation_mode = 0
+operation_mode = 1
 
 [node name="Signal69" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
-transform = Transform( -0.170842, 0, 0.985299, 0, 1, 0, -0.985299, 0, -0.170842, -13.8568, 0, -206.111 )
+transform = Transform( -0.170839, 0, 0.985299, 0, 1, 0, -0.985299, 0, -0.170839, -13.8564, 0, -206.111 )
+visible = false
 script = ExtResource( 3 )
 signal_type = 3
 status = 1
@@ -2619,6 +2637,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach25" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 2014.87, 5, 1385.61 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2649,6 +2668,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach26" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 2064.17, 5, 1393.95 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2679,6 +2699,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach27" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.9677, 0, -0.252103, 0, 1, 0, 0.252103, 0, 0.9677, 2113.05, 5, 1404.43 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2709,6 +2730,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach27P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.9677, 0, -0.252103, 0, 1, 0, 0.252103, 0, 0.9677, 2114.18, 5, 1400.08 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2739,6 +2761,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach24P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.98599, 0, -0.166803, 0, 1, 0, 0.166803, 0, 0.98599, 2016.88, 5, 1373.78 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2769,6 +2792,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach24P2Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.9677, 0, -0.252103, 0, 1, 0, 0.252103, 0, 0.9677, 2046.2, 5, 1380.07 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2799,6 +2823,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach27PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.949974, 0, -0.312328, 0, 1, 0, 0.312328, 0, 0.949974, 2080.19, 5, 1390.07 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2829,6 +2854,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach28" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.942046, 0, -0.335484, 0, 1, 0, 0.335484, 0, 0.942046, 2179.93, 5, 1425.01 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2859,6 +2885,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach29" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.823117, 0, -0.567872, 0, 1, 0, 0.567872, 0, 0.823117, 2268.7, 7.49731, 1470.44 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2889,6 +2916,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach29P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.823117, 0, -0.567872, 0, 1, 0, 0.567872, 0, 0.823117, 2271.26, 7.49731, 1466.74 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2919,6 +2947,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach28P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.942046, 0, -0.335484, 0, 1, 0, 0.335484, 0, 0.942046, 2181.44, 5, 1420.77 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2949,6 +2978,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach30" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.770491, 0, -0.637451, 0, 1, 0, 0.637451, 0, 0.770491, 2308.56, 8.74866, 1500.59 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -2979,6 +3009,7 @@ switch_part = [ "", "Röthenbach31Connector" ]
 
 [node name="Röthenbach31" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.770491, 0, -0.637451, 0, 1, 0, 0.637451, 0, 0.770491, 2347.09, 8.74866, 1532.46 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3009,6 +3040,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach31P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.770491, 0, -0.637451, 0, 1, 0, 0.637451, 0, 0.770491, 2349.96, 8.74866, 1528.99 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3039,6 +3071,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach30P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.770491, 0, -0.637451, 0, 1, 0, 0.637451, 0, 0.770491, 2311.43, 8.74866, 1497.12 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3069,6 +3102,7 @@ switch_part = [ "Röthenbach29PConnector", "" ]
 
 [node name="Röthenbach29PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.770491, 0, -0.637451, 0, 1, 0, 0.637451, 0, 0.770491, 2311.43, 8.74866, 1497.12 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3099,6 +3133,7 @@ switch_part = [ "Röthenbach30P", "" ]
 
 [node name="Röthenbach31Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.644295, 0, -0.764777, 0, 1, 0, 0.764777, 0, 0.644295, 2329.26, 8.74866, 1514.79 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3129,6 +3164,7 @@ switch_part = [ "", "Röthenbach30" ]
 
 [node name="Röthenbach32" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2406.9, 8.74866, 1585.57 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3159,6 +3195,7 @@ switch_part = [ "Röthenbach31Connector2", "Röthenbach34" ]
 
 [node name="Röthenbach31P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2410, 8.74866, 1582.31 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3189,6 +3226,7 @@ switch_part = [ "", "Röthenbach31P3Connector" ]
 
 [node name="Röthenbach31P3" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2446.21, 8.74866, 1616.79 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3219,6 +3257,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach31Connector2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2406.9, 8.74866, 1585.57 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3249,6 +3288,7 @@ switch_part = [ "Röthenbach32", "" ]
 
 [node name="Röthenbach31P3Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.83565, 0, -0.549262, 0, 1, 0, 0.549262, 0, 0.83565, 2426.55, 8.74866, 1601.18 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3279,6 +3319,7 @@ switch_part = [ "", "Röthenbach31P2" ]
 
 [node name="Röthenbach33" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.699639, 0, -0.714497, 0, 1, 0, 0.714497, 0, 0.699639, 2499.45, 8.74866, 1676.85 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3309,6 +3350,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach34" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.699639, 0, 0.714497, 0, 1, 0, -0.714497, 0, -0.699639, 2499.45, 8.75028, 1676.84 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3339,6 +3381,7 @@ switch_part = [ "Röthenbach32", "" ]
 
 [node name="Röthenbach35" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.813081, 0, 0.582151, 0, 1, 0, -0.582151, 0, -0.813081, 2461.54, 8.75028, 1644.34 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3369,6 +3412,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach36" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.813081, 0, 0.582151, 0, 1, 0, -0.582151, 0, -0.813081, 2420.88, 7.00382, 1615.24 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3399,6 +3443,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach37" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.564938, 0, 0.825133, 0, 1, 0, -0.825133, 0, -0.564938, 2351.28, 0.00381851, 1544.15 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3429,6 +3474,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach38" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.759249, 0, -0.650801, 0, 1, 0, 0.650801, 0, 0.759249, 2535.95, 8.74866, 1711 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3459,6 +3505,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach38P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.759249, 0, -0.650801, 0, 1, 0, 0.650801, 0, 0.759249, 2543.76, 8.74866, 1701.89 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3489,6 +3536,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach31P3Connector2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.759249, 0, -0.650801, 0, 1, 0, 0.650801, 0, 0.759249, 2483.3, 8.74866, 1650.31 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3519,6 +3567,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach38PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.762248, 0, -0.647285, 0, 1, 0, 0.647285, 0, 0.762248, 2513.53, 8.74866, 1676.1 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3549,6 +3598,7 @@ switch_part = [ "", "Röthenbach38P2" ]
 
 [node name="Röthenbach38P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.759249, 0, 0.650801, 0, 1, 0, -0.650801, 0, -0.759249, 2543.76, 8.74866, 1701.89 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3579,6 +3629,7 @@ switch_part = [ "Röthenbach38PConnector", "" ]
 
 [node name="Röthenbach38P3" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.564938, 0, 0.825133, 0, 1, 0, -0.825133, 0, -0.564938, 2493.81, 8.74866, 1646.22 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3609,6 +3660,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach38P4" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.564938, 0, 0.825133, 0, 1, 0, -0.825133, 0, -0.564938, 2465.57, 7.0022, 1604.97 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3639,6 +3691,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach38P5" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.564938, 0, 0.825133, 0, 1, 0, -0.825133, 0, -0.564938, 2437.32, 3.5022, 1563.71 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3669,6 +3722,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach39" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2610.13, 8.74866, 1778.04 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3699,6 +3753,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach39P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2618.41, 8.74866, 1769.35 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3729,6 +3784,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach40" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.832902, 0, -0.55342, 0, 1, 0, 0.55342, 0, 0.832902, 2688.19, 8.74866, 1840.35 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3759,6 +3815,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach40P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.832902, 0, -0.55342, 0, 1, 0, 0.55342, 0, 0.832902, 2694.83, 8.74866, 1830.36 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3789,6 +3846,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach41" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2819.71, 8.74866, 1912.07 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3819,6 +3877,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach42" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2911.35, 8.74866, 1952.1 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3849,6 +3908,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach42P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2915.35, 8.74866, 1942.94 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3879,6 +3939,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach40PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2824.52, 8.74866, 1901.07 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3909,6 +3970,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach42PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.899606, 0, -0.436702, 0, 1, 0, 0.436702, 0, 0.899606, 2869.93, 8.74866, 1922 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3939,6 +4001,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach43" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2957.17, 7.0022, 1972.12 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3969,6 +4032,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach43P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.916349, 0, -0.400381, 0, 1, 0, 0.400381, 0, 0.916349, 2961.17, 7.0022, 1962.96 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -3999,6 +4063,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach44" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 2998.6, 5.24866, 1999.65 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -4029,6 +4094,7 @@ switch_part = [ "", "Röthenbach45Connector" ]
 
 [node name="Röthenbach43P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.724148, 0, -0.689645, 0, 1, 0, 0.689645, 0, 0.724148, 3005.5, 5.24866, 1992.41 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 1 )
@@ -4059,6 +4125,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach45" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.14957, 0, -0.988751, 0, 1, 0, 0.988751, 0, -0.14957, 3060.92, 5.24866, 2181.69 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4089,6 +4156,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3047.92, 5.24866, 2229.86 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4119,6 +4187,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3059.08, 5.24866, 2234.28 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4149,6 +4218,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.368157, 0, 0.929764, 0, 1, 0, -0.929764, 0, 0.368157, 3059.08, 5.24866, 2234.28 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4179,6 +4249,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46P3" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.368157, 0, 0.929764, 0, 1, 0, -0.929764, 0, 0.368157, 3095.89, 5.24866, 2141.3 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4209,6 +4280,7 @@ switch_part = [ "Röthenbach46P4", "" ]
 
 [node name="Röthenbach46P4" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.368157, 0, 0.929764, 0, 1, 0, -0.929764, 0, 0.368157, 3095.89, 5.24866, 2141.3 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4239,6 +4311,7 @@ switch_part = [ "Röthenbach46P3", "" ]
 
 [node name="Röthenbach46P5" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.368157, 0, 0.929764, 0, 1, 0, -0.929764, 0, 0.368157, 3132.71, 5.24866, 2048.33 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4269,6 +4342,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach47" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3040.56, 5.24866, 2248.46 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4299,6 +4373,7 @@ switch_part = [ "Röthenbach46Connector", "Röthenbach48Connector" ]
 
 [node name="Röthenbach48" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3003.74, 5.24866, 2341.43 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4329,6 +4404,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach48P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3014.9, 5.24866, 2345.85 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4359,6 +4435,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3040.56, 5.24866, 2248.46 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4389,6 +4466,7 @@ switch_part = [ "Röthenbach47", "" ]
 
 [node name="Röthenbach48PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.137727, 0, -0.99047, 0, 1, 0, 0.99047, 0, -0.137727, 3027.73, 5.24866, 2297.15 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4419,6 +4497,7 @@ switch_part = [ "", "Röthenbach47P" ]
 
 [node name="Röthenbach46PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3051.71, 5.24866, 2252.87 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4449,6 +4528,7 @@ switch_part = [ "Röthenbach47P", "" ]
 
 [node name="Röthenbach48Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.577682, 0, -0.816262, 0, 1, 0, 0.816262, 0, -0.577682, 3027.73, 5.24866, 2297.15 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4479,6 +4559,7 @@ switch_part = [ "", "Röthenbach47" ]
 
 [node name="Röthenbach47P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.368157, 0, -0.929764, 0, 1, 0, 0.929764, 0, -0.368157, 3051.72, 5.24866, 2252.88 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -4509,6 +4590,7 @@ switch_part = [ "Röthenbach46PConnector", "Röthenbach48PConnector" ]
 
 [node name="Röthenbach49" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.114972, 0, -0.993369, 0, 1, 0, 0.993369, 0, -0.114972, 2991.59, 5.24866, 2389.81 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4570,6 +4652,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach50" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.201112, 0, -0.979568, 0, 1, 0, 0.979568, 0, -0.201112, 2975.77, 5.24866, 2488.52 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4600,6 +4683,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach52" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.416312, 0, -0.909222, 0, 1, 0, 0.909222, 0, -0.416312, 2899.86, 5.24866, 2672.92 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4630,6 +4714,7 @@ switch_part = [ "Röthenbach53", "" ]
 
 [node name="Röthenbach53" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.416312, 0, -0.909222, 0, 1, 0, 0.909222, 0, -0.416312, 2899.86, 5.24866, 2672.92 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4660,6 +4745,7 @@ switch_part = [ "Röthenbach52", "" ]
 
 [node name="Röthenbach54" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2874.78, 5.24866, 2769.2 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4690,6 +4776,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach54P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2883.75, 5.24866, 2769.92 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4720,6 +4807,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach53Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2887.83, 5.24866, 2719.14 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4750,6 +4838,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach54PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0796084, 0, -0.996826, 0, 1, 0, 0.996826, 0, -0.0796084, 2885.79, 5.24866, 2744.53 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4780,6 +4869,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach55" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2870.77, 5.24866, 2819.04 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4810,6 +4900,7 @@ switch_part = [ "Röthenbach54Connector", "" ]
 
 [node name="Röthenbach56" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2862.75, 5.24866, 2918.72 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4840,6 +4931,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach56P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2871.72, 5.24866, 2919.44 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4870,6 +4962,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach55P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2879.74, 5.24866, 2819.76 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4900,6 +4993,7 @@ switch_part = [ "", "Röthenbach56PConnector" ]
 
 [node name="Röthenbach57" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0976175, 0, -0.995224, 0, 1, 0, 0.995224, 0, -0.0976175, 2860.08, 5.24866, 2948.6 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4930,6 +5024,7 @@ switch_part = [ "", "Röthenbach58Connector" ]
 
 [node name="Röthenbach54Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0802336, 0, -0.996776, 0, 1, 0, 0.996776, 0, -0.0802336, 2870.77, 5.24866, 2819.04 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4960,6 +5055,7 @@ switch_part = [ "Röthenbach55", "" ]
 
 [node name="Röthenbach56PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0990315, 0, -0.995084, 0, 1, 0, 0.995084, 0, 0.0990315, 2871.24, 5.24866, 2869.24 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -4990,6 +5086,7 @@ switch_part = [ "", "Röthenbach55P" ]
 
 [node name="Röthenbach58" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0976175, 0, -0.995224, 0, 1, 0, 0.995224, 0, -0.0976175, 2850.32, 5.24866, 3048.12 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5020,6 +5117,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach56PConnector2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0976175, 0, -0.995224, 0, 1, 0, 0.995224, 0, -0.0976175, 2869.04, 5.24866, 2949.48 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -5050,6 +5148,7 @@ switch_part = [ "Röthenbach56P2", "" ]
 
 [node name="Röthenbach58Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.273749, 0, -0.961801, 0, 1, 0, 0.961801, 0, -0.273749, 2859.68, 5.24866, 2998.8 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -5080,6 +5179,7 @@ switch_part = [ "", "Röthenbach57" ]
 
 [node name="Röthenbach59" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2846.87, 5.24866, 3077.92 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5110,6 +5210,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach59P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2858.76, 5.24866, 3079.51 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5140,6 +5241,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach56P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0976175, 0, -0.995224, 0, 1, 0, 0.995224, 0, -0.0976175, 2869.04, 5.24866, 2949.48 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -5170,6 +5272,7 @@ switch_part = [ "Röthenbach56PConnector2", "" ]
 
 [node name="Röthenbach56P2Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2865.59, 5.24866, 2979.28 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -5200,6 +5303,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach59PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0032796, 0, -0.999995, 0, 1, 0, 0.999995, 0, -0.0032796, 2862.18, 5.24866, 3029.39 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5230,6 +5334,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach60" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2833.64, 5.24866, 3177.04 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5260,6 +5365,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach61" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2827.02, 6.49732, 3226.6 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5290,6 +5396,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach61P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2838.91, 6.49732, 3228.19 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5320,6 +5427,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach60P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2845.53, 5.24866, 3178.63 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5350,6 +5458,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach62" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2813.8, 9, 3325.72 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5380,6 +5489,7 @@ switch_part = [ "Röthenbach64", "" ]
 
 [node name="Röthenbach62P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2825.69, 9, 3327.31 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5410,6 +5520,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach63" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0453978, 0, -0.998969, 0, 1, 0, 0.998969, 0, -0.0453978, 2807.57, 9, 3395.42 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5440,6 +5551,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach63P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0453978, 0, -0.998969, 0, 1, 0, 0.998969, 0, -0.0453978, 2813.56, 9, 3395.69 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5470,6 +5582,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach63PP" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0453978, 0, -0.998969, 0, 1, 0, 0.998969, 0, -0.0453978, 2819.55, 9, 3395.96 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5500,6 +5613,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach64" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.132291, 0, -0.991211, 0, 1, 0, 0.991211, 0, -0.132291, 2813.8, 9, 3325.72 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5530,6 +5644,7 @@ switch_part = [ "Röthenbach62", "" ]
 
 [node name="Röthenbach64Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0453978, 0, -0.998969, 0, 1, 0, 0.998969, 0, -0.0453978, 2812.91, 9, 3335.68 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5560,6 +5675,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach63PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0673527, 0, -0.997729, 0, 1, 0, 0.997729, 0, 0.0673527, 2813.24, 9, 3365.69 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5590,6 +5706,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach65" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0418407, 0, -0.999124, 0, 1, 0, 0.999124, 0, 0.0418407, 2807.48, 9, 3445.41 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5620,6 +5737,7 @@ switch_part = [ "", "Röthenbach67" ]
 
 [node name="Röthenbach65P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0418407, 0, -0.999124, 0, 1, 0, 0.999124, 0, 0.0418407, 2819.47, 9, 3444.91 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5650,6 +5768,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach66" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0766843, 0, -0.997055, 0, 1, 0, 0.997055, 0, 0.0766843, 2811.63, 9, 3515.28 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5680,6 +5799,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach67" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.0766844, 0, 0.997055, 0, 1, 0, -0.997055, 0, -0.0766844, 2811.63, 9, 3515.28 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5710,6 +5830,7 @@ switch_part = [ "Röthenbach65", "" ]
 
 [node name="Röthenbach63PConnector2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0418407, 0, -0.999124, 0, 1, 0, 0.999124, 0, 0.0418407, 2813.48, 9, 3445.16 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5740,6 +5861,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach67Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.107405, 0, -0.994215, 0, 1, 0, 0.994215, 0, -0.107405, 2812.41, 9, 3477.72 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5770,6 +5892,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach66P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0766843, 0, -0.997055, 0, 1, 0, 0.997055, 0, 0.0766843, 2823.59, 9, 3514.36 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5800,6 +5923,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach68" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.332128, 0, -0.943234, 0, 1, 0, 0.943234, 0, 0.332128, 2832.19, 9, 3612.85 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5830,6 +5954,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach68P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.332128, 0, -0.943234, 0, 1, 0, 0.943234, 0, 0.332128, 2843.51, 9, 3608.86 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5860,6 +5985,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach69" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.413073, 0, -0.910698, 0, 1, 0, 0.910698, 0, 0.413073, 2869.47, 9, 3705.61 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5890,6 +6016,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach70" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.444604, 0, -0.895727, 0, 1, 0, 0.895727, 0, 0.444604, 2912.36, 9, 3795.94 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5920,6 +6047,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach71" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.52098, 0, -0.853569, 0, 1, 0, 0.853569, 0, 0.52098, 2960.67, 9, 3883.46 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5950,6 +6078,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach71P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.52098, 0, -0.853569, 0, 1, 0, 0.853569, 0, 0.52098, 2964.51, 9, 3881.12 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -5980,6 +6109,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach70P" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.444604, 0, -0.895727, 0, 1, 0, 0.895727, 0, 0.444604, 2916.39, 9, 3793.94 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -6010,6 +6140,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach68PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.413073, 0, -0.910698, 0, 1, 0, 0.910698, 0, 0.413073, 2880.4, 9, 3700.65 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -6040,6 +6171,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach70PConnector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.305627, 0, -0.952151, 0, 1, 0, 0.952151, 0, 0.305627, 2898.4, 9, 3747.29 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 3 )
@@ -6255,7 +6387,7 @@ has_overhead_line = false
 switch_part = [ "", "" ]
 
 [node name="RöthenbachP4PP" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
-transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 8.49373, 0, -62.8511 )
+transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 8.49371, 0, -62.851 )
 visible = false
 script = ExtResource( 2 )
 __meta__ = {
@@ -6783,6 +6915,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach50Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.416312, 0, -0.909222, 0, 1, 0, 0.909222, 0, -0.416312, 2944.77, 5.24866, 2583.37 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -6813,6 +6946,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach53Connector2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.479645, 0, -0.877463, 0, 1, 0, 0.877463, 0, -0.479645, 2922.31, 5.24866, 2628.14 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -6843,6 +6977,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach48P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.114972, 0, -0.993369, 0, 1, 0, 0.993369, 0, -0.114972, 3003.51, 5.24866, 2391.19 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -6873,6 +7008,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach48P5" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( -0.201112, 0, -0.979568, 0, 1, 0, 0.979568, 0, -0.201112, 2987.53, 5.24866, 2490.93 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -6903,6 +7039,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach48P6" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.146049, 0, -0.989277, 0, 1, 0, 0.989277, 0, 0.146049, 2981.97, 5.24866, 2689.84 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 2 )
@@ -6933,6 +7070,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach48P7" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.475594, 0, -0.879665, 0, 1, 0, 0.879665, 0, 0.475594, 3044.77, 5.24866, 2878.66 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -6963,6 +7101,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46P6" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.851709, 0, -0.524015, 0, 1, 0, 0.524015, 0, 0.851709, 3512.37, 5.24866, 2002.77 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -6993,6 +7132,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46P7" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.979568, 0, -0.201112, 0, 1, 0, 0.201112, 0, 0.979568, 3456.68, 5.24866, 1873.17 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 1 )
@@ -7023,6 +7163,7 @@ switch_part = [ "Röthenbach46P8", "Röthenbach46P8" ]
 
 [node name="Röthenbach74" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.947758, 0, -0.31899, 0, 1, 0, 0.31899, 0, 0.947758, 3037.24, 9, 3944.59 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 3 )
@@ -7053,6 +7194,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach71P2" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.947758, 0, -0.31899, 0, 1, 0, 0.31899, 0, 0.947758, 3038.68, 9, 3940.33 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 3 )
@@ -7238,6 +7380,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach38P6" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0976197, 0, 0.995224, 0, 1, 0, -0.995224, 0, 0.0976197, 2412.96, -3.4978, 1468.81 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 2, 0, 1 )
@@ -7268,6 +7411,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach45Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.14957, 0, 0.988751, 0, 1, 0, -0.988751, 0, 0.14957, 3060.92, 5.24866, 2181.69 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -7298,6 +7442,7 @@ switch_part = [ "Röthenbach44", "" ]
 
 [node name="Röthenbach43P2Connector" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.145736, 0, 0.989324, 0, 1, 0, -0.989324, 0, 0.145736, 3062.34, 5.24866, 2172.15 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 2 )
@@ -7328,6 +7473,7 @@ switch_part = [ "", "" ]
 
 [node name="Röthenbach46P8" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.979568, 0, -0.201112, 0, 1, 0, 0.201112, 0, 0.979568, 3456.68, 5.24866, 1873.17 )
+visible = false
 script = ExtResource( 2 )
 __meta__ = {
 "chunk_pos": Vector3( 3, 0, 1 )

@@ -888,7 +888,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach23P TunnelPortal" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1916.95, 5, 1356.87 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1916.95, 5, 1356.88 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "TunnelPortal"
@@ -1280,7 +1280,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach24P Lights" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1938, 5, 1360.43 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1938, 5, 1360.44 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Lights"
@@ -1336,7 +1336,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach24P WallPaint (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1922.23, 5, 1357.77 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1922.22, 5, 1357.77 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate)"
@@ -1840,7 +1840,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach38 WallPaint (Duplicate)5" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1205.92, 0, 1108.93 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1205.93, 0, 1108.94 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate)"
@@ -1896,7 +1896,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach38P DestinationSigns2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1229.56, 0, 1119.76 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1229.57, 0, 1119.76 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DestinationSigns"

@@ -1,0 +1,857 @@
+[gd_resource type="Resource" load_steps=105 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=1]
+[ext_resource path="res://Data/Scripts/Resources/route_point_station.gd" type="Script" id=2]
+[ext_resource path="res://Data/Scripts/Resources/scenario_route.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/Resources/signal_settings.gd" type="Script" id=4]
+[ext_resource path="res://Data/Scripts/Resources/contact_point_settings.gd" type="Script" id=5]
+[ext_resource path="res://Data/Scripts/Resources/station_settings.gd" type="Script" id=6]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=33]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=35]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=36]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=37]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=38]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=39]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=40]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=41]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=42]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=43]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=44]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=45]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=46]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=47]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=48]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=49]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=50]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=51]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=52]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=53]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=54]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=55]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=56]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=57]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=58]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=59]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=60]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=61]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=62]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=63]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=64]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=65]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=66]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=67]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=68]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=69]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=70]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=71]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=72]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=73]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=74]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=75]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=76]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=77]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=78]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=79]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=80]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=81]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=82]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=83]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=84]
+script = ExtResource( 6 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=85]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=86]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=87]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=88]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=89]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=90]
+script = ExtResource( 2 )
+station_node_name = "Röthenbach1"
+station_name = "Röthenbach"
+approach_sound_path = ""
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 60
+signal_time = 0
+stop_type = 2
+leaving_persons = 0
+waiting_persons = 100
+
+[sub_resource type="Resource" id=91]
+script = ExtResource( 2 )
+station_node_name = "HoheMarter1"
+station_name = "Hohe Marter"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_hohe_marter.ogg"
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 90
+minimum_halt_time = 15
+planned_halt_time = 30
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=92]
+script = ExtResource( 2 )
+station_node_name = "Schweinau1"
+station_name = "Schweinau"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_schweinau.ogg"
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 30
+minimum_halt_time = 15
+planned_halt_time = 30
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 50
+
+[sub_resource type="Resource" id=93]
+script = ExtResource( 2 )
+station_node_name = "StLeonhard1"
+station_name = "St. Leonhard"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_st_leonhard.ogg"
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 60
+minimum_halt_time = 15
+planned_halt_time = 30
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 50
+
+[sub_resource type="Resource" id=94]
+script = ExtResource( 2 )
+station_node_name = "RothenburgerStraße1"
+station_name = "Rothenburger Straße"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_rothenburger_strasse.ogg"
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 60
+minimum_halt_time = 15
+planned_halt_time = 30
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 50
+
+[sub_resource type="Resource" id=95]
+script = ExtResource( 2 )
+station_node_name = "Plärrer1"
+station_name = "Plärrer"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_plaerrer.ogg"
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 90
+minimum_halt_time = 15
+planned_halt_time = 30
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 50
+
+[sub_resource type="Resource" id=96]
+script = ExtResource( 2 )
+station_node_name = "Oper1"
+station_name = "Opernhaus"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_opernhaus.ogg"
+arrival_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/train_to_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 60
+minimum_halt_time = 15
+planned_halt_time = 30
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 50
+
+[sub_resource type="Resource" id=97]
+script = ExtResource( 2 )
+station_node_name = "Hauptbahnhof1"
+station_name = "Hauptbahnhof"
+approach_sound_path = "res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Sounds/next_station_hauptbahnhof.ogg"
+arrival_sound_path = "res://Resources/Sounds/platform_endstation.ogg"
+departure_sound_path = ""
+duration_since_last_station = 60
+minimum_halt_time = 0
+planned_halt_time = 0
+signal_time = 0
+stop_type = 3
+leaving_persons = 100
+waiting_persons = 0
+
+[sub_resource type="Resource" id=98]
+script = ExtResource( 3 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 90 ), SubResource( 91 ), SubResource( 92 ), SubResource( 93 ), SubResource( 94 ), SubResource( 95 ), SubResource( 96 ), SubResource( 97 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = true
+train_name = "JFR1_Red"
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 39540
+
+[resource]
+script = ExtResource( 1 )
+time = 0
+title = ""
+description = ""
+duration = 0
+is_hidden = false
+routes = {
+"Player Route": SubResource( 98 )
+}
+rail_logic_settings = {
+"ContactPoint": SubResource( 20 ),
+"ContactPoint2": SubResource( 88 ),
+"ContactPoint5": SubResource( 85 ),
+"Hauptbahnhof1": SubResource( 17 ),
+"Hauptbahnhof2": SubResource( 18 ),
+"HoheMarter1": SubResource( 3 ),
+"HoheMarter2": SubResource( 4 ),
+"Oper1": SubResource( 15 ),
+"Oper2": SubResource( 16 ),
+"Plärrer1": SubResource( 11 ),
+"Plärrer1R": SubResource( 12 ),
+"Plärrer2": SubResource( 13 ),
+"Plärrer2R": SubResource( 14 ),
+"RothenburgerStraße1": SubResource( 9 ),
+"RothenburgerStraße2": SubResource( 10 ),
+"Röthenbach1": SubResource( 1 ),
+"Röthenbach2": SubResource( 2 ),
+"Schweinau1": SubResource( 5 ),
+"Schweinau2": SubResource( 6 ),
+"Signal": SubResource( 19 ),
+"Signal10": SubResource( 29 ),
+"Signal11": SubResource( 30 ),
+"Signal12": SubResource( 31 ),
+"Signal13": SubResource( 32 ),
+"Signal14": SubResource( 33 ),
+"Signal15": SubResource( 34 ),
+"Signal16": SubResource( 35 ),
+"Signal17": SubResource( 36 ),
+"Signal18": SubResource( 37 ),
+"Signal19": SubResource( 38 ),
+"Signal2": SubResource( 21 ),
+"Signal20": SubResource( 39 ),
+"Signal21": SubResource( 40 ),
+"Signal22": SubResource( 41 ),
+"Signal23": SubResource( 42 ),
+"Signal24": SubResource( 44 ),
+"Signal25": SubResource( 43 ),
+"Signal26": SubResource( 45 ),
+"Signal27": SubResource( 46 ),
+"Signal28": SubResource( 47 ),
+"Signal29": SubResource( 48 ),
+"Signal3": SubResource( 22 ),
+"Signal30": SubResource( 49 ),
+"Signal31": SubResource( 50 ),
+"Signal32": SubResource( 51 ),
+"Signal33": SubResource( 52 ),
+"Signal34": SubResource( 53 ),
+"Signal35": SubResource( 54 ),
+"Signal36": SubResource( 55 ),
+"Signal37": SubResource( 56 ),
+"Signal38": SubResource( 57 ),
+"Signal39": SubResource( 58 ),
+"Signal4": SubResource( 23 ),
+"Signal40": SubResource( 59 ),
+"Signal41": SubResource( 60 ),
+"Signal42": SubResource( 61 ),
+"Signal43": SubResource( 62 ),
+"Signal44": SubResource( 63 ),
+"Signal45": SubResource( 64 ),
+"Signal46": SubResource( 65 ),
+"Signal47": SubResource( 66 ),
+"Signal48": SubResource( 67 ),
+"Signal49": SubResource( 68 ),
+"Signal5": SubResource( 24 ),
+"Signal50": SubResource( 69 ),
+"Signal51": SubResource( 70 ),
+"Signal52": SubResource( 71 ),
+"Signal53": SubResource( 72 ),
+"Signal54": SubResource( 73 ),
+"Signal55": SubResource( 74 ),
+"Signal56": SubResource( 75 ),
+"Signal57": SubResource( 76 ),
+"Signal58": SubResource( 77 ),
+"Signal59": SubResource( 78 ),
+"Signal6": SubResource( 25 ),
+"Signal60": SubResource( 79 ),
+"Signal61": SubResource( 80 ),
+"Signal62": SubResource( 81 ),
+"Signal63": SubResource( 82 ),
+"Signal64": SubResource( 83 ),
+"Signal65": SubResource( 86 ),
+"Signal66": SubResource( 87 ),
+"Signal67": SubResource( 89 ),
+"Signal7": SubResource( 26 ),
+"Signal8": SubResource( 27 ),
+"Signal9": SubResource( 28 ),
+"StLeonhard1": SubResource( 7 ),
+"StLeonhard2": SubResource( 8 ),
+"TrainStation": SubResource( 84 )
+}

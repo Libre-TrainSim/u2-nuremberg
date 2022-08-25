@@ -2121,7 +2121,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RöthenbachP4PP Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.49683, 0, -62.8455 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.49373, 0, -62.8511 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Ground"
@@ -2149,7 +2149,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RöthenbachP4PP Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.49683, 0, -62.8455 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.49373, 0, -62.8511 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Wall"

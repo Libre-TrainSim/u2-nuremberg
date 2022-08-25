@@ -1212,6 +1212,45 @@ attached_rail = "Röthenbach43P2"
 on_rail_position = 170.0
 forward = false
 
+[node name="Signal67" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
+transform = Transform( -0.170748, 0, 0.985315, 0, 1, 0, -0.985315, 0, -0.170748, -1.96386, 0, -207.761 )
+script = ExtResource( 3 )
+signal_type = 3
+status = 1
+signal_free_time = -1
+speed = -1.0
+visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
+attached_rail = "RöthenbachP4"
+forward = true
+on_rail_position = 145
+operation_mode = 0
+
+[node name="Signal68" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
+transform = Transform( -0.170795, 0, 0.985307, 0, 1, 0, -0.985307, 0, -0.170795, -7.91032, 0, -206.936 )
+script = ExtResource( 3 )
+signal_type = 3
+status = 1
+signal_free_time = -1
+speed = -1.0
+visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
+attached_rail = "RöthenbachP4P"
+forward = true
+on_rail_position = 145
+operation_mode = 0
+
+[node name="Signal69" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
+transform = Transform( -0.170842, 0, 0.985299, 0, 1, 0, -0.985299, 0, -0.170842, -13.8568, 0, -206.111 )
+script = ExtResource( 3 )
+signal_type = 3
+status = 1
+signal_free_time = -1
+speed = -1.0
+visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
+attached_rail = "RöthenbachP4PP"
+forward = true
+on_rail_position = 145
+operation_mode = 0
+
 [node name="Rails" type="Spatial" parent="."]
 
 [node name="Röthenbach" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
@@ -6169,7 +6208,7 @@ manual_moving = false
 start_rot = 1.70864
 end_rot = 1.74355
 start_pos = Vector3( 20.3799, 0, -64.5 )
-end_pos = Vector3( -2.82028, 0, -212.687 )
+end_pos = Vector3( -2.82026, 0, -212.687 )
 start_slope = 0.0
 end_slope = 0.0
 start_tend = 0.0
@@ -6216,7 +6255,7 @@ has_overhead_line = false
 switch_part = [ "", "" ]
 
 [node name="RöthenbachP4PP" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
-transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 8.49371, 0, -62.851 )
+transform = Transform( -0.13741, 0, 0.990514, 0, 1, 0, -0.990514, 0, -0.13741, 8.49373, 0, -62.8511 )
 visible = false
 script = ExtResource( 2 )
 __meta__ = {
@@ -6230,8 +6269,8 @@ visible_segments = 167
 manual_moving = false
 start_rot = 1.70864
 end_rot = 1.74355
-start_pos = Vector3( 8.49683, 0, -62.8455 )
-end_pos = Vector3( -14.639, 0, -210.619 )
+start_pos = Vector3( 8.49373, 0, -62.8511 )
+end_pos = Vector3( -14.6421, 0, -210.624 )
 start_slope = 0.0
 end_slope = 0.0
 start_tend = 0.0

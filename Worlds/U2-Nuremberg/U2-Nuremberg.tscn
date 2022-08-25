@@ -1204,19 +1204,6 @@ attached_rail = "Röthenbach38P2"
 on_rail_position = 10
 forward = true
 
-[node name="Signal67" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 15 )]
-transform = Transform( -0.171896, 0, 0.985115, 0, 1, 0, -0.985115, 0, -0.171896, -8.72998, 0, -211.65 )
-script = ExtResource( 3 )
-signal_type = 3
-status = 1
-signal_free_time = -1
-speed = -1.0
-visual_instance_path = "res://Resources/SignalTypes/Ks/Ks.tscn"
-attached_rail = "RöthenbachP4P3"
-forward = true
-on_rail_position = 0
-operation_mode = 0
-
 [node name="SpeedLimit" type="Spatial" parent="Signals" groups=["Signal"] instance=ExtResource( 60 )]
 transform = Transform( 0.0628234, 0, 0.998025, 0, 1, 0, -0.998025, 0, 0.0628234, 3065.57, 5.24866, 2145.72 )
 script = ExtResource( 8 )
@@ -6213,7 +6200,7 @@ manual_moving = false
 start_rot = 1.70864
 end_rot = 1.74355
 start_pos = Vector3( 14.4368, 0, -63.6755 )
-end_pos = Vector3( -8.73124, 0, -211.656 )
+end_pos = Vector3( -8.73119, 0, -211.656 )
 start_slope = 0.0
 end_slope = 0.0
 start_tend = 0.0
@@ -7210,37 +7197,6 @@ distance_to_parallel_rail = 0.0
 has_overhead_line = false
 switch_part = [ "", "" ]
 
-[node name="RöthenbachP6" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
-transform = Transform( -0.171895, 0, 0.985115, 0, 1, 0, -0.985115, 0, -0.171895, -2.82007, 0, -212.68 )
-visible = false
-script = ExtResource( 2 )
-__meta__ = {
-"chunk_pos": Vector3( 0, 0, 0 )
-}
-rail_type_path = "res://Resources/RailTypes/Default.tscn"
-length = 10.0
-radius = 4297.18
-build_distance = 0.9
-visible_segments = 12
-manual_moving = false
-start_rot = 1.74355
-end_rot = 1.74588
-start_pos = Vector3( -2.82007, 0, -212.68 )
-end_pos = Vector3( -4.55056, 0, -222.529 )
-start_slope = 0.0
-end_slope = 0.0
-start_tend = 0.0
-tend1_pos = -1.0
-tend1 = 0.0
-tend2_pos = 0.0
-tend2 = 0.0
-end_tend = 0.0
-automatic_tend = false
-parallel_rail_name = ""
-distance_to_parallel_rail = 0.0
-has_overhead_line = false
-switch_part = [ "", "" ]
-
 [node name="Röthenbach38P6" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
 transform = Transform( 0.0976197, 0, 0.995224, 0, 1, 0, -0.995224, 0, 0.0976197, 2412.96, -3.4978, 1468.81 )
 script = ExtResource( 2 )
@@ -7259,37 +7215,6 @@ start_pos = Vector3( 2412.96, -3.4978, 1468.81 )
 end_pos = Vector3( 2455.3, -10.4978, 1380.45 )
 start_slope = -7.0
 end_slope = -7.0
-start_tend = 0.0
-tend1_pos = -1.0
-tend1 = 0.0
-tend2_pos = 0.0
-tend2 = 0.0
-end_tend = 0.0
-automatic_tend = false
-parallel_rail_name = ""
-distance_to_parallel_rail = 0.0
-has_overhead_line = false
-switch_part = [ "", "" ]
-
-[node name="RöthenbachP4P3" type="Spatial" parent="Rails" groups=["Rail"] instance=ExtResource( 5 )]
-transform = Transform( -0.171895, 0, 0.985115, 0, 1, 0, -0.985115, 0, -0.171895, -8.72998, 0, -211.65 )
-visible = false
-script = ExtResource( 2 )
-__meta__ = {
-"chunk_pos": Vector3( 0, 0, 0 )
-}
-rail_type_path = "res://Resources/RailTypes/Default.tscn"
-length = 1000.0
-radius = 0.0
-build_distance = 0.9
-visible_segments = 1112
-manual_moving = false
-start_rot = 1.74355
-end_rot = 1.74355
-start_pos = Vector3( -8.72998, 0, -211.65 )
-end_pos = Vector3( -180.625, 0, -1196.77 )
-start_slope = 0.0
-end_slope = 0.0
 start_tend = 0.0
 tend1_pos = -1.0
 tend1 = 0.0

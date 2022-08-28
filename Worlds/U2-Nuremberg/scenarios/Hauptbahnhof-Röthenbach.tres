@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=191 format=2]
+[gd_resource type="Resource" load_steps=164 format=2]
 
 [ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=1]
 [ext_resource path="res://Data/Scripts/Resources/route_point_station.gd" type="Script" id=2]
@@ -38,6 +38,102 @@ new_speed_limit = -1
 new_status = 1
 enable_for_all_trains = true
 specific_train = ""
+
+[sub_resource type="Resource" id=87]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=88]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=73]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=74]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=85]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=86]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=81]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=82]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=83]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=84]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=79]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=80]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=71]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=72]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=75]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=76]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 6 )
@@ -487,6 +583,20 @@ signal_free_time = 90000
 speed = -1
 status = 0
 
+[sub_resource type="Resource" id=90]
+script = ExtResource( 6 )
+operation_mode = 1
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=91]
+script = ExtResource( 6 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
 [sub_resource type="Resource" id=68]
 script = ExtResource( 6 )
 operation_mode = 0
@@ -508,42 +618,6 @@ signal_free_time = 90000
 speed = -1
 status = 1
 
-[sub_resource type="Resource" id=71]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=72]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=73]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=74]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=75]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=76]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
 [sub_resource type="Resource" id=77]
 script = ExtResource( 8 )
 assigned_signal_name = ""
@@ -556,87 +630,13 @@ assigned_signal_name = ""
 enable_person_system = true
 overwrite = false
 
-[sub_resource type="Resource" id=79]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=80]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=81]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=82]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=83]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=84]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=85]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=86]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=87]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=88]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
 [sub_resource type="Resource" id=89]
 script = ExtResource( 8 )
 assigned_signal_name = ""
 enable_person_system = true
 overwrite = false
 
-[sub_resource type="Resource" id=90]
-script = ExtResource( 6 )
-operation_mode = 1
-signal_free_time = -1
-speed = -1
-status = 0
-
-[sub_resource type="Resource" id=91]
-script = ExtResource( 6 )
-operation_mode = 0
-signal_free_time = -1
-speed = -1
-status = 0
-
-[sub_resource type="Resource" id=183]
+[sub_resource type="Resource" id=156]
 script = ExtResource( 2 )
 station_node_name = "Hauptbahnhof2"
 station_name = "Hauptbahnhof"
@@ -651,7 +651,7 @@ stop_type = 2
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=184]
+[sub_resource type="Resource" id=157]
 script = ExtResource( 2 )
 station_node_name = "Oper2"
 station_name = "Opernhaus"
@@ -666,7 +666,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=185]
+[sub_resource type="Resource" id=158]
 script = ExtResource( 2 )
 station_node_name = "Plärrer1R"
 station_name = "Plärrer"
@@ -681,7 +681,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=186]
+[sub_resource type="Resource" id=159]
 script = ExtResource( 2 )
 station_node_name = "RothenburgerStraße2"
 station_name = "Rothenburger Straße"
@@ -696,7 +696,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=187]
+[sub_resource type="Resource" id=160]
 script = ExtResource( 2 )
 station_node_name = "StLeonhard2"
 station_name = "St. Leonhard"
@@ -711,7 +711,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=188]
+[sub_resource type="Resource" id=161]
 script = ExtResource( 2 )
 station_node_name = "Schweinau2"
 station_name = "Schweinau"
@@ -726,7 +726,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=189]
+[sub_resource type="Resource" id=162]
 script = ExtResource( 2 )
 station_node_name = "HoheMarter2"
 station_name = "Hohe Marter"
@@ -741,7 +741,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=190]
+[sub_resource type="Resource" id=163]
 script = ExtResource( 2 )
 station_node_name = "Röthenbach2"
 station_name = "Röthenbach"
@@ -756,7 +756,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=191]
+[sub_resource type="Resource" id=164]
 script = ExtResource( 2 )
 station_node_name = "TrainStation"
 station_name = "Röthenbach Abstellgeis"
@@ -771,11 +771,11 @@ stop_type = 3
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=192]
+[sub_resource type="Resource" id=165]
 script = ExtResource( 5 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 183 ), SubResource( 184 ), SubResource( 185 ), SubResource( 186 ), SubResource( 187 ), SubResource( 188 ), SubResource( 189 ), SubResource( 190 ), SubResource( 191 ) ]
+route_points = [ SubResource( 156 ), SubResource( 157 ), SubResource( 158 ), SubResource( 159 ), SubResource( 160 ), SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = true
@@ -794,111 +794,6 @@ initial_speed_limit = 80
 
 [sub_resource type="Resource" id=103]
 script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
-station_name = "röthenbach"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=104]
-script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
-station_name = "hohe marter"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=105]
-script = ExtResource( 2 )
-station_node_name = "Schweinau1"
-station_name = "schweinau"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=106]
-script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
-station_name = "st leonhard"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=107]
-script = ExtResource( 2 )
-station_node_name = "RothenburgerStraße1"
-station_name = "rothenburger str"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=108]
-script = ExtResource( 2 )
-station_node_name = "Plärrer1"
-station_name = "plärrer"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=109]
-script = ExtResource( 2 )
-station_node_name = "Oper1"
-station_name = "oper"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=110]
-script = ExtResource( 2 )
 station_node_name = "Hauptbahnhof1"
 station_name = "hbf"
 approach_sound_path = ""
@@ -912,16 +807,16 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=111]
+[sub_resource type="Resource" id=104]
 script = ExtResource( 7 )
 rail_name = "Röthenbach74"
 distance_on_rail = 0.0
 
-[sub_resource type="Resource" id=112]
+[sub_resource type="Resource" id=105]
 script = ExtResource( 5 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 102 ), SubResource( 103 ), SubResource( 104 ), SubResource( 105 ), SubResource( 106 ), SubResource( 107 ), SubResource( 108 ), SubResource( 109 ), SubResource( 110 ), SubResource( 111 ) ]
+route_points = [ SubResource( 102 ), SubResource( 103 ), SubResource( 104 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = false
@@ -931,16 +826,102 @@ interval = 0
 interval_end = 0
 interval_start = 0
 
-[sub_resource type="Resource" id=113]
+[sub_resource type="Resource" id=106]
 script = ExtResource( 4 )
 rail_name = "Röthenbach52"
 distance_on_rail = 50.0
 initial_speed = 80.0
 initial_speed_limit = 80
 
+[sub_resource type="Resource" id=107]
+script = ExtResource( 2 )
+station_node_name = "Oper1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=108]
+script = ExtResource( 2 )
+station_node_name = "Hauptbahnhof1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=109]
+script = ExtResource( 7 )
+rail_name = "Röthenbach74"
+distance_on_rail = 0.0
+
+[sub_resource type="Resource" id=110]
+script = ExtResource( 5 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 106 ), SubResource( 107 ), SubResource( 108 ), SubResource( 109 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
+train_name = ""
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
+
+[sub_resource type="Resource" id=111]
+script = ExtResource( 4 )
+rail_name = "Röthenbach40"
+distance_on_rail = 50.0
+initial_speed = 80.0
+initial_speed_limit = 80
+
+[sub_resource type="Resource" id=112]
+script = ExtResource( 2 )
+station_node_name = "Plärrer1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=113]
+script = ExtResource( 2 )
+station_node_name = "Oper1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
 [sub_resource type="Resource" id=114]
 script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
+station_node_name = "Hauptbahnhof1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -954,49 +935,30 @@ leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=115]
-script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 7 )
+rail_name = "Röthenbach71"
+distance_on_rail = 0.0
 
 [sub_resource type="Resource" id=116]
-script = ExtResource( 2 )
-station_node_name = "Schweinau1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 5 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 111 ), SubResource( 112 ), SubResource( 113 ), SubResource( 114 ), SubResource( 115 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
+train_name = ""
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
 
 [sub_resource type="Resource" id=117]
-script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 4 )
+rail_name = "Röthenbach28"
+distance_on_rail = 50.0
+initial_speed = 80.0
+initial_speed_limit = 80
 
 [sub_resource type="Resource" id=118]
 script = ExtResource( 2 )
@@ -1060,14 +1022,14 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=122]
 script = ExtResource( 7 )
-rail_name = "Röthenbach74"
+rail_name = "Röthenbach71"
 distance_on_rail = 0.0
 
 [sub_resource type="Resource" id=123]
 script = ExtResource( 5 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 113 ), SubResource( 114 ), SubResource( 115 ), SubResource( 116 ), SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ) ]
+route_points = [ SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = false
@@ -1079,14 +1041,14 @@ interval_start = 0
 
 [sub_resource type="Resource" id=124]
 script = ExtResource( 4 )
-rail_name = "Röthenbach40"
+rail_name = "Röthenbach28"
 distance_on_rail = 50.0
 initial_speed = 80.0
 initial_speed_limit = 80
 
 [sub_resource type="Resource" id=125]
 script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
+station_node_name = "RothenburgerStraße1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1101,7 +1063,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=126]
 script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
+station_node_name = "Plärrer1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1116,7 +1078,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=127]
 script = ExtResource( 2 )
-station_node_name = "Schweinau1"
+station_node_name = "Oper1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1131,7 +1093,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=128]
 script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
+station_node_name = "Hauptbahnhof1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1145,6 +1107,77 @@ leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=129]
+script = ExtResource( 7 )
+rail_name = "Röthenbach71"
+distance_on_rail = 0.0
+
+[sub_resource type="Resource" id=130]
+script = ExtResource( 5 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 124 ), SubResource( 125 ), SubResource( 126 ), SubResource( 127 ), SubResource( 128 ), SubResource( 129 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
+train_name = ""
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
+
+[sub_resource type="Resource" id=131]
+script = ExtResource( 4 )
+rail_name = "Röthenbach9"
+distance_on_rail = 20.0
+initial_speed = 80.0
+initial_speed_limit = 80
+
+[sub_resource type="Resource" id=132]
+script = ExtResource( 2 )
+station_node_name = "HoheMarter1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=133]
+script = ExtResource( 2 )
+station_node_name = "Schweinau1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=134]
+script = ExtResource( 2 )
+station_node_name = "StLeonhard1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=135]
 script = ExtResource( 2 )
 station_node_name = "RothenburgerStraße1"
 station_name = "-"
@@ -1159,80 +1192,9 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=130]
-script = ExtResource( 2 )
-station_node_name = "Plärrer1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=131]
-script = ExtResource( 2 )
-station_node_name = "Oper1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=132]
-script = ExtResource( 2 )
-station_node_name = "Hauptbahnhof1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=133]
-script = ExtResource( 7 )
-rail_name = "Röthenbach74"
-distance_on_rail = 0.0
-
-[sub_resource type="Resource" id=134]
-script = ExtResource( 5 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 124 ), SubResource( 125 ), SubResource( 126 ), SubResource( 127 ), SubResource( 128 ), SubResource( 129 ), SubResource( 130 ), SubResource( 131 ), SubResource( 132 ), SubResource( 133 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = false
-train_name = ""
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=135]
-script = ExtResource( 4 )
-rail_name = "Röthenbach28"
-distance_on_rail = 50.0
-initial_speed = 80.0
-initial_speed_limit = 80
-
 [sub_resource type="Resource" id=136]
 script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
+station_node_name = "Plärrer1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1247,7 +1209,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=137]
 script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
+station_node_name = "Oper1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1262,7 +1224,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=138]
 script = ExtResource( 2 )
-station_node_name = "Schweinau1"
+station_node_name = "Hauptbahnhof1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1276,53 +1238,34 @@ leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=139]
-script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 7 )
+rail_name = "Röthenbach71"
+distance_on_rail = 0.0
 
 [sub_resource type="Resource" id=140]
-script = ExtResource( 2 )
-station_node_name = "RothenburgerStraße1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 5 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 131 ), SubResource( 132 ), SubResource( 133 ), SubResource( 134 ), SubResource( 135 ), SubResource( 136 ), SubResource( 137 ), SubResource( 138 ), SubResource( 139 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
+train_name = ""
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
 
 [sub_resource type="Resource" id=141]
-script = ExtResource( 2 )
-station_node_name = "Plärrer1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 4 )
+rail_name = "RöthenbachP4P"
+distance_on_rail = 20.0
+initial_speed = 20.0
+initial_speed_limit = 20
 
 [sub_resource type="Resource" id=142]
 script = ExtResource( 2 )
-station_node_name = "Oper1"
+station_node_name = "Röthenbach1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1337,7 +1280,22 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=143]
 script = ExtResource( 2 )
-station_node_name = "Hauptbahnhof1"
+station_node_name = "HoheMarter1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = -43815
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=144]
+script = ExtResource( 2 )
+station_node_name = "Schweinau1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1350,35 +1308,39 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=144]
-script = ExtResource( 7 )
-rail_name = "Röthenbach41"
-distance_on_rail = 0.0
-
 [sub_resource type="Resource" id=145]
-script = ExtResource( 5 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 135 ), SubResource( 136 ), SubResource( 137 ), SubResource( 138 ), SubResource( 139 ), SubResource( 140 ), SubResource( 141 ), SubResource( 142 ), SubResource( 143 ), SubResource( 144 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = false
-train_name = ""
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
+script = ExtResource( 2 )
+station_node_name = "StLeonhard1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
 
 [sub_resource type="Resource" id=146]
-script = ExtResource( 4 )
-rail_name = "Röthenbach28"
-distance_on_rail = 50.0
-initial_speed = 80.0
-initial_speed_limit = 80
+script = ExtResource( 2 )
+station_node_name = "RothenburgerStraße1"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 15
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
 
 [sub_resource type="Resource" id=147]
 script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
+station_node_name = "Plärrer1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1393,7 +1355,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=148]
 script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
+station_node_name = "Oper1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1408,7 +1370,7 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=149]
 script = ExtResource( 2 )
-station_node_name = "Schweinau1"
+station_node_name = "Hauptbahnhof1"
 station_name = "-"
 approach_sound_path = ""
 arrival_sound_path = ""
@@ -1422,399 +1384,32 @@ leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=150]
-script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 7 )
+rail_name = "Röthenbach71"
+distance_on_rail = 0.0
 
 [sub_resource type="Resource" id=151]
-script = ExtResource( 2 )
-station_node_name = "RothenburgerStraße1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 5 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 141 ), SubResource( 142 ), SubResource( 143 ), SubResource( 144 ), SubResource( 145 ), SubResource( 146 ), SubResource( 147 ), SubResource( 148 ), SubResource( 149 ), SubResource( 150 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
+train_name = ""
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
 
 [sub_resource type="Resource" id=152]
-script = ExtResource( 2 )
-station_node_name = "Plärrer1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=153]
-script = ExtResource( 2 )
-station_node_name = "Oper1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=154]
-script = ExtResource( 2 )
-station_node_name = "Hauptbahnhof1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=155]
-script = ExtResource( 7 )
-rail_name = "Röthenbach41"
-distance_on_rail = 0.0
-
-[sub_resource type="Resource" id=156]
-script = ExtResource( 5 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 146 ), SubResource( 147 ), SubResource( 148 ), SubResource( 149 ), SubResource( 150 ), SubResource( 151 ), SubResource( 152 ), SubResource( 153 ), SubResource( 154 ), SubResource( 155 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = false
-train_name = ""
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=157]
-script = ExtResource( 4 )
-rail_name = "Röthenbach9"
-distance_on_rail = 20.0
-initial_speed = 80.0
-initial_speed_limit = 80
-
-[sub_resource type="Resource" id=158]
-script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=159]
-script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=160]
-script = ExtResource( 2 )
-station_node_name = "Schweinau1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=161]
-script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=162]
-script = ExtResource( 2 )
-station_node_name = "RothenburgerStraße1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=163]
-script = ExtResource( 2 )
-station_node_name = "Plärrer1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=164]
-script = ExtResource( 2 )
-station_node_name = "Oper1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=165]
-script = ExtResource( 2 )
-station_node_name = "Hauptbahnhof1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=166]
-script = ExtResource( 7 )
-rail_name = "Röthenbach41"
-distance_on_rail = 0.0
-
-[sub_resource type="Resource" id=167]
-script = ExtResource( 5 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 157 ), SubResource( 158 ), SubResource( 159 ), SubResource( 160 ), SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ), SubResource( 165 ), SubResource( 166 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = false
-train_name = ""
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=168]
-script = ExtResource( 4 )
-rail_name = "RöthenbachP4P"
-distance_on_rail = 20.0
-initial_speed = 20.0
-initial_speed_limit = 20
-
-[sub_resource type="Resource" id=169]
-script = ExtResource( 2 )
-station_node_name = "Röthenbach1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=170]
-script = ExtResource( 2 )
-station_node_name = "HoheMarter1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = -43815
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=171]
-script = ExtResource( 2 )
-station_node_name = "Schweinau1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=172]
-script = ExtResource( 2 )
-station_node_name = "StLeonhard1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=173]
-script = ExtResource( 2 )
-station_node_name = "RothenburgerStraße1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=174]
-script = ExtResource( 2 )
-station_node_name = "Plärrer1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=175]
-script = ExtResource( 2 )
-station_node_name = "Oper1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=176]
-script = ExtResource( 2 )
-station_node_name = "Hauptbahnhof1"
-station_name = "-"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 15
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=177]
-script = ExtResource( 7 )
-rail_name = "Röthenbach41"
-distance_on_rail = 0.0
-
-[sub_resource type="Resource" id=178]
-script = ExtResource( 5 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 168 ), SubResource( 169 ), SubResource( 170 ), SubResource( 171 ), SubResource( 172 ), SubResource( 173 ), SubResource( 174 ), SubResource( 175 ), SubResource( 176 ), SubResource( 177 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = false
-train_name = ""
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=179]
 script = ExtResource( 4 )
 rail_name = "Röthenbach48P7"
 distance_on_rail = 0.0
 initial_speed = 80.0
 initial_speed_limit = 80
 
-[sub_resource type="Resource" id=180]
+[sub_resource type="Resource" id=153]
 script = ExtResource( 2 )
 station_node_name = "Plärrer2"
 station_name = "-"
@@ -1829,16 +1424,16 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=181]
+[sub_resource type="Resource" id=154]
 script = ExtResource( 7 )
 rail_name = "Röthenbach46P8"
 distance_on_rail = 0.0
 
-[sub_resource type="Resource" id=182]
+[sub_resource type="Resource" id=155]
 script = ExtResource( 5 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 179 ), SubResource( 180 ), SubResource( 181 ) ]
+route_points = [ SubResource( 152 ), SubResource( 153 ), SubResource( 154 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = false
@@ -1860,15 +1455,15 @@ Safe journey!"
 duration = 12
 is_hidden = false
 routes = {
-"Player": SubResource( 192 ),
-"npc1": SubResource( 112 ),
-"npc2": SubResource( 123 ),
-"npc3": SubResource( 134 ),
-"npc4": SubResource( 145 ),
-"npc5": SubResource( 156 ),
-"npc6": SubResource( 167 ),
-"npc7": SubResource( 178 ),
-"npcPlärrer": SubResource( 182 )
+"Player": SubResource( 165 ),
+"npc1": SubResource( 105 ),
+"npc2": SubResource( 110 ),
+"npc3": SubResource( 116 ),
+"npc4": SubResource( 123 ),
+"npc5": SubResource( 130 ),
+"npc6": SubResource( 140 ),
+"npc7": SubResource( 151 ),
+"npcPlärrer": SubResource( 155 )
 }
 rail_logic_settings = {
 "ContactPoint": SubResource( 1 ),

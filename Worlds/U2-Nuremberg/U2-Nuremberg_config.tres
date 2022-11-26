@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/world_config.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+release_date = {
+"day": 8,
+"month": 8,
+"year": 2021
+}
+title = "U2 Nuremberg"
+author = "Jean"
+track_description = "U2 in Nuremberg, Bavaria, Germany.Röthenbach - Hauptbahnhof (Central Station)"
+generate_grass = false
+editor_notes = ""

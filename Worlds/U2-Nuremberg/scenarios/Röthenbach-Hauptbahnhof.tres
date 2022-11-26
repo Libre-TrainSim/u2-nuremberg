@@ -48,7 +48,7 @@ status = 0
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
@@ -62,7 +62,7 @@ status = 0
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
@@ -76,49 +76,49 @@ status = 0
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=11]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=12]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 80
 status = 1
 
 [sub_resource type="Resource" id=13]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=15]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90015
 speed = 20
 status = 1
@@ -139,35 +139,35 @@ status = 0
 
 [sub_resource type="Resource" id=18]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=19]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=20]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=21]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 50
 status = 1
 
 [sub_resource type="Resource" id=22]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
@@ -181,7 +181,7 @@ status = 1
 
 [sub_resource type="Resource" id=24]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
@@ -195,63 +195,63 @@ status = 0
 
 [sub_resource type="Resource" id=26]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=27]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=28]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=29]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=30]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 60
 status = 1
 
 [sub_resource type="Resource" id=31]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 60
 status = 1
 
 [sub_resource type="Resource" id=32]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 50
 status = 1
 
 [sub_resource type="Resource" id=33]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=34]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
@@ -272,7 +272,7 @@ status = 0
 
 [sub_resource type="Resource" id=37]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
@@ -293,28 +293,28 @@ status = 0
 
 [sub_resource type="Resource" id=40]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=41]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=42]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=43]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 40200
 speed = -1
 status = 0
@@ -335,14 +335,14 @@ status = 0
 
 [sub_resource type="Resource" id=46]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=47]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 40210
 speed = -1
 status = 1
@@ -363,56 +363,56 @@ status = 0
 
 [sub_resource type="Resource" id=50]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=51]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=52]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=53]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=54]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=55]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=56]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=57]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 50
 status = 1
@@ -426,42 +426,42 @@ status = 0
 
 [sub_resource type="Resource" id=59]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = 80
 status = 1
 
 [sub_resource type="Resource" id=60]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=61]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=62]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=63]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=64]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
@@ -482,28 +482,28 @@ status = 0
 
 [sub_resource type="Resource" id=67]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=68]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1
 
 [sub_resource type="Resource" id=69]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 0
 
 [sub_resource type="Resource" id=70]
 script = ExtResource( 6 )
-operation_mode = 2
+operation_mode = 0
 signal_free_time = 90000
 speed = -1
 status = 1

@@ -5,12 +5,12 @@
 [resource]
 script = ExtResource( 1 )
 release_date = {
-"day": 8,
-"month": 8,
-"year": 2021
+"day": 31.0,
+"month": 12.0,
+"year": 2022.0
 }
 title = "U2 Nuremberg"
-author = "Jean"
+author = "Jean and LTS Contributers"
 track_description = "U2 in Nuremberg, Bavaria, Germany.Röthenbach - Hauptbahnhof (Central Station)"
 generate_grass = false
 editor_notes = ""

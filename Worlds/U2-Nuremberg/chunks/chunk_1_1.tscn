@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=1]
 [ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
@@ -22,11 +22,11 @@
 [ext_resource path="res://Resources/Objects/Wall4m.obj" type="ArrayMesh" id=21]
 [ext_resource path="res://Resources/Materials/Metal_Red.tres" type="Material" id=22]
 [ext_resource path="res://Resources/Materials/DestinationSign.tres" type="Material" id=23]
-[ext_resource path="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Materials/Sandstone_Bricks_St_Leonhard.tres" type="Material" id=24]
+[ext_resource path="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Materials/Painting_HoheMarter_2.tres" type="Material" id=24]
 [ext_resource path="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Materials/Painting_Schweinau.tres" type="Material" id=25]
 [ext_resource path="res://Resources/Objects/TunnelRound1Portal.obj" type="ArrayMesh" id=26]
 [ext_resource path="res://Resources/Objects/SpecialGround.obj" type="ArrayMesh" id=27]
-[ext_resource path="res://Resources/Materials/Sandstone_Bricks.tres" type="Material" id=28]
+[ext_resource path="res://Mods/u2-nuremberg/Resources/U2-Nuremberg/Materials/Painting_HoheMarter_1.tres" type="Material" id=28]
 [ext_resource path="res://Resources/Materials/LEDLamp_Bright.tres" type="Material" id=29]
 [ext_resource path="res://Resources/Objects/Lift-Subway.obj" type="ArrayMesh" id=30]
 [ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=31]
@@ -37,15 +37,884 @@
 [ext_resource path="res://Resources/Objects/Garbage.obj" type="ArrayMesh" id=36]
 [ext_resource path="res://Resources/Objects/Bench.obj" type="ArrayMesh" id=37]
 [ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=38]
+[ext_resource path="res://Resources/Objects/Wall16m.obj" type="ArrayMesh" id=39]
 
 [node name="chunk_1_1" type="Spatial"]
 script = ExtResource( 5 )
 is_empty = false
 generate_grass = false
 chunk_position = Vector3( 1, 0, 1 )
-rails = [ "Röthenbach14", "Röthenbach15", "Röthenbach13Connector", "Röthenbach15PConnector", "Röthenbach13PConnector2", "Röthenbach15Connector", "Röthenbach13PConnector3", "Röthenbach15PConnector2", "Röthenbach16", "Röthenbach16P", "Röthenbach17", "Röthenbach18", "Röthenbach19", "Röthenbach19P", "Röthenbach20", "Röthenbach21", "Röthenbach21P", "Röthenbach20P", "Röthenbach22", "Röthenbach22P", "Röthenbach23", "Röthenbach23P", "Röthenbach24", "Röthenbach24P", "Röthenbach16PConnector", "Röthenbach19PConnector", "Röthenbach15PConnector3", "Röthenbach15PConnector3Connector", "Röthenbach16PConnector2" ]
+rails = [ "Röthenbach9", "Röthenbach9P", "Röthenbach10", "Röthenbach10P", "Röthenbach11", "Röthenbach12", "Röthenbach13", "Röthenbach13P", "Röthenbach10PConnector", "Röthenbach13PConnector", "Röthenbach14", "Röthenbach15", "Röthenbach13Connector", "Röthenbach15PConnector", "Röthenbach13PConnector2", "Röthenbach15Connector", "Röthenbach13PConnector3", "Röthenbach15PConnector2", "Röthenbach16", "Röthenbach16P", "Röthenbach17", "Röthenbach18", "Röthenbach19", "Röthenbach19P", "Röthenbach9Connector", "Röthenbach9PConnector", "Röthenbach16PConnector", "Röthenbach19PConnector", "Röthenbach15PConnector3", "Röthenbach15PConnector3Connector", "Röthenbach16PConnector2" ]
 
 [node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Röthenbach10 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 677.45, 0, 820.9 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach10"
+on_rail_position = 0.0
+length = 80.0
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach10P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 683.067, 0, 815.204 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach10P"
+on_rail_position = 0.0
+length = 77.9056
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach10PConnector Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 745.03, 0, 862.06 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach10PConnector"
+on_rail_position = 0.0
+length = 50.1695
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach11 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 741.07, 0, 869.02 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach11"
+on_rail_position = 0.0
+length = 50.0
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach12 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 785.57, 0, 891.79 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach12"
+on_rail_position = 0.0
+length = 50.0
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach13 Benches" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 847.46, 0, 924.439 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Benches"
+attached_rail = "Röthenbach13"
+on_rail_position = 20.0
+length = 100.0
+mesh = ExtResource( 37 )
+materials = [ ExtResource( 38 ), ExtResource( 10 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.1
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.3
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 830.07, 0, 914.56 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Ceilling"
+attached_rail = "Röthenbach13"
+on_rail_position = 0.0
+length = 220.0
+mesh = ExtResource( 15 )
+materials = [ ExtResource( 17 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 6.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 DestinationSigns" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 873.544, 0, 939.259 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "DestinationSigns"
+attached_rail = "Röthenbach13"
+on_rail_position = 50.0
+length = 70.0
+mesh = ExtResource( 18 )
+materials = [ ExtResource( 8 ), ExtResource( 23 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 3.8
+height = 5.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 GarbageCans" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 849.199, 0, 925.427 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "GarbageCans"
+attached_rail = "Röthenbach13"
+on_rail_position = 22.0
+length = 98.0
+mesh = ExtResource( 36 )
+materials = [ ExtResource( 8 ), ExtResource( 22 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 830.07, 0, 914.56 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Ground"
+attached_rail = "Röthenbach13"
+on_rail_position = 0.0
+length = 220.0
+mesh = ExtResource( 27 )
+materials = [ ExtResource( 17 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 3.0
+distanceRows = 0.0
+shift = 0.0
+height = -0.4
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Lights" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 851.807, 0, 926.909 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Lights"
+attached_rail = "Röthenbach13"
+on_rail_position = 25.0
+length = 90.0
+mesh = ExtResource( 19 )
+materials = [ ExtResource( 8 ), ExtResource( 29 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 2.5
+height = 5.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Pfosts" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 960.492, 0, 988.656 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Pfosts"
+attached_rail = "Röthenbach13"
+on_rail_position = 150.0
+length = 70.0
+mesh = ExtResource( 11 )
+materials = [ ExtResource( 17 ), null ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 3.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 847.46, 0, 924.439 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform"
+attached_rail = "Röthenbach13"
+on_rail_position = 20.0
+length = 100.0
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 31 ), ExtResource( 7 ), ExtResource( 34 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 9.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Stairs" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 938.755, 0, 976.307 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Stairs"
+attached_rail = "Röthenbach13"
+on_rail_position = 125.0
+length = 5.0
+mesh = ExtResource( 14 )
+materials = [ ExtResource( 10 ), ExtResource( 10 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 TunnelPortal" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 830.418, 0, 914.758 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "TunnelPortal"
+attached_rail = "Röthenbach13"
+on_rail_position = 0.4
+length = 0.6
+mesh = ExtResource( 26 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 830.07, 0, 914.56 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Wall"
+attached_rail = "Röthenbach13"
+on_rail_position = 0.0
+length = 220.0
+mesh = ExtResource( 32 )
+materials = [ ExtResource( 17 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.5
+distanceRows = 0.0
+shift = 3.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 WallPaint" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 843.112, 0, 921.97 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "WallPaint"
+attached_rail = "Röthenbach13"
+on_rail_position = 15.0
+length = 105.0
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 17 ), ExtResource( 28 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 16.0
+distanceRows = 0.0
+shift = 3.0
+height = -1.0
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13 WallPaint (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 850.068, 0, 925.921 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "WallPaint (Duplicate)"
+attached_rail = "Röthenbach13"
+on_rail_position = 23.0
+length = 97.0
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 28 ), ExtResource( 24 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 16.0
+distanceRows = 0.0
+shift = 3.0
+height = -1.0
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13P DestinationSigns" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 879.472, 0, 928.825 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "DestinationSigns"
+attached_rail = "Röthenbach13P"
+on_rail_position = 50.0
+length = 70.0
+mesh = ExtResource( 18 )
+materials = [ ExtResource( 8 ), ExtResource( 23 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 3.8
+height = 5.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13P Lights" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 857.735, 0, 916.476 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Lights"
+attached_rail = "Röthenbach13P"
+on_rail_position = 25.0
+length = 90.0
+mesh = ExtResource( 19 )
+materials = [ ExtResource( 8 ), ExtResource( 29 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 2.5
+height = 5.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13P Pfosts" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 966.419, 0, 978.222 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Pfosts"
+attached_rail = "Röthenbach13P"
+on_rail_position = 150.0
+length = 70.0
+mesh = ExtResource( 11 )
+materials = [ ExtResource( 17 ), null ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 3.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13P TunnelPortal" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 836.215, 0, 904.25 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "TunnelPortal"
+attached_rail = "Röthenbach13P"
+on_rail_position = 0.25
+length = 0.75
+mesh = ExtResource( 26 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13P Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 835.998, 0, 904.126 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Wall"
+attached_rail = "Röthenbach13P"
+on_rail_position = 0.0
+length = 220.0
+mesh = ExtResource( 32 )
+materials = [ ExtResource( 17 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.5
+distanceRows = 0.0
+shift = 3.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach13P WallPaint" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 849.04, 0, 911.536 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "WallPaint"
+attached_rail = "Röthenbach13P"
+on_rail_position = 15.0
+length = 105.0
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 17 ), ExtResource( 28 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 16.0
+distanceRows = 0.0
+shift = 3.0
+height = -1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13P WallPaint (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 855.996, 0, 915.488 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "WallPaint (Duplicate)"
+attached_rail = "Röthenbach13P"
+on_rail_position = 23.0
+length = 97.0
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 28 ), ExtResource( 24 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 16.0
+distanceRows = 0.0
+shift = 3.0
+height = -1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Röthenbach13PConnector Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 790.51, 0, 883.09 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach13PConnector"
+on_rail_position = 0.0
+length = 50.1695
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach9 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 620.49, -0.00477213, 764.72 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach9"
+on_rail_position = 0.0
+length = 80.0
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach9Connector Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 553.69, -0.014434, 701.54 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach9Connector"
+on_rail_position = 0.0
+length = 91.9596
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach9P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 626.107, -0.00477213, 759.024 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach9P"
+on_rail_position = 0.0
+length = 80.0
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach9PConnector Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 560.71, 0.00144005, 694.42 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Tunnel"
+attached_rail = "Röthenbach9PConnector"
+on_rail_position = 0.0
+length = 91.9329
+mesh = ExtResource( 33 )
+materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach13 WallPaint_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 843.112, 0, 921.97 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "WallPaint_duplicate"
+attached_rail = "Röthenbach13"
+on_rail_position = 15.0
+length = 0.0
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 17 ), ExtResource( 28 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 16.0
+distanceRows = 0.0
+shift = 6.0
+height = -1.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
 
 [node name="Röthenbach13 TunnelPortal2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1197.29, 0, 1118.18 )
@@ -635,762 +1504,6 @@ applySlopeRotation = true
 randomSeed = 0
 wholeRail = false
 
-[node name="Röthenbach20 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1554.51, 0, 1296.09 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach20"
-on_rail_position = 0.0
-length = 98.95
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach20P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1558.54, 0, 1284.79 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach20P"
-on_rail_position = 0.0
-length = 98.95
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach21 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1650.06, 2.49731, 1325.49 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach21"
-on_rail_position = 0.0
-length = 98.95
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach21P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1653.09, 2.49731, 1313.88 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach21P"
-on_rail_position = 0.0
-length = 98.95
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach22 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1747.8, 5, 1346.45 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach22"
-on_rail_position = 0.0
-length = 98.95
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach22P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1749.8, 5, 1334.62 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach22P"
-on_rail_position = 0.0
-length = 98.95
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach23 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1846.9, 5, 1359.67 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach23"
-on_rail_position = 0.0
-length = 70.0
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = true
-
-[node name="Röthenbach23 TunnelPortal" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1915.78, 5, 1368.85 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "TunnelPortal"
-attached_rail = "Röthenbach23"
-on_rail_position = 69.5
-length = 0.5
-mesh = ExtResource( 26 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach23P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1848.07, 5, 1347.73 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Tunnel"
-attached_rail = "Röthenbach23P"
-on_rail_position = 0.0
-length = 70.0
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = true
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach23P TunnelPortal" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1916.95, 5, 1356.88 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "TunnelPortal"
-attached_rail = "Röthenbach23P"
-on_rail_position = 69.5
-length = 0.5
-mesh = ExtResource( 26 )
-materials = [ ExtResource( 17 ), ExtResource( 1 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Benches" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1936, 5, 1372.27 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Benches"
-attached_rail = "Röthenbach24"
-on_rail_position = 20.0
-length = 70.0
-mesh = ExtResource( 37 )
-materials = [ ExtResource( 38 ), ExtResource( 10 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.1
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.3
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Ceilling" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1916.28, 5, 1368.93 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Ceilling"
-attached_rail = "Röthenbach24"
-on_rail_position = 0.0
-length = 100.0
-mesh = ExtResource( 15 )
-materials = [ ExtResource( 17 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.9
-distanceRows = 0.0
-shift = 0.0
-height = 6.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 DestinationSigns" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1945.86, 5, 1373.93 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DestinationSigns"
-attached_rail = "Röthenbach24"
-on_rail_position = 30.0
-length = 70.0
-mesh = ExtResource( 18 )
-materials = [ ExtResource( 8 ), ExtResource( 23 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 3.8
-height = 5.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 GarbageCans" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1928.11, 5, 1370.93 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "GarbageCans"
-attached_rail = "Röthenbach24"
-on_rail_position = 12.0
-length = 78.0
-mesh = ExtResource( 36 )
-materials = [ ExtResource( 8 ), ExtResource( 22 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 20.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.3
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Ground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1916.28, 5, 1368.93 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Ground"
-attached_rail = "Röthenbach24"
-on_rail_position = 0.0
-length = 100.0
-mesh = ExtResource( 27 )
-materials = [ ExtResource( 17 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 3.0
-distanceRows = 0.0
-shift = 0.0
-height = -0.4
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Lift" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1926.14, 5, 1370.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Lift"
-attached_rail = "Röthenbach24"
-on_rail_position = 10.0
-length = 0.0
-mesh = ExtResource( 30 )
-materials = [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 6 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.2
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Lights" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1936, 5, 1372.27 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Lights"
-attached_rail = "Röthenbach24"
-on_rail_position = 20.0
-length = 70.0
-mesh = ExtResource( 19 )
-materials = [ ExtResource( 8 ), ExtResource( 29 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 20.0
-distanceRows = 0.0
-shift = 2.5
-height = 6.1
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Pfosts" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1921.21, 5, 1369.76 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Pfosts"
-attached_rail = "Röthenbach24"
-on_rail_position = 5.0
-length = 95.0
-mesh = ExtResource( 11 )
-materials = [ ExtResource( 28 ), ExtResource( 9 ), ExtResource( 6 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1921.21, 5, 1369.76 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Platform"
-attached_rail = "Röthenbach24"
-on_rail_position = 5.0
-length = 95.0
-mesh = ExtResource( 35 )
-materials = [ ExtResource( 31 ), ExtResource( 7 ), ExtResource( 34 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 9.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1916.28, 5, 1368.93 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Wall"
-attached_rail = "Röthenbach24"
-on_rail_position = 0.0
-length = 100.0
-mesh = ExtResource( 32 )
-materials = [ ExtResource( 17 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.5
-distanceRows = 0.0
-shift = 3.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 WallPaint (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1920.22, 5, 1369.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "WallPaint"
-attached_rail = "Röthenbach24"
-on_rail_position = 4.0
-length = 96.0
-mesh = ExtResource( 20 )
-materials = [ ExtResource( 10 ), ExtResource( 28 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 16.0
-distanceRows = 0.0
-shift = 3.0
-height = -1.0
-rotationObjects = 3.14159
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24 WallPaint (Duplicate) (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1928.11, 5, 1370.93 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "WallPaint (Duplicate)"
-attached_rail = "Röthenbach24"
-on_rail_position = 12.0
-length = 88.0
-mesh = ExtResource( 20 )
-materials = [ ExtResource( 10 ), ExtResource( 24 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 16.0
-distanceRows = 0.0
-shift = 3.0
-height = -1.0
-rotationObjects = 3.14159
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24P DestinationSigns" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1947.86, 5, 1362.1 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DestinationSigns"
-attached_rail = "Röthenbach24P"
-on_rail_position = 30.0
-length = 70.0
-mesh = ExtResource( 18 )
-materials = [ ExtResource( 8 ), ExtResource( 23 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 3.8
-height = 5.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24P Lights" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1938, 5, 1360.44 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Lights"
-attached_rail = "Röthenbach24P"
-on_rail_position = 20.0
-length = 70.0
-mesh = ExtResource( 19 )
-materials = [ ExtResource( 8 ), ExtResource( 29 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 20.0
-distanceRows = 0.0
-shift = 2.5
-height = 6.1
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24P Wall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1918.28, 5, 1357.1 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Wall"
-attached_rail = "Röthenbach24P"
-on_rail_position = 0.0
-length = 100.0
-mesh = ExtResource( 32 )
-materials = [ ExtResource( 17 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 1.5
-distanceRows = 0.0
-shift = 3.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24P WallPaint (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1922.22, 5, 1357.77 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "WallPaint (Duplicate)"
-attached_rail = "Röthenbach24P"
-on_rail_position = 4.0
-length = 96.0
-mesh = ExtResource( 20 )
-materials = [ ExtResource( 28 ), ExtResource( 28 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 16.0
-distanceRows = 0.0
-shift = 3.0
-height = -1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Röthenbach24P WallPaint (Duplicate) (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1930.11, 5, 1359.1 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "WallPaint (Duplicate) (Duplicate)"
-attached_rail = "Röthenbach24P"
-on_rail_position = 12.0
-length = 88.0
-mesh = ExtResource( 20 )
-materials = [ ExtResource( 10 ), ExtResource( 24 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 16.0
-distanceRows = 0.0
-shift = 3.0
-height = -1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="Röthenbach38 Benches3" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1206.38, 0, 1122.34 )
 lod_max_distance = 100.0
@@ -1840,7 +1953,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach38 WallPaint (Duplicate)5" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1205.93, 0, 1108.94 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1205.92, 0, 1108.93 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "WallPaint (Duplicate)"
@@ -1896,7 +2009,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Röthenbach38P DestinationSigns2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1229.57, 0, 1119.76 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1229.56, 0, 1119.76 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DestinationSigns"
@@ -2007,35 +2120,57 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = false
 
-[node name="Röthenbach24 WallPaint_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2014.88, 5, 1385.61 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "WallPaint_duplicate"
-attached_rail = "Röthenbach24"
-on_rail_position = 100.0
-length = 0.0
-mesh = ExtResource( 20 )
-materials = [ ExtResource( 10 ), ExtResource( 28 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 16.0
-distanceRows = 0.0
-shift = 6.0
-height = -1.0
-rotationObjects = -1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="Buildings" type="Spatial" parent="."]
+
+[node name="Pfost11" type="MeshInstance" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 835.753, -1.65127, 913.966 )
+mesh = ExtResource( 11 )
+material/0 = ExtResource( 17 )
+
+[node name="Pfost12" type="MeshInstance" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 845.104, -1.65127, 913.144 )
+mesh = ExtResource( 11 )
+material/0 = ExtResource( 17 )
+
+[node name="Pfost13" type="MeshInstance" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 838.7, -1.65127, 909.456 )
+mesh = ExtResource( 11 )
+material/0 = ExtResource( 17 )
+
+[node name="Pfost14" type="MeshInstance" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 842.444, -1.65127, 917.802 )
+mesh = ExtResource( 11 )
+material/0 = ExtResource( 17 )
+
+[node name="Wall16m5" type="MeshInstance" parent="Buildings"]
+transform = Transform( 0.87171, 0, -0.490022, 0, 1, 0, 0.490022, 0, 0.87171, 955.602, 0.523453, 983.381 )
+mesh = ExtResource( 39 )
+material/0 = ExtResource( 17 )
+
+[node name="Wall16m6" type="MeshInstance" parent="Buildings"]
+transform = Transform( 0.87171, 0, -0.490022, 0, 1, 0, 0.490022, 0, 0.87171, 959.565, 0.523452, 976.535 )
+mesh = ExtResource( 39 )
+material/0 = ExtResource( 17 )
+
+[node name="Wall16m7" type="MeshInstance" parent="Buildings"]
+transform = Transform( 0.490021, 0, 0.87171, 0, 1, 0, -0.87171, 0, 0.490021, 950.622, 0.523453, 976.02 )
+mesh = ExtResource( 12 )
+material/0 = ExtResource( 17 )
+
+[node name="Wall4m5" type="MeshInstance" parent="Buildings"]
+transform = Transform( 0.427374, 0, 0.904075, 0, 1, 0, -0.904075, 0, 0.427374, 832.957, 0.263883, 909.938 )
+mesh = ExtResource( 21 )
+material/0 = ExtResource( 17 )
+
+[node name="Wall4m6" type="MeshInstance" parent="Buildings"]
+transform = Transform( 0.5425, 0, 0.840056, 0, 1, 0, -0.840056, 0, 0.5425, 833.442, 0.263883, 908.843 )
+mesh = ExtResource( 21 )
+material/0 = ExtResource( 17 )
+
+[node name="Wall8m8" type="MeshInstance" parent="Buildings"]
+transform = Transform( 0.498745, 0, 0.866749, 0, 1, 0, -0.866749, 0, 0.498745, 964.546, -2.32903, 983.855 )
+mesh = ExtResource( 12 )
+material/0 = ExtResource( 17 )
 
 [node name="Pfost15" type="MeshInstance" parent="Buildings"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1081.28, -1.65127, 1049.74 )
@@ -2082,16 +2217,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1031.99, -1.65127, 1019.16 )
 mesh = ExtResource( 11 )
 material/0 = ExtResource( 17 )
 
-[node name="Wall4m10" type="MeshInstance" parent="Buildings"]
-transform = Transform( 0.173837, 0, 0.984774, 0, 1, 0, -0.984774, 0, 0.173837, 1917.36, 4.58622, 1363.63 )
-mesh = ExtResource( 21 )
-material/0 = ExtResource( 17 )
-
-[node name="Wall4m11" type="MeshInstance" parent="Buildings"]
-transform = Transform( 0.205845, 0, 0.978584, 0, 1, 0, -0.978584, 0, 0.205845, 1917.58, 4.58622, 1362.31 )
-mesh = ExtResource( 21 )
-material/0 = ExtResource( 17 )
-
 [node name="Wall4m28" type="MeshInstance" parent="Buildings"]
 transform = Transform( 0.27322, 0, 0.961951, 0, 1, 0, -0.961951, 0, 0.27322, 1199.25, -1.27498, 1113.13 )
 mesh = ExtResource( 21 )
@@ -2107,17 +2232,57 @@ transform = Transform( 0.460773, 0, 0.887518, 0, 1, 0, -0.887518, 0, 0.460773, 1
 mesh = ExtResource( 21 )
 material/0 = ExtResource( 17 )
 
-[node name="Wall4m8" type="MeshInstance" parent="Buildings"]
-transform = Transform( -0.984439, 0, 0.175727, 0, 1, 0, -0.175727, 0, -0.984439, 1916.03, 4.58622, 1360.04 )
-mesh = ExtResource( 21 )
-material/0 = ExtResource( 17 )
-
-[node name="Wall4m9" type="MeshInstance" parent="Buildings"]
-transform = Transform( -0.984439, 0, 0.175727, 0, 1, 0, -0.175727, 0, -0.984439, 1915.07, 4.58622, 1365.25 )
-mesh = ExtResource( 21 )
-material/0 = ExtResource( 17 )
-
 [node name="Wall8m9" type="MeshInstance" parent="Buildings"]
 transform = Transform( 0.506305, 0, 0.862355, 0, 1, 0, -0.862355, 0, 0.506305, 1111.1, -1.81683, 1065.73 )
 mesh = ExtResource( 12 )
 material/0 = ExtResource( 17 )
+
+[node name="OmniLight8" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 850.541, 5.17254, 919.381 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight9" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 869.158, 5.17254, 929.869 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight10" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 889.968, 5.17254, 942.022 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight11" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 908.329, 5.17254, 953.966 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight12" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 927.558, 5.17254, 964.841 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight13" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1211.26, 5.17254, 1117.22 )
+light_energy = 2.0
+omni_range = 20.0
+__meta__ = {
+"color_filter": Color( 1, 1, 1, 0 ),
+"color_temperature": 6500,
+"use_color_temperature": true
+}
+
+[node name="OmniLight38" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1232.31, 5.17254, 1127.48 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight39" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1257.54, 5.17254, 1138.59 )
+light_energy = 2.0
+omni_range = 20.0
+
+[node name="OmniLight40" type="OmniLight" parent="Buildings"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1277.12, 5.17256, 1149.41 )
+light_energy = 2.0
+omni_range = 20.0

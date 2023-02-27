@@ -1,0 +1,131 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=1]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=2]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=5]
+[ext_resource path="res://Resources/Materials/Beton_Tunnel.tres" type="Material" id=6]
+[ext_resource path="res://Resources/Objects/TunnelRound1.obj" type="ArrayMesh" id=7]
+
+[node name="chunk_0_1" type="Spatial"]
+script = ExtResource( 1 )
+is_empty = false
+generate_grass = false
+chunk_position = Vector3( 0, 0, 1 )
+rails = [ "Röthenbach73", "Röthenbach73Connector", "Röthenbach73P", "Röthenbach73PConnector" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Röthenbach73 Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 356.69, -5.01493, 536.26 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tunnel"
+attached_rail = "Röthenbach73"
+on_rail_position = 0.0
+length = 165.8
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 6 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach73Connector Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 486.88, -0.0222279, 638.35 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tunnel"
+attached_rail = "Röthenbach73Connector"
+on_rail_position = 0.0
+length = 91.9596
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 6 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach73P Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 362.978, -5.01493, 526.039 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tunnel"
+attached_rail = "Röthenbach73P"
+on_rail_position = 0.0
+length = 168.523
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 6 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Röthenbach73PConnector Tunnel" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 495.31, 0.00144005, 629.81 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tunnel"
+attached_rail = "Röthenbach73PConnector"
+on_rail_position = 0.0
+length = 91.9329
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 6 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 1.9
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = true
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]
